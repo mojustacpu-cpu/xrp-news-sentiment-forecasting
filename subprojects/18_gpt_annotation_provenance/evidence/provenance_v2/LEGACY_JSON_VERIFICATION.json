@@ -1,0 +1,8 @@
+{
+  "sample_articles": 95,
+  "uniquely_matched": 95,
+  "all_seven_fields_match": 95,
+  "source_sha256": "0507fdf8550bd31d49dcc46d88cce936415804736ca6caf1e411da72c02504ac",
+  "source_path": "/Users/mahmoudali/Disk/Master 2025/cursor projects/news_sentiment_bilstm/data/raw/raw/complete_sentiment_raw.csv",
+  "limitation": "Saved JSON consistency only. Original request, model version, generation settings and human accuracy not established."
+}

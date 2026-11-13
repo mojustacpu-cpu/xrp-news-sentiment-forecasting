@@ -1,0 +1,308 @@
+{
+  "status": "approved_phase1_only",
+  "initial_stage_fits": 25,
+  "main_full_stage_fits": 55,
+  "timestamp_robustness_additional_fits": 15,
+  "earlier_rolling_fits": 120,
+  "HBAR_selected_method_fits": 5,
+  "maximum_initial_programme_fits": 195,
+  "budget_exclusions": [
+    "Additional feature-drop ablations only if selected method supports them; exact list frozen before they run.",
+    "HBAR extra baseline fits only if compatibility verification fails.",
+    "No fine-tuned-backbone gate variant initially.",
+    "No new ARIMAX/GARCH reruns when saved periods align."
+  ],
+  "matrix": [
+    {
+      "id": "E1B",
+      "configurations": 1,
+      "seeds": 5,
+      "main_new_fits": 5,
+      "news": "4 direct means + presence + capped48h time since latest eligible news"
+    },
+    {
+      "id": "E2 base",
+      "configurations": 4,
+      "seeds": 5,
+      "main_new_fits": 20,
+      "news": "N_h plus no-relevant-news indicator; h3/6/12/24;W48"
+    },
+    {
+      "id": "E2 limited additions",
+      "configurations": 3,
+      "seeds": 5,
+      "main_new_fits": 15,
+      "news": "At selected h, add intensity OR stance OR uncertainty separately"
+    },
+    {
+      "id": "E3",
+      "configurations": 1,
+      "seeds": 5,
+      "main_new_fits": 5,
+      "news": "E1B six features + selected base equation and relevant-news indicator"
+    },
+    {
+      "id": "E4 frozen gate",
+      "configurations": 1,
+      "seeds": 5,
+      "main_new_fits": 5,
+      "news": "Frozen seed-matched E0; GRU16 news encoder, sigmoid gate, zero-initialised correction"
+    },
+    {
+      "id": "E4 ungated correction",
+      "configurations": 1,
+      "seeds": 5,
+      "main_new_fits": 5,
+      "news": "Same correction encoder, gate fixed1; gate-disabled0 needs no fit"
+    }
+  ],
+  "seeds": [
+    42,
+    123,
+    2026,
+    7,
+    99
+  ],
+  "lookback_hours": 48,
+  "half_lives": [
+    3,
+    6,
+    12,
+    24
+  ],
+  "delay_hours": [
+    0,
+    1,
+    6,
+    24
+  ],
+  "architecture": {
+    "hidden_per_direction": 128,
+    "layers": 2,
+    "dense": 64,
+    "dropout": 0.2,
+    "attention": false
+  },
+  "training": {
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "batch_size": 32,
+    "max_epochs": 200,
+    "patience": 15,
+    "device": "cpu",
+    "threads": 4
+  },
+  "target": "log(P[t+24]/P[t])",
+  "input_window": 30,
+  "selection": "Checkpoint: minimum validation scaled-return MSE. Configuration: minimum mean validation reconstructed-price RMSE over five seeds. Exact tie: fewer news inputs, then half-life order3,6,12,24. No evaluation-based replacement.",
+  "earlier_rolling": "Repeat candidate selection within each earlier fold using only its preceding train/validation data. New log-return E0 controls required; do not reuse main weights backward. 55news+5technical fits per earlier fold,120total.",
+  "gate": "Frozen seed-matched E0 forecasts in unscaled log-return units. Train GRU16 news encoder plus sigmoid gate and scalar correction head. Zero initial correction; multiply by current eligible-news mask. Gate-disabled prediction must equal E0. Same scaled-return loss and train-only preprocessing. Report gates as model behavior, not causal effect.",
+  "statistical_plan": "Paired errors on identical origins. Circular moving-block bootstrap with primary72h blocks, sensitivity24/168h,2000replicates, fixedseed2026; recompute RMSE differences in each sample. Report each seed and seed-mean error curve separately, not seeds as independent markets. Forecast-loss comparison HAC at least lag23; block-based inference primary; predefine multiple-comparison adjustment before final inference.",
+  "subgroup_plan": "News active/inactive by eligible archive; regulatory by observed category, positive/negative by available sentiment. Volatility thresholds fitted in training. Large future moves only retrospective diagnostics, never selection or timing shifts.",
+  "observed_fit_minutes": {
+    "minimum": 5.122366066773733,
+    "median": 16.559524377187092,
+    "maximum": 147.04164569775264
+  },
+  "first25_observed_range_hours": [
+    2.134319194489055,
+    61.2673523740636
+  ],
+  "first25_median_based_hours": 6.899801823827955,
+  "compute_caveat": "Historical timings differ substantially with runtime load and early stopping; extrapolation is not a completion guarantee. Sequential fits on existing8core/8GB local hardware; no paid compute.",
+  "approved_new_fits": 25,
+  "candidates": [
+    {
+      "name": "E1B",
+      "half_life_hours": null,
+      "delay_hours": 0,
+      "news_features": [
+        "direct_sentiment",
+        "direct_specificity",
+        "direct_stance",
+        "direct_uncertainty",
+        "direct_news_present",
+        "hours_since_latest_news_capped48"
+      ],
+      "features": [
+        "EMA_20",
+        "MACD_Signal",
+        "SMA_20",
+        "SMA_10",
+        "EMA_10",
+        "Volatility_10",
+        "MACD",
+        "MFI",
+        "OBV",
+        "BTC_Close",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "return",
+        "volatility",
+        "price_sma10",
+        "price_sma20",
+        "direct_sentiment",
+        "direct_specificity",
+        "direct_stance",
+        "direct_uncertainty",
+        "direct_news_present",
+        "hours_since_latest_news_capped48"
+      ],
+      "parameters": 570497,
+      "dataset": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E1B/training.csv",
+      "scalers": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E1B/scalers.joblib",
+      "source_scenario_sha256": "bf0923ac1691688fa69d14d5196dbae7094f397b950cbcc00fcfbeefb7c8e87f"
+    },
+    {
+      "name": "E2_h3",
+      "half_life_hours": 3,
+      "delay_hours": 0,
+      "news_features": [
+        "equation_sentiment",
+        "no_relevant_news"
+      ],
+      "features": [
+        "EMA_20",
+        "MACD_Signal",
+        "SMA_20",
+        "SMA_10",
+        "EMA_10",
+        "Volatility_10",
+        "MACD",
+        "MFI",
+        "OBV",
+        "BTC_Close",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "return",
+        "volatility",
+        "price_sma10",
+        "price_sma20",
+        "equation_sentiment",
+        "no_relevant_news"
+      ],
+      "parameters": 566401,
+      "dataset": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E2_h3/training.csv",
+      "scalers": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E2_h3/scalers.joblib",
+      "source_scenario_sha256": "bf0923ac1691688fa69d14d5196dbae7094f397b950cbcc00fcfbeefb7c8e87f"
+    },
+    {
+      "name": "E2_h6",
+      "half_life_hours": 6,
+      "delay_hours": 0,
+      "news_features": [
+        "equation_sentiment",
+        "no_relevant_news"
+      ],
+      "features": [
+        "EMA_20",
+        "MACD_Signal",
+        "SMA_20",
+        "SMA_10",
+        "EMA_10",
+        "Volatility_10",
+        "MACD",
+        "MFI",
+        "OBV",
+        "BTC_Close",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "return",
+        "volatility",
+        "price_sma10",
+        "price_sma20",
+        "equation_sentiment",
+        "no_relevant_news"
+      ],
+      "parameters": 566401,
+      "dataset": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E2_h6/training.csv",
+      "scalers": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E2_h6/scalers.joblib",
+      "source_scenario_sha256": "54ac0bdebbe45bf4a9932accff7cbfe057702a519f53028f26fd1f0570cbd96d"
+    },
+    {
+      "name": "E2_h12",
+      "half_life_hours": 12,
+      "delay_hours": 0,
+      "news_features": [
+        "equation_sentiment",
+        "no_relevant_news"
+      ],
+      "features": [
+        "EMA_20",
+        "MACD_Signal",
+        "SMA_20",
+        "SMA_10",
+        "EMA_10",
+        "Volatility_10",
+        "MACD",
+        "MFI",
+        "OBV",
+        "BTC_Close",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "return",
+        "volatility",
+        "price_sma10",
+        "price_sma20",
+        "equation_sentiment",
+        "no_relevant_news"
+      ],
+      "parameters": 566401,
+      "dataset": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E2_h12/training.csv",
+      "scalers": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E2_h12/scalers.joblib",
+      "source_scenario_sha256": "15e615f7ed96ae6af4afa4221e642e7e3580761971dc8854320576a6f93c9217"
+    },
+    {
+      "name": "E2_h24",
+      "half_life_hours": 24,
+      "delay_hours": 0,
+      "news_features": [
+        "equation_sentiment",
+        "no_relevant_news"
+      ],
+      "features": [
+        "EMA_20",
+        "MACD_Signal",
+        "SMA_20",
+        "SMA_10",
+        "EMA_10",
+        "Volatility_10",
+        "MACD",
+        "MFI",
+        "OBV",
+        "BTC_Close",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "return",
+        "volatility",
+        "price_sma10",
+        "price_sma20",
+        "equation_sentiment",
+        "no_relevant_news"
+      ],
+      "parameters": 566401,
+      "dataset": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E2_h24/training.csv",
+      "scalers": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E2_h24/scalers.joblib",
+      "source_scenario_sha256": "a7d8af2f60a56fd36c5681289c9098ab56bb2743da50ef6c0883483647d0f2c1"
+    }
+  ],
+  "stop_after_phase1": true,
+  "E0_E1_retrained": false,
+  "final_evaluation_performed": false,
+  "phase1_statistics": "Paired circular moving-block bootstrap on seed-averaged squared errors:72h primary,24/168h sensitivity,2000 replicates,seed2026. Five candidates versus E0 and E1:10 comparisons; report unadjusted95% and Bonferroni99.5% intervals, validation-selection optimism disclosed. Numerical improvement alone is not robust evidence."
+}

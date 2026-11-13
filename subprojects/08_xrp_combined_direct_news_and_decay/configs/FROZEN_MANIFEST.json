@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-11-07 06:58:04.738665+00:00",
+  "files": {
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase2_e3/prepare_e3.py": "59eca70be900a15850b85653bb678ae76834ac8c9ed0436bef069bfe8b95a5e7",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase2_e3/main_evaluation.npy": "ddaabc636de1a9550632b51691eb074aa50bded9c548d6e1478a510fdd99bf0a",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase2_e3/VALIDATION_ORIGINS.csv": "bc3d047504a44a6ce83d96646f53d853774de3a58bf3af5b3ae1f6e1bb1b0068",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase2_e3/main_validation.npy": "696360151f01afc2c589b2053a515cb3a4cde4b65420a18c5e4f762cc589c67e",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase2_e3/main_train.npy": "b9fb77c822095ff79369fe7f002d3308411879e80a27e638fb073118ceb52ea3",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase2_e3/PROTOCOL.json": "9120d382a8bf2aacf5bef64032b9cf80ae6764db2f632759d5309cf89fe2ee86",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase2_e3/train_candidate.py": "0d1fa6d53cdb1374d72fcc47762a12f49fc4757a5ca19001cf339734fb93342d",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase2_e3/PREFLIGHT_VERIFICATION.json": "9d07bd07751db73567f11c4dba49e5000538e45d4aaf518b40be7a64956efd40",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase2_e3/E3/training.csv": "4f63103d054fc4902ca10b4ddc8c0d1e76fa712e6c27eb4c36f24ffea88d6301",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase2_e3/E3/CONFIG.json": "90dbd1fe8bd8c0d2e8fc337c4bde9baed3fc3c619c589115d4f4bdec0aebe21d",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase2_e3/E3/scalers.joblib": "186022987f18a575b138357c1c526bb0579f7a13c6dd8fe97ecab7078dc2b129",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase2_e3/reference/neural.py": "c3be76ab476c2de4113f4bf5d896b88fd423e5b97cf8fe5a9121e50601175a73",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase2_e3/reference/common.py": "5613e92acf44bbc04d84b440b1e7b6339b5334c778cc4a15eed96c426888a4a6",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/FROZEN_MANIFEST.json": "0f7cfa6ca441ab40b9312fec3b85ba115f79b963a7b53b5717bb8c6a00b6f7c1",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/analysis/VALIDATION_RANKING.csv": "2076a38139e19892209b7976bc3ed6d8ae2f55b22baa20bb6b46e83b5314cd40",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E1B/training.csv": "80122a080caa35a053a8487a91bfe5df175e958e8ca476da214ee3f520c9d5d0",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E2_h6/training.csv": "6791686c8388b203942f153705d2ca3ee443adfb104048957ce4100392857cf3"
+  }
+}

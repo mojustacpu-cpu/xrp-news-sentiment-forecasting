@@ -1,0 +1,35 @@
+{
+  "status": "completed_reports_verified",
+  "completed_utc": "2026-11-07T07:33:16.949234+00:00",
+  "completed_fits": 5,
+  "passed": true,
+  "reports": [
+    {
+      "path": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase2_e3/E3/reports/SCIENTIFIC_REPORT.docx",
+      "sha256": "f4ced63b99988a66f7eb9d4cc506e1a592b966800c2644e249864ae7d7ab586e",
+      "pages": 3,
+      "visual_review": "All three final rendered pages inspected and accepted",
+      "page_hashes": {
+        "page-1.png": "1d2591d3794ae5fdd643bd8b6f6b5351e54f519c1a8d234ec46666b8b13afa08",
+        "page-2.png": "641aca181832f543ce7a57d208a675ecc32076ba2529efc60a23f33c1fa8d96c",
+        "page-3.png": "990a04335b914cbe6d3a119c73480a3e96b3bf32922fec66e07a83de3f39e305"
+      }
+    },
+    {
+      "path": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase2_e3/reports/UPDATED_COMPARISON.docx",
+      "sha256": "46be93c30861e5ad1046f7e33008a9211bd785793bc0c36adb67c2c02f946393",
+      "pages": 3,
+      "visual_review": "All three final rendered pages inspected and accepted",
+      "page_hashes": {
+        "page-1.png": "8c35806cc6fc5fdd4e24b5e3ad9850f82f4e427e7ae15dcd7f16814a39502a33",
+        "page-2.png": "a379f997e9ed854f83808c815d60012dded18b799352d4c5466370889851f668",
+        "page-3.png": "6166d0f659e374cfd50af095540f74a4ec10af1e86243b228fadb31c0944b9ed"
+      }
+    }
+  ],
+  "numerical_verification_sha256": "e8b4d8af54bedd5332569cbebf71f9ac8e227471d3715f10a3134687bc3ae500",
+  "frozen_inputs_unchanged": true,
+  "phase1_reports_unchanged": true,
+  "final_evaluation_performed": false,
+  "E4_started": false
+}

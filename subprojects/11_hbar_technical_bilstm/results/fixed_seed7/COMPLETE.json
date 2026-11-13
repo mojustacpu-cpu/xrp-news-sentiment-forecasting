@@ -1,0 +1,14 @@
+{
+  "candidate": "fixed",
+  "seed": 7,
+  "selected_epoch": 7,
+  "epochs": 22,
+  "parameters": 564353,
+  "training_seconds": 1386.8050491809845,
+  "n": 2136,
+  "rmse": 0.0037354513973630273,
+  "mae": 0.0028459603831372904,
+  "r2": 0.8797885964451961,
+  "directional_accuracy": 0.5117041198501873,
+  "bias": 0.00024139346917916764
+}

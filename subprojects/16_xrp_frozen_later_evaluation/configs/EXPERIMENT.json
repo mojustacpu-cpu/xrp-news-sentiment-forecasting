@@ -1,0 +1,120 @@
+{
+  "frozen_before_inference_utc": "2026-11-07T11:15:31.819408+00:00",
+  "seeds": [
+    42,
+    123,
+    2026,
+    7,
+    99
+  ],
+  "models": [
+    "E0",
+    "E1B",
+    "persistence"
+  ],
+  "primary_contrast": "E1B minus E0",
+  "origins": 5262,
+  "origin_start": "2026-03-19 07:00:00+00:00",
+  "origin_end": "2026-10-24 12:00:00+00:00",
+  "target_start": "2026-03-20 07:00:00+00:00",
+  "target_end": "2026-10-25 12:00:00+00:00",
+  "window": 30,
+  "horizon_hours": 24,
+  "target": "log return reconstructed to price",
+  "retraining": false,
+  "scalers_verified_train_only": true,
+  "checkpoint_selection": "Preserved historical validation MSE minimum",
+  "retrospective_status": "Reserved for this E1B evaluation, but 2026 history examined in other experiments; not a pristine unseen prospective test",
+  "news_availability": "Publication proxy, not verified first-public availability; cannot establish exclusion from all historical human design decisions",
+  "timing_sensitivities_hours": [
+    1,
+    6,
+    24
+  ],
+  "timing_policy": "Frozen model inference only using delayed news; diagnostic distribution shifts, no feature selection or retraining",
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 2026,
+    "primary_block": 72,
+    "sensitivity_blocks": [
+      24,
+      168
+    ],
+    "confidence": 0.95,
+    "estimand": "sqrt(mean over seeds and origins squared errors); gain percent from same risk"
+  },
+  "HAC_lags": 71,
+  "files": {
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/xrp-2026-data-original-model/data/review_candidate/XRPUSDT_hourly_through_25Oct_Sydney.csv": "120d72bc8ac5b811e0f7eb4528b56b21d7e20a10e06756cac474d625eadc2fcc",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/xrp-technical-btc-log-return-control/data/technical_only_v1/XRP_TECHNICAL_BTC_TRAINING_UNSCALED.csv": "5410191a2e372d7ea41de0f3a405d6dda9a0f001aeb46701edb8bd0d85755dd0",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E1B/training.csv": "80122a080caa35a053a8487a91bfe5df175e958e8ca476da214ee3f520c9d5d0",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/analysis/PHASE1_SELECTION_LOCK.json": "b11e579197bb941ea551b5756208d67365636b61fab117314cf1652fb3f326a3",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/xrp-technical-btc-log-return-control/runs/log_return_v1/log_return_scalers.joblib": "e2d677f8464825954f5efc8ae263b50a8630e42c3eaeec3df90d496994bfef99",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/xrp-technical-btc-log-return-control/runs/log_return_v1/technical_btc_seed42/best.pt": "1b4ff49ee7e599f6585604504d8023c34ee8973cce30ff59ee3284cda2d4c1fe",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/xrp-technical-btc-log-return-control/runs/log_return_v1/technical_btc_seed123/best.pt": "9f3f660535633d3d50a0a4a307b6afbc36b971bf8bac9dc13c632186be87449b",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/xrp-technical-btc-log-return-control/runs/log_return_v1/technical_btc_seed2026/best.pt": "7ab9b34345674cfeda47c4471d7a3580876ca5148b87a9d8135e5f0dd69a9b6a",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/xrp-technical-btc-log-return-control/runs/log_return_v1/technical_btc_seed7/best.pt": "cbefdd571ac18b62619eed6b5a9f5a58760d3140ff3e18102d79f413e9e89a48",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/xrp-technical-btc-log-return-control/runs/log_return_v1/technical_btc_seed99/best.pt": "3606561f535910b954b5a6c340a57dc06dfbf8266a875e35115674f6a4f343be",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E1B/scalers.joblib": "4bfe14a939a5307dd9b9c20a167596b02877394327b2d02dc09b770e93cc363f",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E1B/runs/E1B_seed42/best.pt": "f3177dfd794759f8a5576f431f534a4113b21912f702dbcd5da60dbd8c620c71",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E1B/runs/E1B_seed123/best.pt": "1f0b7b8245c8a18e993cb6cf239cbf931061391078681f8fa2a9ff8c83fd42b5",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E1B/runs/E1B_seed2026/best.pt": "156cd73329bd35b6d86305a41b79f17aeb06000da5b2eac880a4e631fd37a269",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E1B/runs/E1B_seed7/best.pt": "a93edc84bd1cff0a6d17c0cdedac4e8c8904b831ea70adc05895da37888fcb65",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E1B/runs/E1B_seed99/best.pt": "685c9c2efb36296f9c73f8f630d509869595c009b5bdcd4a55e26ca8a1da3798"
+  },
+  "feature_schemas": {
+    "E0": [
+      "EMA_20",
+      "MACD_Signal",
+      "SMA_20",
+      "SMA_10",
+      "EMA_10",
+      "Volatility_10",
+      "MACD",
+      "MFI",
+      "OBV",
+      "BTC_Close",
+      "open",
+      "high",
+      "low",
+      "close",
+      "volume",
+      "return",
+      "volatility",
+      "price_sma10",
+      "price_sma20"
+    ],
+    "E1B": [
+      "EMA_20",
+      "MACD_Signal",
+      "SMA_20",
+      "SMA_10",
+      "EMA_10",
+      "Volatility_10",
+      "MACD",
+      "MFI",
+      "OBV",
+      "BTC_Close",
+      "open",
+      "high",
+      "low",
+      "close",
+      "volume",
+      "return",
+      "volatility",
+      "price_sma10",
+      "price_sma20",
+      "direct_sentiment",
+      "direct_specificity",
+      "direct_stance",
+      "direct_uncertainty",
+      "direct_news_present",
+      "hours_since_latest_news_capped48"
+    ]
+  },
+  "versions": {
+    "torch": "2.8.0",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3"
+  }
+}

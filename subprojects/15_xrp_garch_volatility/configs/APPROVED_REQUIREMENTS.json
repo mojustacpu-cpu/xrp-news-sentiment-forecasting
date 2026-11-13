@@ -1,0 +1,12 @@
+{
+  "recorded_utc": "2026-10-31T22:09:17.510978+00:00",
+  "phase": "First neural run active; no final evaluation yet",
+  "persistence": "Last observed XRP close at each identical origin; exact same origin+24 target",
+  "configuration_selection": "Lowest mean validation price RMSE across all five seeds per neural configuration; ARIMAX selected order validation RMSE. Choose minimum across fitted configurations, excluding persistence and GARCH. No evaluation metric enters selection.",
+  "seed_selection": "All five seeds reported. Representative checkpoint is lowest validation RMSE within selected neural configuration; ties use seed order in frozen protocol.",
+  "rolling": "Fresh weights and fitting-only scalers per fold; chronological earlier validation; no parameter carryover from main or other folds",
+  "technical_only": true,
+  "attention": false,
+  "original_protocol_unchanged": true,
+  "benchmark_direction": "Constant-price forecast predicts zero movement. Exact three-way sign accuracy includes actual zero returns; report separately from non-flat directional forecasting."
+}

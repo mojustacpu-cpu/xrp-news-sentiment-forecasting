@@ -1,0 +1,12 @@
+{
+  "sample_size": 300,
+  "batch_request_and_response_consistent": 205,
+  "legacy_saved_json_consistent": 95,
+  "total_saved_score_consistent": 300,
+  "field_count_per_article": 7,
+  "known_batch_model": "gpt-4o-2024-08-06",
+  "legacy_model_version": "not established",
+  "human_validation": "pending; file review without annotations is not label validation",
+  "repeatability": "not run",
+  "claim": "All sampled merged scores match their respective saved response evidence; no claim that semantic labels are correct."
+}

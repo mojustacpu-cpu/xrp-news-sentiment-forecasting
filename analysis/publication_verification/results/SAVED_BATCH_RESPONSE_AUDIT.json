@@ -1,0 +1,24 @@
+{
+  "input_records": 12818,
+  "input_unique_custom_ids": 12818,
+  "input_duplicate_custom_id_records": 0,
+  "input_distinct_normalised_headlines": 12816,
+  "output_records": 12818,
+  "output_unique_custom_ids": 12818,
+  "output_duplicate_custom_id_records": 0,
+  "requests_without_output": [],
+  "outputs_without_request": [],
+  "outer_parse_issues": 0,
+  "response_content_JSON_parsed": 12818,
+  "complete_primary_schema": 12818,
+  "primary_fields_valid_numeric_ranges": 12818,
+  "invalid_primary_records": 0,
+  "finish_reasons": {
+    "stop": 12818
+  },
+  "response_models": {
+    "gpt-4o-2024-08-06": 12818
+  },
+  "semantic_accuracy": "not measured by structural audit",
+  "legacy_scope": "This saved batch is not all article annotation history; the95legacy sample records lack established snapshot metadata"
+}

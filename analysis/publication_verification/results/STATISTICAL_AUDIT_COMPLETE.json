@@ -1,0 +1,20 @@
+{
+  "status": "complete",
+  "resamples": 50000,
+  "blocks": [
+    24,
+    72,
+    168
+  ],
+  "seed": 2026,
+  "seconds": 5.712592667,
+  "comparisons_per_block": {
+    "validation": 26,
+    "later": 18,
+    "HBAR": 1
+  },
+  "conditional_family": 32,
+  "original_validation_family": 10,
+  "conditional_definition_unchanged": true,
+  "no_model_training": true
+}

@@ -1,0 +1,12 @@
+{
+  "pid": 34593,
+  "started_utc": "2026-11-01 00:46:16.794907+00:00",
+  "config": {
+    "name": "lstm_matched_btc",
+    "btc": true,
+    "bidirectional": false,
+    "hidden": 210,
+    "parameters": 562089
+  },
+  "seed": 123
+}

@@ -1,0 +1,32 @@
+{
+  "method": "Expected integrated gradients with Gauss Legendre quadrature over all 32 frozen training references",
+  "seeds": [
+    42,
+    123,
+    2026,
+    7,
+    99
+  ],
+  "backgrounds": [
+    0,
+    1
+  ],
+  "origins": 1000,
+  "quadrature": [
+    64,
+    128,
+    256
+  ],
+  "adaptive_rule": "increase quadrature if abs(additivity residual)>1e-5+0.01*abs(output difference); retain and flag unresolved cases",
+  "aggregation": "sum absolute attribution over lags then mean over origins",
+  "not_exact_shap": true,
+  "output": "unscaled predicted 24h log return",
+  "checkpoint_hashes": {
+    "42": "f3177dfd794759f8a5576f431f534a4113b21912f702dbcd5da60dbd8c620c71",
+    "123": "1f0b7b8245c8a18e993cb6cf239cbf931061391078681f8fa2a9ff8c83fd42b5",
+    "2026": "156cd73329bd35b6d86305a41b79f17aeb06000da5b2eac880a4e631fd37a269",
+    "7": "a93edc84bd1cff0a6d17c0cdedac4e8c8904b831ea70adc05895da37888fcb65",
+    "99": "685c9c2efb36296f9c73f8f630d509869595c009b5bdcd4a55e26ca8a1da3798"
+  },
+  "no_training_or_final_model_selection": true
+}

@@ -1,0 +1,15 @@
+{
+  "impact_full_recalculation_max_error": 0.0,
+  "actor_max_error": 0.0,
+  "velocity_max_error": 0.0,
+  "followers_defaulted": 13049,
+  "engagement_defaulted": 13111,
+  "negative_event_ages": 19020,
+  "decay_multiplier_above_one": 19020,
+  "regime_zero_count": 19928,
+  "source_tiers": "Heuristic source string mapping, not independently verified tiers",
+  "velocity": "Full-archive engagement standardization; unsuitable for causal historical forecasting without correction",
+  "engagement_availability": "Not verified at publication",
+  "E1B_use": "These legacy impact components are not inputs to E1B",
+  "weights": "Heuristic, not independently calibrated"
+}

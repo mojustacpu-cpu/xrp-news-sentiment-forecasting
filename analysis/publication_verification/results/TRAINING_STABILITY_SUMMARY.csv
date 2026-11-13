@@ -1,0 +1,7 @@
+model,selected_epoch_min,selected_epoch_max,epochs_run_min,epochs_run_max,validation_worse_at_stop,training_lower_after_best,parameters
+E0,1,3,16,18,5,5,564353
+E1B,2,6,17,21,5,5,570497
+E2_h12,1,3,16,18,5,5,566401
+E2_h24,1,4,16,19,5,5,566401
+E2_h3,1,4,16,19,5,5,566401
+E2_h6,1,3,16,18,5,5,566401

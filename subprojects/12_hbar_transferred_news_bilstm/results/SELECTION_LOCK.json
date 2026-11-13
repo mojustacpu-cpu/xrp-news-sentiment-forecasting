@@ -1,0 +1,23 @@
+{
+  "selected": {
+    "candidate": "HBAR_E1B",
+    "rmse_mean": 0.0037859696213616094,
+    "rmse_std": 5.19646230587106e-05,
+    "mae_mean": 0.0028592126156489614,
+    "r2_mean": 0.8764965224577947,
+    "direction_mean": 0.5310861423220974
+  },
+  "results": [
+    {
+      "candidate": "HBAR_E1B",
+      "rmse_mean": 0.0037859696213616094,
+      "rmse_std": 5.19646230587106e-05,
+      "mae_mean": 0.0028592126156489614,
+      "r2_mean": 0.8764965224577947,
+      "direction_mean": 0.5310861423220974
+    }
+  ],
+  "selection": "Fixed XRP-selected compact news transfer to HBAR; epochs chosen by HBAR validation scaled-return MSE",
+  "evaluation_performed": false,
+  "limitations": "Main validation only; earlier rolling replication not yet performed. Retrospective news coverage and mixed annotation provenance remain."
+}

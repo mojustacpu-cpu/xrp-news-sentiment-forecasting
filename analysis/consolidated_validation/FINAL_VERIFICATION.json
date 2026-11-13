@@ -1,0 +1,14 @@
+{
+  "status": "completed_reports_verified",
+  "created_utc": "2026-11-07T09:23:23.790244+00:00",
+  "copied_reports": 21,
+  "total_word_reports": 22,
+  "consolidated_pages": 5,
+  "all_consolidated_pages_visually_inspected": true,
+  "source_reports_unchanged": true,
+  "configurations": 10,
+  "seed_results": 50,
+  "final_evaluation_performed": false,
+  "hbar_stopped": true,
+  "report_sha256": "f81e0b96847832e1e91c8fd3514ceff8912b67da69e87232f46e9a41fe1bdc29"
+}

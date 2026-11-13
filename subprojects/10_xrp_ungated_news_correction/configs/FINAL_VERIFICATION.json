@@ -1,0 +1,45 @@
+{
+  "status": "completed_reports_verified",
+  "completed_utc": "2026-11-07T08:53:20.299225+00:00",
+  "completed_fits": 10,
+  "passed": true,
+  "reports": [
+    {
+      "path": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase3_e4/runs/E4_gated/reports/SCIENTIFIC_REPORT.docx",
+      "sha256": "dab890f578dc246e0e59cb569debcdab830dbecf3ae45106f8f40f74d206ebea",
+      "pages": 3,
+      "visual_review": "Every rendered page visually inspected and accepted",
+      "page_hashes": {
+        "page-1.png": "cb62a77c4b8f57b41cb9e1a0f8ad6ba2449dc6b1e7dee8a005f37c6acf8bc5d4",
+        "page-2.png": "1b21f00e8c677b8ee8d2fbf02fccff431a6d7f44f05fe89f2e19892b8cd7eb05",
+        "page-3.png": "03dec76c06c2ff4ac875002a8ad078221e5057fea365d7f75d769cb5dab64c13"
+      }
+    },
+    {
+      "path": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase3_e4/runs/E4_ungated/reports/SCIENTIFIC_REPORT.docx",
+      "sha256": "74e8441f297889012da7c0ff2d2549cd8ae15831c4c659f80ed430d3ee8a239c",
+      "pages": 3,
+      "visual_review": "Every rendered page visually inspected and accepted",
+      "page_hashes": {
+        "page-1.png": "d7aad835a0e88ce7258707108fd9759f584275f279ec4cdd8724bddf022d5cdb",
+        "page-2.png": "1309aa3b969c1b945862602e8d645d2b061c717006ff32361a3c153e09918ee0",
+        "page-3.png": "9dd95139d2e8fc520dfb4f307e52b1aa33e12fac85f73354a4ff6a1a70d61da6"
+      }
+    },
+    {
+      "path": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase3_e4/reports/UPDATED_COMPARISON.docx",
+      "sha256": "6133373e859315427895a9f4c6c39cc3113dd802ccc5c89743f41dd195968c75",
+      "pages": 3,
+      "visual_review": "Every rendered page visually inspected and accepted",
+      "page_hashes": {
+        "page-1.png": "4495aefa932672e177c00ddfe2d9b27cfc9287b49278455f5dd2f8e2fce2daa7",
+        "page-2.png": "648754df65401aaf27f2e626a4012bfa60d79d180f8fb799c63a44d2f07726a3",
+        "page-3.png": "40297205fcc6133ef179d4eecc999273b39a3b062218d169180c4adec0139671"
+      }
+    }
+  ],
+  "numerical_verification_sha256": "8cb2f29f3dc2d6b99fd995f130afddb0c75fd41bf2e91fc25d9a875acc893198",
+  "frozen_inputs_unchanged": true,
+  "final_evaluation_performed": false,
+  "further_training_started": false
+}

@@ -1,0 +1,21 @@
+{
+  "archive_rows": 19928,
+  "distinct_headlines": 19720,
+  "sample_n": 300,
+  "representative_n": 240,
+  "enriched_n": 60,
+  "seed": 2026,
+  "source_sha256": "7f4e4da1915a403ce51c418a315ebc2d638839a52057842be987036088354a0b",
+  "annotation_origin_counts": {
+    "new_batch": 12942,
+    "original_saved_gpt_json": 6879,
+    "reused": 107
+  },
+  "component_sum_max_error": 3.3306690738754696e-16,
+  "human_labels_status": "awaiting two independent reviewers",
+  "original_100_audit_status": "not located in initial filename and text search; original accuracy claims unverified",
+  "full_text_limitation": "Available archive stores headlines; original article body and original API metadata require provenance recovery",
+  "no_paid_API_calls": true,
+  "report_status": "audit_package_report_complete_human_validation_pending",
+  "report_visual_review_passed": true
+}

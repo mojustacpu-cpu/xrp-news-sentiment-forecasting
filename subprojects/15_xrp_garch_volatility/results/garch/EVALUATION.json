@@ -1,0 +1,9 @@
+{
+  "model": "garch",
+  "fold": "main",
+  "n": 5262,
+  "variance_rmse": 21.482558629464144,
+  "variance_mae": 12.066565804738016,
+  "qlike": 3.2199090254161717,
+  "volatility_rmse": 2.007165131442871
+}

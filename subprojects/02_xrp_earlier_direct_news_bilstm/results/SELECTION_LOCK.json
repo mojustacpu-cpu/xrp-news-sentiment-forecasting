@@ -1,0 +1,23 @@
+{
+  "selected": {
+    "candidate": "C_decay_hl12",
+    "rmse_mean": 0.06388316642715722,
+    "rmse_std": 0.0008541347960705276,
+    "mae_mean": 0.04476596102715821,
+    "r2_mean": 0.9520297142596383,
+    "direction_mean": 0.5458801498127341
+  },
+  "results": [
+    {
+      "candidate": "C_decay_hl12",
+      "rmse_mean": 0.06388316642715722,
+      "rmse_std": 0.0008541347960705276,
+      "mae_mean": 0.04476596102715821,
+      "r2_mean": 0.9520297142596383,
+      "direction_mean": 0.5458801498127341
+    }
+  ],
+  "selection": "User-fixed12h; log-return target ablation; epochs chosen by validation scaled-return MSE",
+  "evaluation_performed": false,
+  "limitations": "Main validation only; earlier rolling replication not yet performed. Retrospective news coverage and mixed annotation provenance remain."
+}

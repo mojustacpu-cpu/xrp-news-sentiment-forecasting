@@ -1,0 +1,9 @@
+# Data availability and provenance
+
+The public subprojects contain the actual prepared numerical training/input tables, feature orders, frozen chronological origin arrays, scalers and saved predictions used in the completed experiments. `target_close_plus24h` is deliberately redacted outside training/validation in some frozen candidate files; this preserves the historical training input, not a missing-price imputation. Final actual targets and per-seed forecasts are provided separately in `subprojects/16_xrp_frozen_later_evaluation/results/`. This distinction must be maintained when inspecting training-only scaling and selection.
+
+The prepared tables include XRP/HBAR OHLCV, BTC close, nine original indicators, additional technical derived inputs where specified, and the exact numeric news representations for each candidate. The causal feature-engineering source is in `shared/news_feature_engineering/`. Raw headline/full-text corpus redistribution is not asserted; source text, API keys, authentication files and batch response caches are excluded. The user has authorised the publication of their numerical experimental materials. Provider terms continue to govern the underlying news and market data.
+
+Original news publication timestamps are availability proxies, not a guarantee that a contemporaneous trading system had the precise text. No timestamp was shifted to precede a price move in these scientific candidates. Local/earlier exploratory projects are not the main study released here. GPT feature values are model annotations, not observed impacts. Independent human labels have not been supplied; provenance consistency must not be reported as human accuracy.
+
+The archive/model outputs permit metric reproduction without a live API. Reacquiring the exact historic corpus may be impossible without the original licensed archive, text versions and saved provider access; that limitation is not concealed.

@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "attribution_passes": 10,
+  "explanations": 10000,
+  "mean_news_share_percent": 23.111888084926008,
+  "failed_tolerance": 52,
+  "new_gradient_calculations": 0,
+  "event_cases": [
+    {
+      "case": "april_announcement",
+      "curve_rows": 84,
+      "official_exact_time_known": false,
+      "curve_source": "/Users/mahmoudali/Desktop/xrp_final_reports_20261107/publication_manuscript_20261108_story_enriched/analysis/results/april_announcement_curve.csv",
+      "curve_sha256": "7cec9cce1bc4cfc456657304548052380544bbbcbd501d8368a679a30418eeec",
+      "source_timestamps_retimed": false,
+      "causal_event_claim": false
+    },
+    {
+      "case": "april_pause",
+      "curve_rows": 84,
+      "official_exact_time_known": true,
+      "curve_source": "/Users/mahmoudali/Desktop/xrp_final_reports_20261107/publication_manuscript_20261108_story_enriched/analysis/results/april_pause_curve.csv",
+      "curve_sha256": "cfafb469e05adadccbe25ce8c139f595a1abaaae886536387333ed7b9507dffe",
+      "source_timestamps_retimed": false,
+      "causal_event_claim": false
+    },
+    {
+      "case": "october_tariffs",
+      "curve_rows": 84,
+      "official_exact_time_known": true,
+      "curve_source": "/Users/mahmoudali/Desktop/xrp_final_reports_20261107/publication_manuscript_20261108_story_enriched/analysis/results/october_tariffs_curve.csv",
+      "curve_sha256": "e48ece97f54a92bd7863c59f93448549472d3caffe107a7763fd225a23f421e0",
+      "source_timestamps_retimed": false,
+      "causal_event_claim": false
+    },
+    {
+      "case": "ripple_ceo",
+      "curve_rows": 84,
+      "official_exact_time_known": false,
+      "curve_source": "/Users/mahmoudali/Desktop/xrp_final_reports_20261107/publication_manuscript_20261108_story_enriched/analysis/results/ripple_ceo_curve.csv",
+      "curve_sha256": "ef44c1a2e5367edaeeeb7cac6523a3b877f614c5841287bb358c9d85c7484059",
+      "source_timestamps_retimed": false,
+      "causal_event_claim": false
+    },
+    {
+      "case": "sec_proposal",
+      "curve_rows": 84,
+      "official_exact_time_known": false,
+      "curve_source": "/Users/mahmoudali/Desktop/xrp_final_reports_20261107/publication_manuscript_20261108_story_enriched/analysis/results/sec_proposal_curve.csv",
+      "curve_sha256": "525ca7e11bde991933aeff991032833cb36b80ca37b5081adb8bb8961393565c",
+      "source_timestamps_retimed": false,
+      "causal_event_claim": false
+    }
+  ],
+  "limitations": [
+    "saved arrays do not establish featurewise integration convergence",
+    "completeness failures retained",
+    "historically selected events are descriptive",
+    "first-public times remain unknown for date-only cases"
+  ]
+}

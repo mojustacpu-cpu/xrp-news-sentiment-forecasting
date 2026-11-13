@@ -1,0 +1,14 @@
+{
+  "candidate": "technical_btc",
+  "seed": 42,
+  "selected_epoch": 3,
+  "epochs": 18,
+  "parameters": 564353,
+  "training_seconds": 6021.145421266556,
+  "n": 2136,
+  "rmse": 0.0640636159657198,
+  "mae": 0.04502860134545895,
+  "r2": 0.9517652281567747,
+  "directional_accuracy": 0.48735955056179775,
+  "bias": 0.00813673790576641
+}

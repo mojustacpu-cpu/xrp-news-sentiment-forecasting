@@ -1,0 +1,16 @@
+{
+  "inspected_scope": "Current frozen phase1 E0/E1B/E2 configs, all30checkpoints and saved comparison manifests",
+  "E0_parameters": 564353,
+  "E1B_parameters": 570497,
+  "E2_parameters": 566401,
+  "E1B_extra_parameters": 6144,
+  "E1B_extra_percent": 1.08868031179067,
+  "E2_extra_parameters": 2048,
+  "E2_extra_percent": 0.36289343726355666,
+  "matched_retrained_shuffled_news_found": false,
+  "matched_presence_recency_only_found": false,
+  "exact_capacity_matched_news_control_found": false,
+  "existing_frozen_perturbation_is_retrained_control": false,
+  "legacy_context": "Other historical frozen permutation studies and near-matched LSTM controls do not supply these current return-study negative controls",
+  "new_training": false
+}

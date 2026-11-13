@@ -1,0 +1,35 @@
+{
+  "completed_passes": 10,
+  "seeds": 5,
+  "backgrounds_per_seed": 2,
+  "origins_per_pass": 1000,
+  "total_explanations": 10000,
+  "failed_tolerance": 52,
+  "pass_fraction": 0.9948,
+  "mean_news_share_equal_pass_weight": 23.111888885498047,
+  "mean_technical_share_equal_pass_weight": 76.88811492919922,
+  "news_share_range": [
+    18.44753074645996,
+    31.32248878479004
+  ],
+  "news_seed_mean_sd": 4.041743278503418,
+  "pooled_absolute_attribution_news_share": 22.824827940892035,
+  "maximum_passing_only_share_change_pp": 0.182373046875,
+  "global_rank_pairwise_spearman_range": [
+    0.553076923076923,
+    0.9523076923076922
+  ],
+  "prior_66_2_33_8": "not confirmed for the corrected E1B model and this explanation design",
+  "interpretation": "Reference-dependent expected integrated gradients, not exact Shapley values or causal price effects",
+  "residual_caveat": "Small additivity residual does not establish convergence of every feature attribution; compensating errors and reference dependence remain possible",
+  "no_new_model_or_attribution_inference": true,
+  "checkpoints_unchanged": true,
+  "sample_and_training_backgrounds_match_original": true,
+  "status": "completed_with_disclosed_numerical_and_reference_limitations",
+  "report": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/Research_Final_Experiments/03_SHAP_Verification/precision_v2/XRP_SHAP_PRECISION_VERIFICATION_REPORT.docx",
+  "report_sha256": "6fd57f993260b804dd148f5d16f7ccd3ffa0f0903634f3724a0b5bdc941e3762",
+  "visually_inspected_pages": 5,
+  "report_visual_review_passed": true,
+  "automatic_monitoring": "remains paused",
+  "additional_expensive_computation_started": false
+}

@@ -1,0 +1,131 @@
+period,group,block_hours,quantile_max_error,usable_draws
+HBAR,HBAR_E1B vs technical,168,6.315477654728063e-17,50000
+HBAR,HBAR_E1B vs technical,24,2.520770051028798e-18,50000
+HBAR,HBAR_E1B vs technical,72,2.268693045925918e-17,50000
+later,High volatility,168,9.454242944073599e-17,49798
+later,Other volatility,168,1.5178830414797062e-17,50000
+later,Current-hour news,168,9.80118763926896e-17,50000
+later,No current-hour news,168,5.724587470723463e-17,50000
+later,XRP-specific news within 6h,168,4.9439619065339e-17,50000
+later,No XRP-specific news within 6h,168,8.500145032286355e-17,50000
+later,Positive XRP stance,168,7.502679033599691e-17,50000
+later,Negative XRP stance,168,7.611099250848241e-17,50000
+later,High specificity with news,168,6.505213034913027e-17,50000
+later,Lower specificity with news,168,7.28583859910259e-17,50000
+later,High uncertainty with news,168,8.586881206085195e-17,50000
+later,Lower uncertainty with news,168,4.0766001685454967e-17,50000
+later,High trailing24h article count,168,7.48099499014998e-17,50000
+later,Other trailing24h article count,168,9.367506770274758e-17,50000
+later,Outside curated event window,168,9.790345617544105e-17,50000
+later,E1B vs E0,168,9.80118763926896e-17,50000
+later,E2_h6 vs E0,168,9.367506770274758e-17,50000
+later,High volatility,24,7.28583859910259e-17,50000
+later,Other volatility,24,4.85722573273506e-17,50000
+later,Current-hour news,24,9.020562075079397e-17,50000
+later,No current-hour news,24,9.73613550891983e-17,50000
+later,XRP-specific news within 6h,24,9.172350379227368e-17,50000
+later,No XRP-specific news within 6h,24,4.5102810375396984e-17,50000
+later,Positive XRP stance,24,9.80118763926896e-17,50000
+later,Negative XRP stance,24,7.41594285980085e-17,50000
+later,High specificity with news,24,9.497611030973019e-17,50000
+later,Lower specificity with news,24,8.196568423990414e-17,50000
+later,High uncertainty with news,24,1.3877787807814457e-17,50000
+later,Lower uncertainty with news,24,8.51098705401121e-17,50000
+later,High trailing24h article count,24,6.174531372304948e-17,50000
+later,Other trailing24h article count,24,8.998878031629687e-17,50000
+later,Curated event window,24,9.71445146547012e-17,49022
+later,Outside curated event window,24,9.860818758755663e-17,50000
+later,E1B vs E0,24,4.358492733391728e-17,50000
+later,E2_h6 vs E0,24,6.797947621484113e-17,50000
+later,High volatility,72,8.586881206085195e-17,49935
+later,Other volatility,72,3.9898639947466563e-17,50000
+later,Current-hour news,72,7.719519468096792e-17,50000
+later,No current-hour news,72,9.790345617544105e-17,50000
+later,XRP-specific news within 6h,72,8.847089727481716e-17,50000
+later,No XRP-specific news within 6h,72,8.153200337090993e-17,50000
+later,Positive XRP stance,72,9.183192400952223e-17,50000
+later,Negative XRP stance,72,9.497611030973019e-17,50000
+later,High specificity with news,72,9.020562075079397e-17,50000
+later,Lower specificity with news,72,7.502679033599691e-17,50000
+later,High uncertainty with news,72,9.84455572616838e-17,50000
+later,Lower uncertainty with news,72,5.898059818321144e-17,50000
+later,High trailing24h article count,72,9.627715291671279e-17,50000
+later,Other trailing24h article count,72,9.107298248878237e-17,50000
+later,Outside curated event window,72,6.418476861114186e-17,50000
+later,E1B vs E0,72,4.7488055154865094e-17,50000
+later,E2_h6 vs E0,72,3.209238430557093e-17,50000
+validation,High volatility,168,6.245004513516506e-17,49971
+validation,Other volatility,168,8.001412032943023e-17,50000
+validation,Current-hour news,168,4.4777549723651333e-17,50000
+validation,No current-hour news,168,9.063930161978817e-17,50000
+validation,XRP-specific news within 6h,168,8.716985466783456e-17,50000
+validation,No XRP-specific news within 6h,168,8.326672684688674e-17,50000
+validation,Positive XRP stance,168,9.425782637045854e-17,50000
+validation,Negative XRP stance,168,8.413408858487514e-17,50000
+validation,High specificity with news,168,7.318364664277155e-17,50000
+validation,Lower specificity with news,168,5.659535340374333e-17,50000
+validation,High uncertainty with news,168,9.172350379227368e-17,50000
+validation,Lower uncertainty with news,168,5.551115123125783e-17,50000
+validation,High trailing24h article count,168,4.90059381963448e-17,50000
+validation,Other trailing24h article count,168,8.500145032286355e-17,50000
+validation,Outside curated event window,168,8.630249292984615e-17,50000
+validation,E1B vs E0,168,5.984795992119984e-17,50000
+validation,E1B vs E1,168,5.892638807458717e-17,50000
+validation,E2_h3 vs E0,168,9.790345617544105e-17,50000
+validation,E2_h3 vs E1,168,8.261620554339544e-17,50000
+validation,E2_h6 vs E0,168,5.724587470723463e-17,50000
+validation,E2_h6 vs E1,168,7.19910242530375e-17,50000
+validation,E2_h12 vs E0,168,4.0332320816460765e-17,50000
+validation,E2_h12 vs E1,168,8.868773770931426e-17,50000
+validation,E2_h24 vs E0,168,6.179952383167375e-17,50000
+validation,E2_h24 vs E1,168,7.632783294297951e-17,50000
+validation,High volatility,24,9.497611030973019e-17,50000
+validation,Other volatility,24,2.4123498337802474e-17,50000
+validation,Current-hour news,24,6.006480035569695e-17,50000
+validation,No current-hour news,24,5.442694905877232e-17,50000
+validation,XRP-specific news within 6h,24,8.012254054667878e-17,50000
+validation,No XRP-specific news within 6h,24,7.806255641895632e-17,50000
+validation,Positive XRP stance,24,5.854691731421724e-17,50000
+validation,Negative XRP stance,24,9.150666335777657e-17,50000
+validation,High specificity with news,24,8.825405684032006e-17,50000
+validation,Lower specificity with news,24,5.182486384480711e-17,50000
+validation,High uncertainty with news,24,9.497611030973019e-17,50000
+validation,Lower uncertainty with news,24,5.984795992119984e-17,50000
+validation,High trailing24h article count,24,8.283304597789254e-17,50000
+validation,Other trailing24h article count,24,8.890457814381136e-17,50000
+validation,Outside curated event window,24,5.334274688628682e-17,50000
+validation,E1B vs E0,24,6.854868235539602e-17,50000
+validation,E1B vs E1,24,9.280770596475918e-17,50000
+validation,E2_h3 vs E0,24,8.500145032286355e-17,50000
+validation,E2_h3 vs E1,24,5.117434254131581e-17,50000
+validation,E2_h6 vs E0,24,4.119968255444917e-17,50000
+validation,E2_h6 vs E1,24,7.047314121155779e-17,50000
+validation,E2_h12 vs E0,24,6.792526610621685e-17,50000
+validation,E2_h12 vs E1,24,3.599551212651875e-17,50000
+validation,E2_h24 vs E0,24,3.881443777498106e-17,50000
+validation,E2_h24 vs E1,24,7.892991815694472e-17,50000
+validation,High volatility,72,9.540979117872439e-17,49981
+validation,Other volatility,72,7.28583859910259e-17,50000
+validation,Current-hour news,72,6.375108774214766e-17,50000
+validation,No current-hour news,72,5.2909066017292616e-17,50000
+validation,XRP-specific news within 6h,72,4.2825985813177425e-17,50000
+validation,No XRP-specific news within 6h,72,8.326672684688674e-17,50000
+validation,Positive XRP stance,72,9.703609443745265e-17,50000
+validation,Negative XRP stance,72,6.808789643208968e-17,50000
+validation,High specificity with news,72,8.716985466783456e-17,50000
+validation,Lower specificity with news,72,9.454242944073599e-17,50000
+validation,High uncertainty with news,72,7.448468924975415e-17,50000
+validation,Lower uncertainty with news,72,9.481347998385736e-17,50000
+validation,High trailing24h article count,72,9.237402509576498e-17,50000
+validation,Other trailing24h article count,72,6.982261990806649e-17,50000
+validation,Outside curated event window,72,9.82287168271867e-17,50000
+validation,E1B vs E0,72,7.39425881635114e-17,50000
+validation,E1B vs E1,72,9.90960785651751e-17,50000
+validation,E2_h3 vs E0,72,6.62989628474886e-17,50000
+validation,E2_h3 vs E1,72,9.150666335777657e-17,50000
+validation,E2_h6 vs E0,72,9.64939933512099e-17,50000
+validation,E2_h6 vs E1,72,7.632783294297951e-17,50000
+validation,E2_h12 vs E0,72,9.475926987523309e-17,50000
+validation,E2_h12 vs E1,72,8.782037597132586e-17,50000
+validation,E2_h24 vs E0,72,8.66277535815918e-17,50000
+validation,E2_h24 vs E1,72,9.562663161322149e-17,50000

@@ -1,0 +1,107 @@
+[
+  {
+    "source": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E1B/reports/SCIENTIFIC_REPORT.docx",
+    "copy": "scientific_reports/phase1/E1B/reports/SCIENTIFIC_REPORT.docx",
+    "sha256": "c9dfbf24a352e9e63ccd08e3cc7d2b7257de7b8344eb3ea704c884a47379035a"
+  },
+  {
+    "source": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E2_h12/reports/SCIENTIFIC_REPORT.docx",
+    "copy": "scientific_reports/phase1/E2_h12/reports/SCIENTIFIC_REPORT.docx",
+    "sha256": "5b8dfdd76131fe1589186830ae4f0a1bedeea18fd7d76206a19eb1f8722ed88c"
+  },
+  {
+    "source": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E2_h24/reports/SCIENTIFIC_REPORT.docx",
+    "copy": "scientific_reports/phase1/E2_h24/reports/SCIENTIFIC_REPORT.docx",
+    "sha256": "90152b884b3dcdf741cece7e0d75228bc70da4d0a275248f7ce180cef79207dd"
+  },
+  {
+    "source": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E2_h3/reports/SCIENTIFIC_REPORT.docx",
+    "copy": "scientific_reports/phase1/E2_h3/reports/SCIENTIFIC_REPORT.docx",
+    "sha256": "3bb10e1dcf564d95495c27224159d8ee8197a492e11eadcf2d7f55b211e98e4c"
+  },
+  {
+    "source": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E2_h6/reports/SCIENTIFIC_REPORT.docx",
+    "copy": "scientific_reports/phase1/E2_h6/reports/SCIENTIFIC_REPORT.docx",
+    "sha256": "d54631209f15fc164be0078de2f49715349632667b2bcf4ec8dc85d359cc8ccd"
+  },
+  {
+    "source": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/reports/PHASE1_COLLECTIVE_REPORT.docx",
+    "copy": "scientific_reports/phase1/reports/PHASE1_COLLECTIVE_REPORT.docx",
+    "sha256": "61ad26d6c2f1b5dc77e60945cb18cfd23882e88177fbfdec2ff2c1f4f9145cdf"
+  },
+  {
+    "source": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase2_e3/E3/reports/SCIENTIFIC_REPORT.docx",
+    "copy": "scientific_reports/phase2_e3/E3/reports/SCIENTIFIC_REPORT.docx",
+    "sha256": "f4ced63b99988a66f7eb9d4cc506e1a592b966800c2644e249864ae7d7ab586e"
+  },
+  {
+    "source": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase2_e3/reports/UPDATED_COMPARISON.docx",
+    "copy": "scientific_reports/phase2_e3/reports/UPDATED_COMPARISON.docx",
+    "sha256": "46be93c30861e5ad1046f7e33008a9211bd785793bc0c36adb67c2c02f946393"
+  },
+  {
+    "source": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase3_e4/reports/UPDATED_COMPARISON.docx",
+    "copy": "scientific_reports/phase3_e4/reports/UPDATED_COMPARISON.docx",
+    "sha256": "6133373e859315427895a9f4c6c39cc3113dd802ccc5c89743f41dd195968c75"
+  },
+  {
+    "source": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase3_e4/runs/E4_gated/reports/SCIENTIFIC_REPORT.docx",
+    "copy": "scientific_reports/phase3_e4/runs/E4_gated/reports/SCIENTIFIC_REPORT.docx",
+    "sha256": "dab890f578dc246e0e59cb569debcdab830dbecf3ae45106f8f40f74d206ebea"
+  },
+  {
+    "source": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase3_e4/runs/E4_ungated/reports/SCIENTIFIC_REPORT.docx",
+    "copy": "scientific_reports/phase3_e4/runs/E4_ungated/reports/SCIENTIFIC_REPORT.docx",
+    "sha256": "74e8441f297889012da7c0ff2d2549cd8ae15831c4c659f80ed430d3ee8a239c"
+  },
+  {
+    "source": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/overall report/model_reports_20261105/01_XRP_TECHNICAL_BILSTM_REAL_BTC.docx",
+    "copy": "earlier_model_reports/01_XRP_TECHNICAL_BILSTM_REAL_BTC.docx",
+    "sha256": "729fa13d20404caeea9b90d4533c6b5949513a43de71fd24a941c084a25f5c6c"
+  },
+  {
+    "source": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/overall report/model_reports_20261105/02_XRP_TECHNICAL_BILSTM_WITHOUT_BTC.docx",
+    "copy": "earlier_model_reports/02_XRP_TECHNICAL_BILSTM_WITHOUT_BTC.docx",
+    "sha256": "ba9ae923552e055bff9935ea1739fd7efba8f0eb3aaab2667b96b74e400a82f7"
+  },
+  {
+    "source": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/overall report/model_reports_20261105/03_XRP_TECHNICAL_LSTM.docx",
+    "copy": "earlier_model_reports/03_XRP_TECHNICAL_LSTM.docx",
+    "sha256": "fb4aaeee122d7d25a0b6cf4c5c0e614337a505acd48ae0c9e2488a9fe0854b51"
+  },
+  {
+    "source": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/overall report/model_reports_20261105/04_XRP_TECHNICAL_GARCH.docx",
+    "copy": "earlier_model_reports/04_XRP_TECHNICAL_GARCH.docx",
+    "sha256": "062795467c98c9c3eeee97ffb66a084d94b9296d230e4ad90aeac32f049881fc"
+  },
+  {
+    "source": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/overall report/model_reports_20261105/05_XRP_TECHNICAL_ARIMAX.docx",
+    "copy": "earlier_model_reports/05_XRP_TECHNICAL_ARIMAX.docx",
+    "sha256": "f659103f4b4793eab6b9e240c69c262517dc2d6cd729b2bcec55cda20a5165e0"
+  },
+  {
+    "source": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/overall report/model_reports_20261105/06_XRP_DIRECT_NEWS_HYBRID_BILSTM.docx",
+    "copy": "earlier_model_reports/06_XRP_DIRECT_NEWS_HYBRID_BILSTM.docx",
+    "sha256": "36c418c8c283725db1ed2d78ae7c11d2f04bc039e39f7f27dfd7d8b07aaddaa8"
+  },
+  {
+    "source": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/overall report/model_reports_20261105/07_XRP_DIRECT_NEWS_HYBRID_LSTM.docx",
+    "copy": "earlier_model_reports/07_XRP_DIRECT_NEWS_HYBRID_LSTM.docx",
+    "sha256": "07296db3dc5accc62f513f41eca22809e43cb8e9c807ad336a1b5c25e9ff9f22"
+  },
+  {
+    "source": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/overall report/model_reports_20261105/08_XRP_DIRECT_NEWS_ARIMAX.docx",
+    "copy": "earlier_model_reports/08_XRP_DIRECT_NEWS_ARIMAX.docx",
+    "sha256": "ec78001ed4fcda7c0357bd1d1e4f966ff6dc5f5b381d8858df4354e046608188"
+  },
+  {
+    "source": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/overall report/model_reports_20261105/09_XRP_NEWS_SUITE_GARCH.docx",
+    "copy": "earlier_model_reports/09_XRP_NEWS_SUITE_GARCH.docx",
+    "sha256": "ae40277e549df90306848e1849f92cb168d151137d6246aed2edb1b2cc59ce14"
+  },
+  {
+    "source": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/overall report/model_reports_20261105/10_OVERALL_MATCHED_COMPARISON.docx",
+    "copy": "earlier_model_reports/10_OVERALL_MATCHED_COMPARISON.docx",
+    "sha256": "a6b4b8e0265bdf4706d6c2224c1ecade84d6ae12275376e8f597f033bad6466f"
+  }
+]

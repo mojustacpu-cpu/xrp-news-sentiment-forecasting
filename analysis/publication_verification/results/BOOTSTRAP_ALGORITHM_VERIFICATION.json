@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "explicit_replicates": 7,
+  "comparisons": 26,
+  "tolerance": 1e-11,
+  "rule": "m\u22121 complete blocks plus exactly truncated final block; same paired indices and chronological masks"
+}

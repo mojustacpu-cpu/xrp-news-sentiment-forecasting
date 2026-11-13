@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "raw_quantile_comparisons": 130,
+  "resamples": 50000,
+  "subgroup_table_rows_verified": 32,
+  "original_source_hashes_unchanged": 95,
+  "incoming_PDF_preserved": true,
+  "all_primary_predictions_reused": true,
+  "checkpoints_retrained": 0,
+  "paid_API_calls": 0,
+  "primary_metric_file": "PRIMARY_METRIC_REVERIFICATION.csv",
+  "raw_quantile_file": "RAW_BOOTSTRAP_QUANTILE_VERIFICATION.csv"
+}

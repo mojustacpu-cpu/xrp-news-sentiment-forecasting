@@ -1,0 +1,18 @@
+{
+  "model": "lstm_matched_btc",
+  "fold": "main",
+  "seed": 7,
+  "selected_epoch": 3,
+  "epochs_run": 18,
+  "parameter_count": 562089,
+  "training_seconds": 270.8833270072937,
+  "validation_metrics": {
+    "n": 2136,
+    "rmse": 0.07620639581475736,
+    "mae": 0.05680794937592767,
+    "r2": 0.9317472464893303,
+    "directional_accuracy": 0.5346441947565543,
+    "bias": 0.02009050196949462
+  },
+  "checkpoint_sha256": "3584c13921f83acafdfba88e5031bd292edf04e0847f9441e7174c9389c6569c"
+}

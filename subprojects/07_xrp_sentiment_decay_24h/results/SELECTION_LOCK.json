@@ -1,0 +1,23 @@
+{
+  "selected": {
+    "candidate": "E2_h24",
+    "rmse_mean": 0.06434101443171358,
+    "rmse_std": 0.0009919597604530444,
+    "mae_mean": 0.044974644487782586,
+    "r2_mean": 0.9513373545634197,
+    "direction_mean": 0.5072097378277153
+  },
+  "results": [
+    {
+      "candidate": "E2_h24",
+      "rmse_mean": 0.06434101443171358,
+      "rmse_std": 0.0009919597604530444,
+      "mae_mean": 0.044974644487782586,
+      "r2_mean": 0.9513373545634197,
+      "direction_mean": 0.5072097378277153
+    }
+  ],
+  "selection": "Technical-only log-return control; epochs chosen by validation scaled-return MSE",
+  "evaluation_performed": false,
+  "limitations": "Main validation only; earlier rolling replication not yet performed. Retrospective news coverage and mixed annotation provenance remain."
+}

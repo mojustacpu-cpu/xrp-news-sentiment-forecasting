@@ -1,0 +1,11 @@
+{
+  "request_count": 12816,
+  "output_count": 12818,
+  "sample_count": 300,
+  "sample_requests_linked": 205,
+  "invalid_structural_responses": [],
+  "invalid_check_scope": "JSON and required-key presence only; semantic validity not established",
+  "linkage_limitation": "exact normalized headline matching, not proof that the final merged record used this response",
+  "repeatability": "not run; historical outputs are not repeat calls",
+  "human_audit": "pending"
+}

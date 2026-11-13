@@ -1,0 +1,14 @@
+{
+  "candidate": "HBAR_E1B",
+  "seed": 123,
+  "selected_epoch": 3,
+  "epochs": 18,
+  "parameters": 570497,
+  "training_seconds": 350.8997440338135,
+  "n": 2136,
+  "rmse": 0.0037613849128515448,
+  "mae": 0.0028921370504218875,
+  "r2": 0.8781136577777366,
+  "directional_accuracy": 0.44756554307116103,
+  "bias": 0.0005403585011428326
+}

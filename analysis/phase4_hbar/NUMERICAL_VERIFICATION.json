@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "new_fits": 5,
+  "checkpoint_checks": [
+    {
+      "candidate": "HBAR_E1B",
+      "seed": 42,
+      "checkpoint_sha256": "3a3e5527b08003fe9dab9fe7878980315bc12079337d30058df6710c81924970",
+      "predictions_sha256": "34b684fc9001fdd3db078b243933dc3a914269d38547f0e91d488f8a022def62",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    },
+    {
+      "candidate": "HBAR_E1B",
+      "seed": 123,
+      "checkpoint_sha256": "1aef264cb88c8a337310b877a7a8b515a8d0550d40dd776e74c8bd7468004621",
+      "predictions_sha256": "da3673a79a8c6813fb7d8d852312ded435f6a4841a83d6755d7df324b291ca2d",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    },
+    {
+      "candidate": "HBAR_E1B",
+      "seed": 2026,
+      "checkpoint_sha256": "9588686a7f0a86e75a98334fad41ba32d1f2ccb52ed7f74826a08afd9a53c771",
+      "predictions_sha256": "6b8cfde0d286d6490d995d52f43974cda317af3204c7a87401f3e2cd7e7a3417",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    },
+    {
+      "candidate": "HBAR_E1B",
+      "seed": 7,
+      "checkpoint_sha256": "1db114a73ded879ce7289cf20167c1e7d34e23e834913e4657884df1c5608fa9",
+      "predictions_sha256": "b1dfc447c118045f04252b89b89562c4442d143894f6afc1f66708d73e39cba0",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    },
+    {
+      "candidate": "HBAR_E1B",
+      "seed": 99,
+      "checkpoint_sha256": "adc025f4f1b8fb1af53360a5033fd8f75496aa102585cb0cb5189956eef958e0",
+      "predictions_sha256": "894b8336ae5c6e735c7874d3242bb60e62a5c6242ad2816b24c41f9fa5125a72",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    }
+  ],
+  "frozen_hashes_unchanged": true,
+  "shared_news_values_verified": true,
+  "train_sequences": 18861,
+  "validation_origins": 2136,
+  "window_hours": 30,
+  "horizon_hours": 24,
+  "real_btc_and_technical_values_unchanged": true,
+  "train_only_scalers_verified": true,
+  "final_labels_redacted": true,
+  "final_evaluation_performed": false,
+  "baseline_retrained": false
+}

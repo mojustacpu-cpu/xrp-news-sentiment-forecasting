@@ -1,0 +1,174 @@
+{
+  "status": "prepared_not_trained",
+  "main_seeds": [
+    42,
+    123,
+    2026,
+    7,
+    99
+  ],
+  "input_window_hours": 30,
+  "horizon_hours": 24,
+  "technical_feature_order": [
+    "EMA_20",
+    "MACD_Signal",
+    "SMA_20",
+    "SMA_10",
+    "EMA_10",
+    "Volatility_10",
+    "MACD",
+    "MFI",
+    "OBV",
+    "BTC_Close",
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume",
+    "return",
+    "volatility",
+    "price_sma10",
+    "price_sma20"
+  ],
+  "candidates": {
+    "A_core": [
+      "sentiment",
+      "stance_xrp",
+      "uncertainty",
+      "xrp_specificity",
+      "news_present"
+    ],
+    "B_core_flags": [
+      "sentiment",
+      "stance_xrp",
+      "uncertainty",
+      "xrp_specificity",
+      "news_present",
+      "reg_access_flag",
+      "surprise_flag"
+    ],
+    "C_decay_hl3": [
+      "sentiment",
+      "stance_xrp",
+      "uncertainty",
+      "xrp_specificity",
+      "news_present",
+      "reg_access_flag",
+      "surprise_flag",
+      "sentiment_decay24_hl3"
+    ],
+    "C_decay_hl6": [
+      "sentiment",
+      "stance_xrp",
+      "uncertainty",
+      "xrp_specificity",
+      "news_present",
+      "reg_access_flag",
+      "surprise_flag",
+      "sentiment_decay24_hl6"
+    ],
+    "C_decay_hl12": [
+      "sentiment",
+      "stance_xrp",
+      "uncertainty",
+      "xrp_specificity",
+      "news_present",
+      "reg_access_flag",
+      "surprise_flag",
+      "sentiment_decay24_hl12"
+    ]
+  },
+  "half_lives_hours": [
+    3,
+    6,
+    12
+  ],
+  "training": {
+    "recurrent_layers": 2,
+    "hidden_per_direction": 128,
+    "bidirectional": true,
+    "dense_units": 64,
+    "activation": "ReLU",
+    "dropout": 0.2,
+    "readout": "last recurrent sequence output, inherited unchanged",
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "maximum_epochs": 200,
+    "patience": 15,
+    "min_delta": 0.0,
+    "device": "cpu",
+    "torch_threads": 4,
+    "deterministic_algorithms": true,
+    "input_scaler": "RobustScaler fitted only unique training-window rows",
+    "target_scaler": "MinMaxScaler fitted only training target rows"
+  },
+  "main_selection": "Lowest mean validation price RMSE over all five seeds. First choose C half-life using validation, then compare A/B/selected C. Exact ties prefer fewer features, then half-life order 3,6,12. Keep all five seeds, no best-test seed.",
+  "fold_policy": "Each earlier rolling fold independently trains and selects from its own earlier train/validation data. Never apply main-period selected weights or hyperparameters backward. These assess the selection procedure, not five-seed performance of one main-selected configuration at an earlier date.",
+  "runs": {
+    "main_hybrid_candidates": 25,
+    "earlier_rolling_hybrid_candidates": 50,
+    "earlier_rolling_additional_technical_controls": 8,
+    "total_new_fits_if_all_folds_run": 83
+  },
+  "baseline": "Reuse five original main BiLSTM-BTC runs, and seed42 per earlier fold. Four missing technical seeds per rolling fold are optional expansion for complete five-seed rolling comparison, trained in NEW subproject only with unchanged baseline code/config/data. Original experiments never altered.",
+  "evaluation": "For each fold, write a hashed selection lock before loading evaluation labels or calling evaluation inference. Evaluate only the selected news configuration, all five seeds, once. Report technical/persistence same targets; existing ARIMAX contextual. Do not evaluate losing candidates.",
+  "main_primary_claim": "Primary matched comparison is main five-seed result. Full earlier five-seed rolling extension is planned sequentially subject to compute; incomplete work must be labelled.",
+  "major_news_definition": {
+    "rule": "Retained focused article: leadership_policy or macro_risk topic OR allowed event with reg_access_flag or surprise_flag=1; any such article in trailing24 completed hourly buckets.",
+    "ordinary": "No matching article; includes quiet periods and other focused news.",
+    "purpose": "Predefined reporting subgroup only; no outcome-selected turning points."
+  },
+  "forbidden": [
+    "attention",
+    "manual impact equation",
+    "actor/audience weights",
+    "event categories as model inputs",
+    "novelty placeholders",
+    "unverified event-age inputs",
+    "additional technical tuning",
+    "test-dependent selection"
+  ],
+  "availability": "Publication-time retrospective proxy; source and original-version availability unverified. Full historical leakage-free claim is not supported.",
+  "failure_rule": "Do not force improvement. If validation winner is worse than technical, report it and still evaluate this preselected hybrid once as an ablation, not as a recommended upgrade. No post-test replacement.",
+  "dataset": "data/assistant_review_v4/XRP_TECHNICAL_NEWS_TRAINING.csv",
+  "dataset_sha256": "265c598efa75c41b9b09afbb0c396e5e1bc799c34d952e8deba805a9bc8e71e5",
+  "version": "assistant_review_v4",
+  "training_authorization": "User requested report, preparation and start training after describing enhancements.",
+  "news_filter": {
+    "regex_patterns": {
+      "legal_access": "\\bSEC\\b|regulat|court|lawsuit|appeal|judge|custody|\\bETF\\b|\\blisting\\b|\\bdelisting\\b",
+      "leadership_policy": "gensler|atkins|sec chair|sec chief|(?=.*(?:trump|president|government|white house))(?=.*(?:crypto|reserve|stockpile|digital asset))",
+      "macro_risk": "tariff|trade war|trade deal|\\bfed\\b|federal reserve|interest rate|inflation|ceasefire|\\biran\\b|\\bisrael\\b",
+      "security": "\\bhack|exploit|outage"
+    },
+    "event_categories": [
+      "court_ruling",
+      "custody/etf",
+      "custody_etf",
+      "delisting",
+      "hack/outage",
+      "hack_outage",
+      "listing",
+      "regulatory"
+    ],
+    "promotion_regex": "best (?:crypto|coins?|tokens?)|next (?:100x|1000x)|\\bpresale\\b|\\bprice prediction|\\bprice forecast|\\bprice target|expert predicts|could (?:hit|reach)|will .*reach \\$|set to explode",
+    "limitations": "Deterministic lexical screen, not verified factuality; multilingual titles rely partly on cached categories. Reaction reports retained at real publication time; no backdating or score correction."
+  },
+  "parameter_counts": {
+    "A_core": 569473,
+    "B_core_flags": 571521,
+    "C_decay_hl3": 572545,
+    "C_decay_hl6": 572545,
+    "C_decay_hl12": 572545
+  },
+  "folds": [
+    "main",
+    "rolling_1",
+    "rolling_2"
+  ],
+  "source_baseline_protocol_sha256": "ff1ebced84981f0c709f799ffb87f25e736ecc03d741289d9760cc540a676425",
+  "annotation_additions": "Original four plus ten new hourly assistant-scored source summaries; two date-only scores remain metadata; six unverified leads unscored; one existing source not duplicated",
+  "annotation_caveat": "Mixed annotator provenance; not blinded to prior conversation. Retrospective targeted coverage repair. Surprise is a textual flag, not measured market surprise.",
+  "metadata_exclusion": "Use only technical_feature_order plus candidate allowlist. All JSON fields, source counters, split roles, target fields and timestamps excluded."
+}

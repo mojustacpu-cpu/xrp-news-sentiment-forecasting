@@ -1,0 +1,8 @@
+{
+  "seconds_per_1000_validation72": 0.010950500000000085,
+  "rough_seconds_all_50000_blocks": 3.83267500000003,
+  "replicates": 50000,
+  "estimated_peak_MB": 150,
+  "paid_API": false,
+  "training": false
+}

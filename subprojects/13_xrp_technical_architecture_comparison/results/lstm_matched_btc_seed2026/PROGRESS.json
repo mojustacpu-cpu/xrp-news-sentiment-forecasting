@@ -1,0 +1,8 @@
+{
+  "epoch": 17,
+  "selected_epoch": 2,
+  "validation_mse": 0.0010736871045082808,
+  "best_validation_mse": 0.0007481610518880188,
+  "stale_epochs": 15,
+  "elapsed_seconds": 257.3026177883148
+}

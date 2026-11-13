@@ -1,0 +1,16 @@
+{
+  "candidate": "E4_ungated",
+  "seed": 123,
+  "selected_epoch": 30,
+  "epochs": 45,
+  "trainable_parameters": 1265,
+  "frozen_parameters": 564353,
+  "total_parameters": 565618,
+  "training_seconds": 74.89844679832458,
+  "n": 2136,
+  "rmse": 0.06367737056523544,
+  "mae": 0.04469155832565902,
+  "r2": 0.9523450985283687,
+  "directional_accuracy": 0.5308988764044944,
+  "bias": 0.00317263151747122
+}

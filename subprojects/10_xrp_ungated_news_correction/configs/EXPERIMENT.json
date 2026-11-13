@@ -1,0 +1,30 @@
+{
+  "name": "10_xrp_ungated_news_correction",
+  "title": "XRP ungated GRU correction to frozen technical BiLSTM (E4)",
+  "target": "frozen_base_plus_return_correction",
+  "features": [],
+  "window_hours": 30,
+  "horizon_hours": 24,
+  "seeds": [
+    42,
+    123,
+    2026,
+    7,
+    99
+  ],
+  "hidden_per_direction": 128,
+  "layers": 2,
+  "dense_units": 64,
+  "dropout": 0.2,
+  "dataset": "data/training.csv",
+  "training": {
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "maximum_epochs": 200,
+    "early_stopping_patience": 15
+  },
+  "checkpoint_rule": "minimum chronological validation scaled-target MSE",
+  "metric_rule": "reconstructed price; each seed evaluated separately; sample SD",
+  "status": "completed archived experiment; no new fitting during publication preparation"
+}

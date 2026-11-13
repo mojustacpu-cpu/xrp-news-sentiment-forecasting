@@ -1,0 +1,14 @@
+{
+  "candidate": "C_decay_hl12",
+  "seed": 2026,
+  "selected_epoch": 1,
+  "epochs": 16,
+  "parameters": 572545,
+  "training_seconds": 578.0726320743561,
+  "n": 2136,
+  "rmse": 0.06413755891993755,
+  "mae": 0.045076509971233,
+  "r2": 0.9516538176536403,
+  "directional_accuracy": 0.5697565543071161,
+  "bias": -0.005174574612262435
+}

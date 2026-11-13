@@ -1,0 +1,12 @@
+# Expected integrated gradients: five seeds, two backgrounds, completeness checks
+
+Target: `inverse-scaled_predicted_log_return`.
+
+- `code/original/`: preserved experimental implementation; local path constants may require relocation.
+- `configs/`: archived settings and feature definitions, with a portable experiment description where available.
+- `data/`: prepared numerical inputs, scalers and chronological origin indexes where used.
+- `results/`: saved predictions, histories, metrics and selected checkpoints where available.
+
+Run `python tools/reproduce_saved_metrics.py --output reproduced` from the repository root to reproduce saved price metrics without fitting. Read the root reproducibility guide before training: archived scripts preserve no-restart guards and historical paths; do not run stage pipelines blindly. No new models were fitted for this release.
+
+This method is expected integrated gradients, not exact SHAP or a causal price decomposition. All numerical exceptions are retained.

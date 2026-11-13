@@ -1,0 +1,29 @@
+{
+  "reviewers": [
+    {
+      "reviewer": 1,
+      "rows": 300,
+      "nonempty_primary_field_cells": 0,
+      "complete_primary_rows": 0,
+      "source": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/Research_Final_Experiments/02_GPT4O_Annotation_Validation/provenance_v2/BLINDED_reviewer_1_EXPANDED.csv",
+      "sha256": "920cc3c2b578152538dc8718efd02aa63db23087b776e0808916db50922f4cf9"
+    },
+    {
+      "reviewer": 2,
+      "rows": 300,
+      "nonempty_primary_field_cells": 0,
+      "complete_primary_rows": 0,
+      "source": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/Research_Final_Experiments/02_GPT4O_Annotation_Validation/provenance_v2/BLINDED_reviewer_2_EXPANDED.csv",
+      "sha256": "920cc3c2b578152538dc8718efd02aa63db23087b776e0808916db50922f4cf9"
+    }
+  ],
+  "semantic_accuracy_status": "pending independent human labels",
+  "claimed_human_accuracy": null,
+  "primary_fields": [
+    "sentiment",
+    "stance_xrp",
+    "uncertainty",
+    "xrp_specificity"
+  ],
+  "structural_provenance_semantics_distinct": true
+}

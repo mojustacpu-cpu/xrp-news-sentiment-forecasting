@@ -1,0 +1,22 @@
+{
+  "selected": {
+    "order": [
+      0,
+      1,
+      0
+    ],
+    "key": "0_1_0",
+    "converged": true,
+    "warnings": [],
+    "n": 2136,
+    "rmse": 0.06494348934428414,
+    "mae": 0.04465868802936515,
+    "r2": 0.9504311811249062,
+    "directional_accuracy": 0.5323033707865169,
+    "bias": 0.004852378329848475
+  },
+  "training_seconds": 19.382052183151245,
+  "fit_end": "2025-12-19 05:00:00+00:00",
+  "final_refit": false,
+  "policy": "Selected training-only fit retained; filter states update with observed data"
+}

@@ -1,0 +1,79 @@
+{
+  "completed_utc": "2026-11-07T06:27:13.347761+00:00",
+  "passed": true,
+  "new_fits": 25,
+  "frozen_files_unchanged": true,
+  "numerical_verification": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/analysis/NUMERICAL_VERIFICATION.json",
+  "numerical_verification_sha256": "34c21fdbef797957c3566ce2f7f5c99b302e4dd7d4620a98fcbb0107352a2329",
+  "reports": [
+    {
+      "path": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E1B/reports/SCIENTIFIC_REPORT.docx",
+      "sha256": "c9dfbf24a352e9e63ccd08e3cc7d2b7257de7b8344eb3ea704c884a47379035a",
+      "pages": 3,
+      "visual_review": "All final rendered pages inspected and accepted during report-generation session",
+      "render_hashes": {
+        "page-1.png": "85528aef5cf483a95cb081325144e57372eb8fe841fe8d7048241b52db9ae0ad",
+        "page-2.png": "7bbd2288cf2ed0cfbb526734ed8c77731a3c2c845eed998587a58489ea9804df",
+        "page-3.png": "684a2e6021445032e4a21cf5b3615f344952a2fd11b658392b14203004e360b0"
+      }
+    },
+    {
+      "path": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E2_h12/reports/SCIENTIFIC_REPORT.docx",
+      "sha256": "5b8dfdd76131fe1589186830ae4f0a1bedeea18fd7d76206a19eb1f8722ed88c",
+      "pages": 3,
+      "visual_review": "All final rendered pages inspected and accepted during report-generation session",
+      "render_hashes": {
+        "page-1.png": "a3d0b6a76358ed126abae434cf8fcaec6215162108c7ef99ff65ff44e606261a",
+        "page-2.png": "236a9306f676c5186cadcf587f97b05fb634550ef19381404dfb7c94dce39089",
+        "page-3.png": "d070cb08f4becab59919414c4b435581cd73792a05f6520d2a7286f86dbf3d12"
+      }
+    },
+    {
+      "path": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E2_h24/reports/SCIENTIFIC_REPORT.docx",
+      "sha256": "90152b884b3dcdf741cece7e0d75228bc70da4d0a275248f7ce180cef79207dd",
+      "pages": 3,
+      "visual_review": "All final rendered pages inspected and accepted during report-generation session",
+      "render_hashes": {
+        "page-1.png": "77e5dd7656e6c3007bcb04920b7a11407504373518a8920ca00432641eba7a72",
+        "page-2.png": "1bd985e36dd314fbbf9a27707dd2a78cda34207365db34676bf3565730255986",
+        "page-3.png": "c8f045ae7bd02c2ca45d3725cd66f1be90146beda7ca97de326b7a18ecdf14c9"
+      }
+    },
+    {
+      "path": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E2_h3/reports/SCIENTIFIC_REPORT.docx",
+      "sha256": "3bb10e1dcf564d95495c27224159d8ee8197a492e11eadcf2d7f55b211e98e4c",
+      "pages": 3,
+      "visual_review": "All final rendered pages inspected and accepted during report-generation session",
+      "render_hashes": {
+        "page-1.png": "7829118c9d8d74b389a0d2ee0176243738f1c158199708d1b665a60b1061e953",
+        "page-2.png": "4fca5c655469c3c2a24bd31f087198af7237e7be992aad66ac2281e48ec2dbba",
+        "page-3.png": "903e25c53271a83881b26dcaef7014842833a8a40b0fa210192a94f896bcbe33"
+      }
+    },
+    {
+      "path": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E2_h6/reports/SCIENTIFIC_REPORT.docx",
+      "sha256": "d54631209f15fc164be0078de2f49715349632667b2bcf4ec8dc85d359cc8ccd",
+      "pages": 3,
+      "visual_review": "All final rendered pages inspected and accepted during report-generation session",
+      "render_hashes": {
+        "page-1.png": "c74c1300c3772b2dc6bb6bb2e5451a4884d68a75de99c711adefa9727930642b",
+        "page-2.png": "3bfd6667021b521169e411daa6a76a97186329e1d417381828c99cced5ac2196",
+        "page-3.png": "1f45d824bdcb340d15f93e4fbb6ff8157081548fbb304c27674d4636b3b880b9"
+      }
+    },
+    {
+      "path": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/reports/PHASE1_COLLECTIVE_REPORT.docx",
+      "sha256": "61ad26d6c2f1b5dc77e60945cb18cfd23882e88177fbfdec2ff2c1f4f9145cdf",
+      "pages": 3,
+      "visual_review": "All final rendered pages inspected and accepted during report-generation session",
+      "render_hashes": {
+        "page-1.png": "0cef8c85c3358494fb2a686af380beec2a0b7ad5c3bb7a93288e229d8a5d43a4",
+        "page-2.png": "31eacc05f52698c0640cadc430e7ffeac821a78b48dff41504b8925d1502a7ac",
+        "page-3.png": "2c9d394704c322e9e868d27b96a7ce3c2b294be36d953e473d46fc17ec8f0f4a"
+      }
+    }
+  ],
+  "final_evaluation_performed": false,
+  "E3_E4_started": false,
+  "programme_status": "Phase 1 complete; awaiting review before additional stages"
+}

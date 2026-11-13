@@ -1,0 +1,12 @@
+{
+  "pid": 34593,
+  "started_utc": "2026-11-01 00:09:21.182592+00:00",
+  "config": {
+    "name": "bilstm_no_btc",
+    "btc": false,
+    "bidirectional": true,
+    "hidden": 128,
+    "parameters": 563329
+  },
+  "seed": 7
+}

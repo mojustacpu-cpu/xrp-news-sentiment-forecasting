@@ -1,0 +1,21 @@
+item,status,finding,evidence
+Source market data,Verified/reused,26337continuous hourly inputs;2023-10-2305UTC–2026-10-2413UTC; future-target archive25Oct2026,phase1/E0_E1_REUSE.json; previous source inventory
+Target and splits,Verified/reused,30completed hours; exact+24h logreturn;18861train/2136validation/5262later; chronological purges,phase1/main_*.npy; frozen origin CSVs
+RealBTC and indicators,Verified/reused,19technical/market inputs; real BTC and nine indicators unchanged,old full-hour/source verification; hashes unchanged
+Scalers,Verified/reused,Training-input rows and training targets only; no later refitting,frozen scaler manifests and previous inference verification
+Models and seeds,Verified,"30primary checkpoints; parameters564353/570497/566401; seeds42,123,2026,7,99",TRAINING_STABILITY_ALL_30_RUNS.csv
+Checkpoint criterion,Verified,Every checkpoint matches validation MSE minimum and patience15,same history/metadata table
+Predictions,Verified/reused,No retraining; primary metrics recomputed from saved arrays,PRIMARY_METRIC_REVERIFICATION.csv
+Statistics,Corrected,50000paired resamples at24/72/168h; original contrast families retained,BOOTSTRAP_ALL_CORRECTED.csv; raw NPZ and script
+Subgroups,Verified,Definitions and sample counts unchanged; training-derived thresholds; no outcome-driven mask changes,bootstrap_audit.py; previous protocol
+News annotation structure,Verified within saved batch,12818matching unique request/response IDs; valid primary fields,SAVED_BATCH_RESPONSE_AUDIT.json
+300sample provenance,"Recovered evidence, limited",205batch links;95legacyJSONmatches; legacy snapshot unknown,original provenance_v2 records
+Human semantic labels,Missing,Both reviewer files have zero completed primary labels,ANNOTATION_EVIDENCE_AUDIT.json; new blinded protocol
+Operational first-seen timestamps,Missing,Publication is a proxy; collection/annotation latency not fully recorded,original archive flags and event/source records
+Repeatability,Missing,Historical consistency is not repeated freshAPIcalls; none authorised,original repeatability status
+Matched retrained controls,Missing,No current timing-only/shuffled-news/near-capacity study,CONTROL_EVIDENCE_AUDIT.json; proposed configs
+Attribution,Verified with unresolved precision,"10arrays,1000origins/pass,32training references;52residual failures retained",ATTRIBUTION_REVERIFIED.csv
+Event curves,Verified descriptively,5genuine cases; official exact times or date bands; no retiming,ATTRIBUTION_EVENT_VERIFICATION.json
+Prospective independence,Not established,Later historical period had prior exposure; no pristine deployment claim,manuscript limitation and previous exposure report
+Figures and references,Available; delivery QA,Corrected intervals in figures6/9; other verified graphics retained;27references,figure code and compiled project
+Public release and licensing,Author action required,Original data/source rights and repository release not invented,data availability declaration; author approval

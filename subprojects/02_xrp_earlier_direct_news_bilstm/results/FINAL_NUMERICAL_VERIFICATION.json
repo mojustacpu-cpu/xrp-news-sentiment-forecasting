@@ -1,0 +1,20 @@
+{
+  "status": "completed_validation_verified",
+  "hybrid_return_mean": {
+    "rmse": 0.06388316642715716,
+    "mae": 0.04476596102715818,
+    "r2": 0.9520297142596383,
+    "directional_accuracy": 0.5458801498127341
+  },
+  "absolute_price_mean": {
+    "rmse": 0.08053973184284927,
+    "mae": 0.06064122587984416,
+    "r2": 0.9232540679405897,
+    "directional_accuracy": 0.5284644194756554
+  },
+  "persistence_validation": {
+    "rmse": 0.06496197728294116,
+    "r2": 0.9504029548705222
+  },
+  "evaluation_performed": false
+}

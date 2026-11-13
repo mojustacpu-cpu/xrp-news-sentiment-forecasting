@@ -1,0 +1,16 @@
+{
+  "candidate": "E4_gated",
+  "seed": 42,
+  "selected_epoch": 1,
+  "epochs": 16,
+  "trainable_parameters": 1282,
+  "frozen_parameters": 564353,
+  "total_parameters": 565635,
+  "training_seconds": 27.909106254577637,
+  "n": 2136,
+  "rmse": 0.0635274112229859,
+  "mae": 0.04459662342373463,
+  "r2": 0.9525692875267314,
+  "directional_accuracy": 0.5070224719101124,
+  "bias": 0.007081447137177887
+}

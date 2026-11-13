@@ -1,0 +1,39 @@
+{
+  "best_E4": {
+    "candidate": "E4_ungated",
+    "rmse_mean": 0.06347445423337864,
+    "rmse_std": 0.0005007072507349967,
+    "mae_mean": 0.04435524487364325,
+    "mae_std": 0.00035929331513687054,
+    "r2_mean": 0.952645974663923,
+    "r2_std": 0.0007478630805629102,
+    "directional_accuracy_mean": 0.5391385767790262,
+    "directional_accuracy_std": 0.017437488924816134,
+    "training_seconds_mean": 57.564419221878055,
+    "training_seconds_std": 26.062424407366212,
+    "rmse_improvement_vs_E0_percent": 0.7203573919693507,
+    "rmse_improvement_vs_E1B_percent": -0.695283433032845,
+    "rmse_improvement_vs_E3_percent": 0.703246215788289,
+    "rmse_improvement_vs_persistence_percent": 2.2898364732397813
+  },
+  "best_overall": {
+    "candidate": "E1B",
+    "rmse_mean": 0.06303617415764282,
+    "rmse_std": 0.000384950382629108,
+    "mae_mean": 0.04398866835166616,
+    "mae_std": 0.00033874457365449265,
+    "r2_mean": 0.9532985910931824,
+    "r2_std": 0.00056912757412965,
+    "directional_accuracy_mean": 0.5587078651685393,
+    "directional_accuracy_std": 0.020917590422442654,
+    "training_seconds_mean": 1212.3273303508759,
+    "training_seconds_std": 1185.5894286849727,
+    "rmse_improvement_vs_E0_percent": 1.4058660711190663,
+    "rmse_improvement_vs_E1B_percent": 0.0,
+    "rmse_improvement_vs_E3_percent": 1.3888730446359188,
+    "rmse_improvement_vs_persistence_percent": 2.964508172081237
+  },
+  "selection": "Mean five-seed validation RMSE only",
+  "further_training_started": false,
+  "final_evaluation_performed": false
+}

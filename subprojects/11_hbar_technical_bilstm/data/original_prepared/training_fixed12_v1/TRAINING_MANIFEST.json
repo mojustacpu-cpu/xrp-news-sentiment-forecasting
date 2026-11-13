@@ -1,0 +1,67 @@
+{
+  "dataset": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/hbar-controlled-technical-bilstm/data/training_fixed12_v1/HBAR_TECHNICAL_DIRECT_NEWS_UNSCALED.csv",
+  "sha256": "d576cd20888118f3bbcc07c3c8ef44404642cc7dc5416f98ac9a42b34a382fe0",
+  "technical_feature_order": [
+    "EMA_20",
+    "MACD_Signal",
+    "SMA_20",
+    "SMA_10",
+    "EMA_10",
+    "Volatility_10",
+    "MACD",
+    "MFI",
+    "OBV",
+    "BTC_Close",
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume",
+    "return",
+    "volatility",
+    "price_sma10",
+    "price_sma20"
+  ],
+  "news_candidates": {
+    "fixed": []
+  },
+  "seeds": [
+    42,
+    123,
+    2026,
+    7,
+    99
+  ],
+  "feature_order": [
+    "EMA_20",
+    "MACD_Signal",
+    "SMA_20",
+    "SMA_10",
+    "EMA_10",
+    "Volatility_10",
+    "MACD",
+    "MFI",
+    "OBV",
+    "BTC_Close",
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume",
+    "return",
+    "volatility",
+    "price_sma10",
+    "price_sma20"
+  ],
+  "rows": 26337,
+  "columns": 30,
+  "metadata_excluded_from_inputs": [
+    "available_at_utc",
+    "target_available_at_utc",
+    "target_close_plus24h"
+  ],
+  "half_life_selection": "Fixed12h inherited from XRP; not tuned on HBAR",
+  "training_only_scalers": true,
+  "asset": "HBAR",
+  "news_semantics": "Unchanged XRP-scored shared news, cross-asset inputs, not HBAR stance"
+}

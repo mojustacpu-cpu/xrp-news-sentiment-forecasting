@@ -1,0 +1,14 @@
+{
+  "candidate": "E1B",
+  "seed": 42,
+  "selected_epoch": 6,
+  "epochs": 21,
+  "parameters": 570497,
+  "training_seconds": 415.29345083236694,
+  "n": 2136,
+  "rmse": 0.06243143751697593,
+  "mae": 0.04377372327168726,
+  "r2": 0.9541917182057897,
+  "directional_accuracy": 0.5697565543071161,
+  "bias": -0.001307384833048903
+}

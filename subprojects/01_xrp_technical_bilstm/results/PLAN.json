@@ -1,0 +1,36 @@
+{
+  "candidates": [
+    "technical_btc"
+  ],
+  "seeds": [
+    42,
+    123,
+    2026,
+    7,
+    99
+  ],
+  "fold": "main",
+  "selection": "Technical-only control; no news features; checkpoint epochs selected on validation only. No evaluation inference. Target is log(P[t+24]/P[t]); MinMax target scaling fit on train only. Checkpoint selection retains validation scaled-target MSE.",
+  "data_sha256": "5410191a2e372d7ea41de0f3a405d6dda9a0f001aeb46701edb8bd0d85755dd0",
+  "training": {
+    "recurrent_layers": 2,
+    "hidden_per_direction": 128,
+    "bidirectional": true,
+    "dense_units": 64,
+    "activation": "ReLU",
+    "dropout": 0.2,
+    "readout": "last recurrent sequence output, inherited unchanged",
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "maximum_epochs": 200,
+    "patience": 15,
+    "min_delta": 0.0,
+    "device": "cpu",
+    "torch_threads": 4,
+    "deterministic_algorithms": true,
+    "input_scaler": "RobustScaler fitted only unique training-window rows",
+    "target_scaler": "MinMaxScaler fitted only training target rows"
+  },
+  "architecture_source_sha256": "c3be76ab476c2de4113f4bf5d896b88fd423e5b97cf8fe5a9121e50601175a73"
+}

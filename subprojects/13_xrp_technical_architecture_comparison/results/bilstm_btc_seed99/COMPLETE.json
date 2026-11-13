@@ -1,0 +1,18 @@
+{
+  "model": "bilstm_btc",
+  "fold": "main",
+  "seed": 99,
+  "selected_epoch": 1,
+  "epochs_run": 16,
+  "parameter_count": 564353,
+  "training_seconds": 354.6921648979187,
+  "validation_metrics": {
+    "n": 2136,
+    "rmse": 0.08352374430967109,
+    "mae": 0.06761017274186852,
+    "r2": 0.9180106878543262,
+    "directional_accuracy": 0.5646067415730337,
+    "bias": -0.04453383469376224
+  },
+  "checkpoint_sha256": "f5a2933c0bd863b7d0d54a2fdb7f872007bfa2dd51c90355abba95e3e3f067fc"
+}

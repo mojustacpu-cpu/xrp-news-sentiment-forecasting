@@ -1,0 +1,14 @@
+{
+  "candidate": "E3",
+  "seed": 7,
+  "selected_epoch": 3,
+  "epochs": 18,
+  "parameters": 572545,
+  "training_seconds": 346.3085300922394,
+  "n": 2136,
+  "rmse": 0.06497097624757092,
+  "mae": 0.04690100717620456,
+  "r2": 0.9503892128944531,
+  "directional_accuracy": 0.4812734082397004,
+  "bias": 0.01022142479687036
+}

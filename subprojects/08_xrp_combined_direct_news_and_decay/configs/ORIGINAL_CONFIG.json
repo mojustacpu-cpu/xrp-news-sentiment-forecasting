@@ -1,0 +1,52 @@
+{
+  "name": "E3",
+  "half_life_hours": 6,
+  "delay_hours": 0,
+  "news_features": [
+    "direct_sentiment",
+    "direct_specificity",
+    "direct_stance",
+    "direct_uncertainty",
+    "direct_news_present",
+    "hours_since_latest_news_capped48",
+    "equation_sentiment",
+    "no_relevant_news"
+  ],
+  "features": [
+    "EMA_20",
+    "MACD_Signal",
+    "SMA_20",
+    "SMA_10",
+    "EMA_10",
+    "Volatility_10",
+    "MACD",
+    "MFI",
+    "OBV",
+    "BTC_Close",
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume",
+    "return",
+    "volatility",
+    "price_sma10",
+    "price_sma20",
+    "direct_sentiment",
+    "direct_specificity",
+    "direct_stance",
+    "direct_uncertainty",
+    "direct_news_present",
+    "hours_since_latest_news_capped48",
+    "equation_sentiment",
+    "no_relevant_news"
+  ],
+  "parameters": 572545,
+  "dataset": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase2_e3/E3/training.csv",
+  "scalers": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase2_e3/E3/scalers.joblib",
+  "equation_selected_from": "Phase 1 validation mean RMSE only",
+  "source_configs": [
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E1B/CONFIG.json",
+    "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E2_h6/CONFIG.json"
+  ]
+}

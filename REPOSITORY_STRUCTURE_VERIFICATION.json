@@ -1,0 +1,155 @@
+{
+  "status": "passed",
+  "subprojects": [
+    {
+      "folder": "01_xrp_technical_bilstm",
+      "python_files": 3,
+      "configuration_files": 20,
+      "prediction_csvs": 5,
+      "checkpoints": 5,
+      "data_files": 7
+    },
+    {
+      "folder": "02_xrp_earlier_direct_news_bilstm",
+      "python_files": 3,
+      "configuration_files": 21,
+      "prediction_csvs": 5,
+      "checkpoints": 5,
+      "data_files": 7
+    },
+    {
+      "folder": "03_xrp_compact_direct_news_bilstm",
+      "python_files": 9,
+      "configuration_files": 20,
+      "prediction_csvs": 5,
+      "checkpoints": 5,
+      "data_files": 7
+    },
+    {
+      "folder": "04_xrp_sentiment_decay_3h",
+      "python_files": 9,
+      "configuration_files": 20,
+      "prediction_csvs": 5,
+      "checkpoints": 5,
+      "data_files": 7
+    },
+    {
+      "folder": "05_xrp_sentiment_decay_6h",
+      "python_files": 9,
+      "configuration_files": 20,
+      "prediction_csvs": 5,
+      "checkpoints": 5,
+      "data_files": 7
+    },
+    {
+      "folder": "06_xrp_sentiment_decay_12h",
+      "python_files": 9,
+      "configuration_files": 20,
+      "prediction_csvs": 5,
+      "checkpoints": 5,
+      "data_files": 7
+    },
+    {
+      "folder": "07_xrp_sentiment_decay_24h",
+      "python_files": 9,
+      "configuration_files": 20,
+      "prediction_csvs": 5,
+      "checkpoints": 5,
+      "data_files": 7
+    },
+    {
+      "folder": "08_xrp_combined_direct_news_and_decay",
+      "python_files": 6,
+      "configuration_files": 19,
+      "prediction_csvs": 5,
+      "checkpoints": 5,
+      "data_files": 7
+    },
+    {
+      "folder": "09_xrp_gated_news_correction",
+      "python_files": 5,
+      "configuration_files": 21,
+      "prediction_csvs": 5,
+      "checkpoints": 5,
+      "data_files": 8
+    },
+    {
+      "folder": "10_xrp_ungated_news_correction",
+      "python_files": 5,
+      "configuration_files": 21,
+      "prediction_csvs": 5,
+      "checkpoints": 5,
+      "data_files": 8
+    },
+    {
+      "folder": "11_hbar_technical_bilstm",
+      "python_files": 3,
+      "configuration_files": 21,
+      "prediction_csvs": 5,
+      "checkpoints": 5,
+      "data_files": 15
+    },
+    {
+      "folder": "12_hbar_transferred_news_bilstm",
+      "python_files": 7,
+      "configuration_files": 21,
+      "prediction_csvs": 5,
+      "checkpoints": 5,
+      "data_files": 7
+    },
+    {
+      "folder": "13_xrp_technical_architecture_comparison",
+      "python_files": 10,
+      "configuration_files": 82,
+      "prediction_csvs": 40,
+      "checkpoints": 20,
+      "data_files": 11
+    },
+    {
+      "folder": "14_xrp_technical_arimax",
+      "python_files": 10,
+      "configuration_files": 6,
+      "prediction_csvs": 1,
+      "checkpoints": 0,
+      "data_files": 11
+    },
+    {
+      "folder": "15_xrp_garch_volatility",
+      "python_files": 10,
+      "configuration_files": 4,
+      "prediction_csvs": 1,
+      "checkpoints": 0,
+      "data_files": 11
+    },
+    {
+      "folder": "16_xrp_frozen_later_evaluation",
+      "python_files": 2,
+      "configuration_files": 4,
+      "prediction_csvs": 0,
+      "checkpoints": 0,
+      "data_files": 0
+    },
+    {
+      "folder": "17_expected_integrated_gradients",
+      "python_files": 4,
+      "configuration_files": 4,
+      "prediction_csvs": 0,
+      "checkpoints": 0,
+      "data_files": 0
+    },
+    {
+      "folder": "18_gpt_annotation_provenance",
+      "python_files": 6,
+      "configuration_files": 9,
+      "prediction_csvs": 0,
+      "checkpoints": 0,
+      "data_files": 0
+    }
+  ],
+  "python_syntax_errors": [],
+  "credential_pattern_scan": "passed",
+  "source_news_text_csvs": "excluded at staging; prepared numerical inputs retained",
+  "files": 1082,
+  "MB": 569.396829,
+  "new_training_runs": 0
+}

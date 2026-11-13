@@ -1,0 +1,23 @@
+{
+  "selected": {
+    "candidate": "fixed",
+    "rmse_mean": 0.003709543113335577,
+    "rmse_std": 4.232924414874389e-05,
+    "mae_mean": 0.0028132415350503688,
+    "r2_mean": 0.8814379853586185,
+    "direction_mean": 0.5316479400749063
+  },
+  "results": [
+    {
+      "candidate": "fixed",
+      "rmse_mean": 0.003709543113335577,
+      "rmse_std": 4.232924414874389e-05,
+      "mae_mean": 0.0028132415350503688,
+      "r2_mean": 0.8814379853586185,
+      "direction_mean": 0.5316479400749063
+    }
+  ],
+  "selection": "Fixed HBAR logreturn configuration; epochs chosen by validation scaled-return MSE",
+  "evaluation_performed": false,
+  "limitations": "Main validation only; earlier rolling replication not yet performed. Retrospective news coverage and mixed annotation provenance remain."
+}

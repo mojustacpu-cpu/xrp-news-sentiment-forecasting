@@ -1,0 +1,92 @@
+[
+  {
+    "folder": "subprojects/01_xrp_technical_bilstm",
+    "title": "XRP technical-only BiLSTM (E0)",
+    "target": "log_return"
+  },
+  {
+    "folder": "subprojects/02_xrp_earlier_direct_news_bilstm",
+    "title": "XRP earlier eight-news-input BiLSTM (E1)",
+    "target": "log_return"
+  },
+  {
+    "folder": "subprojects/03_xrp_compact_direct_news_bilstm",
+    "title": "XRP compact direct-news BiLSTM (E1B)",
+    "target": "log_return"
+  },
+  {
+    "folder": "subprojects/04_xrp_sentiment_decay_3h",
+    "title": "XRP relevance-weighted sentiment decay: 3-hour half-life",
+    "target": "log_return"
+  },
+  {
+    "folder": "subprojects/05_xrp_sentiment_decay_6h",
+    "title": "XRP relevance-weighted sentiment decay: 6-hour half-life",
+    "target": "log_return"
+  },
+  {
+    "folder": "subprojects/06_xrp_sentiment_decay_12h",
+    "title": "XRP relevance-weighted sentiment decay: 12-hour half-life",
+    "target": "log_return"
+  },
+  {
+    "folder": "subprojects/07_xrp_sentiment_decay_24h",
+    "title": "XRP relevance-weighted sentiment decay: 24-hour half-life",
+    "target": "log_return"
+  },
+  {
+    "folder": "subprojects/08_xrp_combined_direct_news_and_decay",
+    "title": "XRP compact direct news plus six-hour decay (E3)",
+    "target": "log_return"
+  },
+  {
+    "folder": "subprojects/09_xrp_gated_news_correction",
+    "title": "XRP gated GRU correction to frozen technical BiLSTM (E4)",
+    "target": "frozen_base_plus_return_correction"
+  },
+  {
+    "folder": "subprojects/10_xrp_ungated_news_correction",
+    "title": "XRP ungated GRU correction to frozen technical BiLSTM (E4)",
+    "target": "frozen_base_plus_return_correction"
+  },
+  {
+    "folder": "subprojects/11_hbar_technical_bilstm",
+    "title": "HBAR technical-only BiLSTM",
+    "target": "log_return"
+  },
+  {
+    "folder": "subprojects/12_hbar_transferred_news_bilstm",
+    "title": "HBAR XRP-selected compact news transfer",
+    "target": "log_return"
+  },
+  {
+    "folder": "subprojects/13_xrp_technical_architecture_comparison",
+    "title": "XRP technical BiLSTM/LSTM/BTC ablation: supporting price-target study",
+    "target": "absolute_price_or_log_price"
+  },
+  {
+    "folder": "subprojects/14_xrp_technical_arimax",
+    "title": "XRP technical ARIMAX benchmark",
+    "target": "absolute_price_or_log_price"
+  },
+  {
+    "folder": "subprojects/15_xrp_garch_volatility",
+    "title": "XRP GARCH variance forecast (separate outcome)",
+    "target": "conditional_variance"
+  },
+  {
+    "folder": "subprojects/16_xrp_frozen_later_evaluation",
+    "title": "Frozen later-period XRP evaluation: E0, E1B and persistence",
+    "target": "reconstructed_price_from_log_return"
+  },
+  {
+    "folder": "subprojects/17_expected_integrated_gradients",
+    "title": "Expected integrated gradients: five seeds, two backgrounds, completeness checks",
+    "target": "inverse-scaled_predicted_log_return"
+  },
+  {
+    "folder": "subprojects/18_gpt_annotation_provenance",
+    "title": "GPT annotation provenance and uncompleted independent human-validation protocol",
+    "target": "annotation_provenance_not_human_accuracy"
+  }
+]

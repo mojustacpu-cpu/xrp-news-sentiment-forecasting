@@ -1,0 +1,82 @@
+{
+  "stage": "E4 only",
+  "authorization": "User resumed after E3 completion and E4 next-stage announcement. Ten fits, no subsequent stages.",
+  "models": [
+    {
+      "name": "E4_gated",
+      "gated": true,
+      "trainable_parameters": 1282,
+      "frozen_parameters": 564353
+    },
+    {
+      "name": "E4_ungated",
+      "gated": false,
+      "trainable_parameters": 1265,
+      "frozen_parameters": 564353
+    }
+  ],
+  "seeds": [
+    42,
+    123,
+    2026,
+    7,
+    99
+  ],
+  "news_features": [
+    "direct_sentiment",
+    "direct_specificity",
+    "direct_stance",
+    "direct_uncertainty",
+    "direct_news_present",
+    "hours_since_latest_news_capped48",
+    "equation_sentiment",
+    "no_relevant_news"
+  ],
+  "technical_features": [
+    "EMA_20",
+    "MACD_Signal",
+    "SMA_20",
+    "SMA_10",
+    "EMA_10",
+    "Volatility_10",
+    "MACD",
+    "MFI",
+    "OBV",
+    "BTC_Close",
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume",
+    "return",
+    "volatility",
+    "price_sma10",
+    "price_sma20"
+  ],
+  "window_hours": 30,
+  "horizon_hours": 24,
+  "target": "log(P[t+24]/P[t])",
+  "half_life_hours": 6,
+  "news_mask": "1-no_relevant_news at forecast origin; positive specificity mass in causal trailing48h window",
+  "architecture": "Frozen seed-matched E0 plus one-layer unidirectional GRU16 news encoder, dropout0.2, linear scalar correction in unscaled logreturn units, optional sigmoid linear gate. Zero correction-head weights and bias.",
+  "fusion": "scaled_prediction=E0_scaled+target_scale*news_mask*gate*delta_raw_return",
+  "training": {
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "correction_penalty": 0.001,
+    "loss": "scaled-return MSE + 0.001 mean squared scaled correction",
+    "batch_size": 32,
+    "max_epochs": 200,
+    "patience": 15,
+    "threads": 4,
+    "device": "cpu"
+  },
+  "checkpoint_selection": "Minimum validation scaled-return MSE excluding penalty, epochs1..200; epoch0 is diagnostic only",
+  "configuration_selection": "Five-seed mean validation reconstructed-price RMSE; compare with previous models without replacing an inferior outcome",
+  "statistics": "Paired circular moving-block bootstrap on seed-averaged squared errors:2000replicates seed2026,72h primary and24/168h sensitivity; compare each E4 variant vsE0,E1B,E3 and gated vsungated:7 contrasts;95% and Bonferroni99.285714% intervals. Disclose validation selection optimism accumulated across earlier stages.",
+  "baseline_training_limitation": "E0 training forecasts are in-sample frozen predictions, not cross-fitted; E0 checkpoint was selected on this same validation block. This is a staged correction model, not an independent validation replication.",
+  "no_news_behavior": "Exactly E0 when mask0 or correction disabled; a gate value is model behaviour, not causal impact.",
+  "final_evaluation_performed": false,
+  "stop_after_E4": true
+}

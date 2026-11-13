@@ -1,0 +1,23 @@
+{
+  "selected": {
+    "candidate": "technical_btc",
+    "rmse_mean": 0.06393501483882685,
+    "rmse_std": 0.00041633131378886743,
+    "mae_mean": 0.04451379085379482,
+    "r2_mean": 0.9519570567933286,
+    "direction_mean": 0.5378277153558052
+  },
+  "results": [
+    {
+      "candidate": "technical_btc",
+      "rmse_mean": 0.06393501483882685,
+      "rmse_std": 0.00041633131378886743,
+      "mae_mean": 0.04451379085379482,
+      "r2_mean": 0.9519570567933286,
+      "direction_mean": 0.5378277153558052
+    }
+  ],
+  "selection": "Technical-only log-return control; epochs chosen by validation scaled-return MSE",
+  "evaluation_performed": false,
+  "limitations": "Main validation only; earlier rolling replication not yet performed. Retrospective news coverage and mixed annotation provenance remain."
+}

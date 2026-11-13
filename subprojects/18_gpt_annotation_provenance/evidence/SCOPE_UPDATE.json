@@ -1,0 +1,14 @@
+{
+  "user_requirement": "Only features used in latest training",
+  "semantic_fields": [
+    "sentiment",
+    "stance_xrp",
+    "uncertainty",
+    "xrp_specificity"
+  ],
+  "derived_fields": [
+    "direct_news_present",
+    "hours_since_latest_news_capped48"
+  ],
+  "excluded_legacy_analysis": "Preserved separately; omitted from reports"
+}

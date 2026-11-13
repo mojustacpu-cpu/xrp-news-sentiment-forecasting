@@ -1,0 +1,100 @@
+{
+  "passed": true,
+  "project": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/hbar-controlled-technical-bilstm",
+  "dataset": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/hbar-controlled-technical-bilstm/data/training_fixed12_v1/HBAR_TECHNICAL_DIRECT_NEWS_UNSCALED.csv",
+  "dataset_sha256": "d576cd20888118f3bbcc07c3c8ef44404642cc7dc5416f98ac9a42b34a382fe0",
+  "scaler": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/hbar-controlled-technical-bilstm/runs/controlled_v1/log_return_scalers.joblib",
+  "scaler_sha256": "d8e53138771ac66b41a3ed227bd4f2e9281ce9b93cadcf0c755312e06e5dbed4",
+  "seeds": [
+    {
+      "seed": 42,
+      "checkpoint": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/hbar-controlled-technical-bilstm/runs/controlled_v1/fixed_seed42/best.pt",
+      "checkpoint_sha256": "ff4ac8bd50ac3647183b8fd7afe7b45dacf57e9aac0da3441bf05fb80bd221c1",
+      "predictions": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/hbar-controlled-technical-bilstm/runs/controlled_v1/fixed_seed42/validation_predictions.csv",
+      "predictions_sha256": "2203bc6d2f2a0f6494de278dffbd5c0b8fd857fd0c5070e49c0befa55e97d0b5",
+      "prediction_max_error": 0.0,
+      "metrics": {
+        "n": 2136,
+        "rmse": 0.003680848554305448,
+        "mae": 0.002819513352893097,
+        "r2": 0.8832772836330198,
+        "directional_accuracy": 0.4859550561797753,
+        "bias": 0.00023958547536437227
+      },
+      "selected_epoch": 5
+    },
+    {
+      "seed": 123,
+      "checkpoint": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/hbar-controlled-technical-bilstm/runs/controlled_v1/fixed_seed123/best.pt",
+      "checkpoint_sha256": "595f7557e962ce7199a59b54da2c867b29bea5892e2c12b5913513e1dfae0dcf",
+      "predictions": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/hbar-controlled-technical-bilstm/runs/controlled_v1/fixed_seed123/validation_predictions.csv",
+      "predictions_sha256": "de4d6064fe65998938d9fc58f55e000e8a180aa009ebb1645044fae33644f582",
+      "prediction_max_error": 0.0,
+      "metrics": {
+        "n": 2136,
+        "rmse": 0.003733482820731351,
+        "mae": 0.002801561530491665,
+        "r2": 0.8799152654759921,
+        "directional_accuracy": 0.5617977528089888,
+        "bias": -0.00020361903899980622
+      },
+      "selected_epoch": 6
+    },
+    {
+      "seed": 2026,
+      "checkpoint": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/hbar-controlled-technical-bilstm/runs/controlled_v1/fixed_seed2026/best.pt",
+      "checkpoint_sha256": "363e5b70f0c8c035c3219830d83a99cd7742bbd9be4cea06ef6b1c7287e0ac6a",
+      "predictions": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/hbar-controlled-technical-bilstm/runs/controlled_v1/fixed_seed2026/validation_predictions.csv",
+      "predictions_sha256": "7ee29f2d7c62d89f2ed6923b579eb18d291449591038b13e9122648b24556609",
+      "prediction_max_error": 0.0,
+      "metrics": {
+        "n": 2136,
+        "rmse": 0.0037483404758668153,
+        "mae": 0.0028173858779244657,
+        "r2": 0.8789575925534466,
+        "directional_accuracy": 0.5519662921348315,
+        "bias": -0.0006201716445966829
+      },
+      "selected_epoch": 2
+    },
+    {
+      "seed": 7,
+      "checkpoint": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/hbar-controlled-technical-bilstm/runs/controlled_v1/fixed_seed7/best.pt",
+      "checkpoint_sha256": "428ca0d0d2294307721e6e9355440c23daad3e02921dbc67540811b1ec8eb910",
+      "predictions": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/hbar-controlled-technical-bilstm/runs/controlled_v1/fixed_seed7/validation_predictions.csv",
+      "predictions_sha256": "74b25091abf8f408c25a337d3a8fc96c7e45df8e420ae3b17d7c4c006dfcd104",
+      "prediction_max_error": 0.0,
+      "metrics": {
+        "n": 2136,
+        "rmse": 0.0037354513973630273,
+        "mae": 0.0028459603831372904,
+        "r2": 0.8797885964451961,
+        "directional_accuracy": 0.5117041198501873,
+        "bias": 0.00024139346917916764
+      },
+      "selected_epoch": 7
+    },
+    {
+      "seed": 99,
+      "checkpoint": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/hbar-controlled-technical-bilstm/runs/controlled_v1/fixed_seed99/best.pt",
+      "checkpoint_sha256": "2a432519cd24f61853d982165bb54043febf077866f96878df234d5171ef860e",
+      "predictions": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/hbar-controlled-technical-bilstm/runs/controlled_v1/fixed_seed99/validation_predictions.csv",
+      "predictions_sha256": "c32eb4680a90c62db71057757cf24fbe492bc80ffb2ab3ff7b4feef1ba92f96e",
+      "prediction_max_error": 0.0,
+      "metrics": {
+        "n": 2136,
+        "rmse": 0.0036495923184112424,
+        "mae": 0.002781786530805326,
+        "r2": 0.8852511886854382,
+        "directional_accuracy": 0.5468164794007491,
+        "bias": -0.00027457844891295877
+      },
+      "selected_epoch": 7
+    }
+  ],
+  "train_only_scalers": true,
+  "parameters": 564353,
+  "validation_origins": 2136,
+  "architecture_identical_to_XRP": true,
+  "previous_final_evaluation_exists": true
+}

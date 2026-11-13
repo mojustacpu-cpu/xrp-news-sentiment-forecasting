@@ -1,0 +1,36 @@
+{
+  "name": "E2_h3",
+  "half_life_hours": 3,
+  "delay_hours": 0,
+  "news_features": [
+    "equation_sentiment",
+    "no_relevant_news"
+  ],
+  "features": [
+    "EMA_20",
+    "MACD_Signal",
+    "SMA_20",
+    "SMA_10",
+    "EMA_10",
+    "Volatility_10",
+    "MACD",
+    "MFI",
+    "OBV",
+    "BTC_Close",
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume",
+    "return",
+    "volatility",
+    "price_sma10",
+    "price_sma20",
+    "equation_sentiment",
+    "no_relevant_news"
+  ],
+  "parameters": 566401,
+  "dataset": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E2_h3/training.csv",
+  "scalers": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase1/E2_h3/scalers.joblib",
+  "source_scenario_sha256": "bf0923ac1691688fa69d14d5196dbae7094f397b950cbcc00fcfbeefb7c8e87f"
+}

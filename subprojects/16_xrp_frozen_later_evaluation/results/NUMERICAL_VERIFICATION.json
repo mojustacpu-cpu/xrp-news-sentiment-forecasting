@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "checkpoint_checks": [
+    {
+      "model": "E0",
+      "seed": 42,
+      "checkpoint_sha256": "1b4ff49ee7e599f6585604504d8023c34ee8973cce30ff59ee3284cda2d4c1fe",
+      "validation_inference_max_error": 0.0
+    },
+    {
+      "model": "E0",
+      "seed": 123,
+      "checkpoint_sha256": "9f3f660535633d3d50a0a4a307b6afbc36b971bf8bac9dc13c632186be87449b",
+      "validation_inference_max_error": 0.0
+    },
+    {
+      "model": "E0",
+      "seed": 2026,
+      "checkpoint_sha256": "7ab9b34345674cfeda47c4471d7a3580876ca5148b87a9d8135e5f0dd69a9b6a",
+      "validation_inference_max_error": 0.0
+    },
+    {
+      "model": "E0",
+      "seed": 7,
+      "checkpoint_sha256": "cbefdd571ac18b62619eed6b5a9f5a58760d3140ff3e18102d79f413e9e89a48",
+      "validation_inference_max_error": 0.0
+    },
+    {
+      "model": "E0",
+      "seed": 99,
+      "checkpoint_sha256": "3606561f535910b954b5a6c340a57dc06dfbf8266a875e35115674f6a4f343be",
+      "validation_inference_max_error": 0.0
+    },
+    {
+      "model": "E1B",
+      "seed": 42,
+      "checkpoint_sha256": "f3177dfd794759f8a5576f431f534a4113b21912f702dbcd5da60dbd8c620c71",
+      "validation_inference_max_error": 0.0
+    },
+    {
+      "model": "E1B",
+      "seed": 123,
+      "checkpoint_sha256": "1f0b7b8245c8a18e993cb6cf239cbf931061391078681f8fa2a9ff8c83fd42b5",
+      "validation_inference_max_error": 0.0
+    },
+    {
+      "model": "E1B",
+      "seed": 2026,
+      "checkpoint_sha256": "156cd73329bd35b6d86305a41b79f17aeb06000da5b2eac880a4e631fd37a269",
+      "validation_inference_max_error": 0.0
+    },
+    {
+      "model": "E1B",
+      "seed": 7,
+      "checkpoint_sha256": "a93edc84bd1cff0a6d17c0cdedac4e8c8904b831ea70adc05895da37888fcb65",
+      "validation_inference_max_error": 0.0
+    },
+    {
+      "model": "E1B",
+      "seed": 99,
+      "checkpoint_sha256": "685c9c2efb36296f9c73f8f630d509869595c009b5bdcd4a55e26ca8a1da3798",
+      "validation_inference_max_error": 0.0
+    }
+  ],
+  "source_hashes_unchanged": true,
+  "train_only_scaling": true,
+  "exact_24h": true,
+  "origins": 5262,
+  "final_inference_completed": true
+}

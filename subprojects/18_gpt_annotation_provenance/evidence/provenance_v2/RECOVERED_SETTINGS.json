@@ -1,0 +1,12 @@
+{
+  "36dea805f34eea5d3897f2b22cb7f357994e7d63d9cb00157e2475fd922448a7": {
+    "model": "gpt-4o-2024-08-06",
+    "response_format": {
+      "type": "json_object"
+    },
+    "temperature": 0,
+    "max_tokens": 200,
+    "store": false,
+    "system_prompt": "You are a financial news analyzer.\n                 Return a JSON object with:\n                 sentiment (-1 to +1),\n                 stance_xrp (-1,0,+1),\n                 uncertainty (0\u20131),\n                 event_type (court_ruling, regulatory, listing, delisting, partnership, custody/etf, hack/outage, exec_comment, influencer_tweet, macro, general_article),\n                 reg_access_flag (0/1),\n                 surprise_flag (0/1),\n                 xrp_specificity (1.0 direct, 0.6 mixed, 0.0 none)."
+  }
+}

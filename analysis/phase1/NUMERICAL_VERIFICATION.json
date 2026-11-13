@@ -1,0 +1,267 @@
+{
+  "passed": true,
+  "new_fits": 25,
+  "checkpoint_checks": [
+    {
+      "candidate": "E1B",
+      "seed": 42,
+      "checkpoint_sha256": "f3177dfd794759f8a5576f431f534a4113b21912f702dbcd5da60dbd8c620c71",
+      "predictions_sha256": "dbbac558affc57d35545451f1e6bbf16b2055d52dd54a65fadc5f7d51e98d6a4",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    },
+    {
+      "candidate": "E1B",
+      "seed": 123,
+      "checkpoint_sha256": "1f0b7b8245c8a18e993cb6cf239cbf931061391078681f8fa2a9ff8c83fd42b5",
+      "predictions_sha256": "725718f1bf8fd6411615358e84aba2e218eb1811098844f7fd9b9f457b63737e",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    },
+    {
+      "candidate": "E1B",
+      "seed": 2026,
+      "checkpoint_sha256": "156cd73329bd35b6d86305a41b79f17aeb06000da5b2eac880a4e631fd37a269",
+      "predictions_sha256": "003362673674cfb758e6c618c4bcbcc4e5a97c74c915fc54eb6f871d739ed462",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    },
+    {
+      "candidate": "E1B",
+      "seed": 7,
+      "checkpoint_sha256": "a93edc84bd1cff0a6d17c0cdedac4e8c8904b831ea70adc05895da37888fcb65",
+      "predictions_sha256": "07c37fda656ed6615f5050ce5d62da8380c90641921997943e195dc2b0d42573",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    },
+    {
+      "candidate": "E1B",
+      "seed": 99,
+      "checkpoint_sha256": "685c9c2efb36296f9c73f8f630d509869595c009b5bdcd4a55e26ca8a1da3798",
+      "predictions_sha256": "62692e32c08fdde8fde598e84f68549e38b0dbd0260d995b5203723bc512b555",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    },
+    {
+      "candidate": "E2_h3",
+      "seed": 42,
+      "checkpoint_sha256": "4a6912119dbec6785f71ebeedac2d296522a87ec1d071fd4147ec662b5476fc9",
+      "predictions_sha256": "5290ccd7c37683ac487ff0440e1952e2cea85f0e8b29feaed698d8eb1246d943",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    },
+    {
+      "candidate": "E2_h3",
+      "seed": 123,
+      "checkpoint_sha256": "c16ca72a219182b59501da63d038eb171f93d5ab944b491537f214edb786adcc",
+      "predictions_sha256": "b414745ea27742894c5d838268450dfcb571695026ffda4b03d7f4e737b3abf5",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    },
+    {
+      "candidate": "E2_h3",
+      "seed": 2026,
+      "checkpoint_sha256": "ac222b5f8ac1cf9c4591322fe076731e7d9edb85c89b836b170bdeb52f0c9857",
+      "predictions_sha256": "a33cf12d1c57043b7d116aa4de81a70c78f2c1977f08b3c2cb001739ec939b9f",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    },
+    {
+      "candidate": "E2_h3",
+      "seed": 7,
+      "checkpoint_sha256": "10305e31050b26c536a239dba2dc3cc4e017fa568cf9b524a2dd8266659555d0",
+      "predictions_sha256": "b797e2aedd1ce3c773f8b729b16aab4d7442474193bb22eb7543a7f4fe8feca6",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    },
+    {
+      "candidate": "E2_h3",
+      "seed": 99,
+      "checkpoint_sha256": "0386a7315bf53efdc1fd9ecd2a0453f0dce93462b63891197fe4618d5161b239",
+      "predictions_sha256": "a1e98e8c4560b5ddb07f565ac07f53847a018769b012be2d768f28ececc942c2",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    },
+    {
+      "candidate": "E2_h6",
+      "seed": 42,
+      "checkpoint_sha256": "e5bebb51edfec974813d1cc5a34061adff5b84623433675fca50e430b85e5387",
+      "predictions_sha256": "03c188c14faa2da071a5f6a0f1b95b660fdf5d82e05a81aa9512d4cecbe6d3a9",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    },
+    {
+      "candidate": "E2_h6",
+      "seed": 123,
+      "checkpoint_sha256": "c6e2cfa7bf58abf8b618b5cddb5720dbc1d3ff3938066e8ba8d61e1b5c97e478",
+      "predictions_sha256": "9091c412a2510c2f1124f9ec8d54d06e8f13574f90542ae3b71fc5ee5b0dec47",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    },
+    {
+      "candidate": "E2_h6",
+      "seed": 2026,
+      "checkpoint_sha256": "dd82e3c8af95b92ff01dec6eb048d19a3590aeeb82197701075126fa997cb6bf",
+      "predictions_sha256": "55ce15acc35d5789cf2d6a0935317ac18993df0f4f2f8b855b8a37394c077033",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    },
+    {
+      "candidate": "E2_h6",
+      "seed": 7,
+      "checkpoint_sha256": "e24b713caff95a48cd394559bbe2b0c409941bdf65ec4b818c5115698532af15",
+      "predictions_sha256": "b010c515b35ae8f929ac4d708920b1930204982da775af8828fa6936ff418662",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    },
+    {
+      "candidate": "E2_h6",
+      "seed": 99,
+      "checkpoint_sha256": "a6e4c47f1d002d78c23dc5d381f19d7aab1e82468468e329bf3561aa18a6c1f4",
+      "predictions_sha256": "67b4e4e141016a7977cdea255e26c92cfc3911b9ab709be784163a5808c433db",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    },
+    {
+      "candidate": "E2_h12",
+      "seed": 42,
+      "checkpoint_sha256": "d093d70e294c1c6abaef8d51f9f7ed60c680d5cf2ecbcd5edc82f5b417704b6d",
+      "predictions_sha256": "01e5b54ae6c072087cf2451db42c85acfeb5c7579ea5c244655805259a4ed549",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    },
+    {
+      "candidate": "E2_h12",
+      "seed": 123,
+      "checkpoint_sha256": "9715e947dc873e5ed339c3fc6b179d4c7d67dbf1cf7844796349aa0daa7c481c",
+      "predictions_sha256": "1ba2a6b971bb65e6e559f38d17a814d8a7c66523a97a067e62bea52f699e845a",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    },
+    {
+      "candidate": "E2_h12",
+      "seed": 2026,
+      "checkpoint_sha256": "966345218be50396863949ce792a602b115c2b7723a32ddb2b5df6680f58e110",
+      "predictions_sha256": "6e21cba5ce0517bce136c9cd7892ce4ae9db4c9d7ba0dca4b273a3ea37840610",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    },
+    {
+      "candidate": "E2_h12",
+      "seed": 7,
+      "checkpoint_sha256": "b2fb5ea7c8442f7c4c77336f103d70ce7e83dd39798ed0f8df806b86ca14eb4e",
+      "predictions_sha256": "a7f5e5ccd37344473c9190b30473f496fa7029bfe79705f986176088f09448b5",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    },
+    {
+      "candidate": "E2_h12",
+      "seed": 99,
+      "checkpoint_sha256": "e3a95420a2fd051a4da89f3ad94addee6169e108e36a28dcd18ab8fb9a46b5e1",
+      "predictions_sha256": "218c9a6f7c98b76c6f04790da9bb76c61ac6118d3caf64a2aa2de01ca667134f",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    },
+    {
+      "candidate": "E2_h24",
+      "seed": 42,
+      "checkpoint_sha256": "5c397236bf2903afd412ece185f54a432bbc8a03f255fe16a335d5151e62da70",
+      "predictions_sha256": "e8f32327ad3da0aa5039e6da93397f3d0f54222fe38d188cb1e298f75a1eff45",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    },
+    {
+      "candidate": "E2_h24",
+      "seed": 123,
+      "checkpoint_sha256": "ae08c54bdbfbb516d2fda0131ac1e22bb2b86c7d22f8a1026f80316719c2d311",
+      "predictions_sha256": "5cc98dd36b30336e7a619ff1a814a6d14e96887857121d44f1bebfbced8b8539",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    },
+    {
+      "candidate": "E2_h24",
+      "seed": 2026,
+      "checkpoint_sha256": "bc3994cb89b377abf2a764278c164da48ceb0f3c9cadc1487870b8d7d38e22c8",
+      "predictions_sha256": "7e7669e803f2e1cb890e81da0ec387f78ccdffedcd9ca1a77988b479e27288ae",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    },
+    {
+      "candidate": "E2_h24",
+      "seed": 7,
+      "checkpoint_sha256": "ae52f89f2ad73987ea06cb98b12f6fb8826d161ad3e004250005eaec813ee759",
+      "predictions_sha256": "02624db2a5121ab11871d08a6e0be895859ef2a8fb98e8b2c66e8a4c18acaa7a",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    },
+    {
+      "candidate": "E2_h24",
+      "seed": 99,
+      "checkpoint_sha256": "9422d1e326c36c59795f545da2bacfc3a99131dc17cfafda51b104495124dbda",
+      "predictions_sha256": "625d9791902dd069002a89573743af72222d901ecd06e5cf29d9c9268155583e",
+      "max_inference_error": 0.0,
+      "scalers_train_only": true,
+      "origins_equal": true,
+      "selected_epoch_verified": true
+    }
+  ],
+  "frozen_hashes_unchanged": true,
+  "all16scenarios_preserved": true,
+  "train_sequences": 18861,
+  "validation_origins": 2136,
+  "window_hours": 30,
+  "horizon_hours": 24,
+  "real_btc_and_technical_values_unchanged": true,
+  "train_only_scalers_verified": true,
+  "final_labels_redacted": true,
+  "final_evaluation_performed": false,
+  "baseline_retrained": false
+}

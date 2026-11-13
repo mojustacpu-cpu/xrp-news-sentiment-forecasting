@@ -1,0 +1,33 @@
+{
+  "status": "completed_reports_verified",
+  "passed": true,
+  "completed_utc": "2026-11-07T10:41:07.890431+00:00",
+  "completed_fits": 5,
+  "baseline_retrained": false,
+  "final_evaluation_performed": false,
+  "frozen_hashes_unchanged": true,
+  "reports": [
+    {
+      "path": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase4_hbar/reports/HBAR_COMPACT_NEWS_REPORT.docx",
+      "sha256": "71a5ebedfc19f7e0493368c9d13a32bb81f7871ec058e99ec73eddfa227e4160",
+      "pages": 3,
+      "visual_review": "All pages visually inspected and accepted",
+      "page_hashes": {
+        "page-1.png": "153e7f72ddbe911da7879401004c6d265ca690cd852d478543a18a0b534c63a0",
+        "page-3.png": "f6bcc4fd018bd944030b4bda4fc9f5ec4edf0d61b7d080bba3f61f28b430dc98",
+        "page-2.png": "b76450b771212d88eae16d80e807f8fcd4097ad8a51dc572ce7f0c5f52470b81"
+      }
+    },
+    {
+      "path": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/news-enhanced-crypto-research/phase4_hbar/reports/XRP_HBAR_TRANSFER_COMPARISON.docx",
+      "sha256": "79055aef653c75acd3d16812beb593ee6c9d05f7cf96dd73550dff421eb9eee4",
+      "pages": 2,
+      "visual_review": "All pages visually inspected and accepted",
+      "page_hashes": {
+        "page-1.png": "60f2296f9ec4b01960567fc7cb45531db7d3c4c0d3557d26554d25d6cc2882fd",
+        "page-2.png": "f28af06d8fd56a00444bab5aef663a68c589f556c95b3347e136ba31c19eae94"
+      }
+    }
+  ],
+  "numerical_verification_sha256": "97bee8e63302f2cb39a76bb9175b2776047ec4f83d0bda12f3c15cfcfc89a95b"
+}

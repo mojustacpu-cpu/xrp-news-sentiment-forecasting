@@ -1,0 +1,53 @@
+{
+  "best_new_configuration": {
+    "candidate": "HBAR_E1B",
+    "rmse_mean": 0.0037859696213616094,
+    "rmse_std": 5.19646230587106e-05,
+    "mae_mean": 0.0028592126156489614,
+    "mae_std": 3.9061919642172565e-05,
+    "r2_mean": 0.8764965224577947,
+    "r2_std": 0.003414470943204453,
+    "directional_accuracy_mean": 0.5310861423220974,
+    "directional_accuracy_std": 0.049066484680702085,
+    "training_seconds_mean": 353.5467328071594,
+    "training_seconds_std": 17.52411019914986,
+    "rmse_improvement_vs_HBAR_technical_percent": -2.060267415447581,
+    "rmse_improvement_vs_persistence_percent": -2.601962864459284
+  },
+  "ranking": [
+    {
+      "candidate": "HBAR_technical",
+      "rmse_mean": 0.003709543113335577,
+      "rmse_std": 4.232924414874389e-05,
+      "mae_mean": 0.0028132415350503688,
+      "mae_std": 2.373222543079604e-05,
+      "r2_mean": 0.8814379853586185,
+      "r2_std": 0.002697917986638007,
+      "directional_accuracy_mean": 0.5316479400749063,
+      "directional_accuracy_std": 0.0317707681187471,
+      "training_seconds_mean": 3256.0045331001284,
+      "training_seconds_std": 4143.898645416069,
+      "rmse_improvement_vs_HBAR_technical_percent": 0.0,
+      "rmse_improvement_vs_persistence_percent": -0.5307603661341531
+    },
+    {
+      "candidate": "HBAR_E1B",
+      "rmse_mean": 0.0037859696213616094,
+      "rmse_std": 5.19646230587106e-05,
+      "mae_mean": 0.0028592126156489614,
+      "mae_std": 3.9061919642172565e-05,
+      "r2_mean": 0.8764965224577947,
+      "r2_std": 0.003414470943204453,
+      "directional_accuracy_mean": 0.5310861423220974,
+      "directional_accuracy_std": 0.049066484680702085,
+      "training_seconds_mean": 353.5467328071594,
+      "training_seconds_std": 17.52411019914986,
+      "rmse_improvement_vs_HBAR_technical_percent": -2.060267415447581,
+      "rmse_improvement_vs_persistence_percent": -2.601962864459284
+    }
+  ],
+  "criterion": "Five-seed mean validation price RMSE only",
+  "final_evaluation_performed": false,
+  "E4_started": false,
+  "requires_user_review_before_next_stage": true
+}

@@ -1,0 +1,16 @@
+{
+  "linked_articles_with_responses": 205,
+  "all_seven_fields_match": 205,
+  "articles_with_mismatch": 0,
+  "field_match_counts": {
+    "event_type": 205,
+    "reg_access_flag": 205,
+    "sentiment": 205,
+    "stance_xrp": 205,
+    "surprise_flag": 205,
+    "uncertainty": 205,
+    "xrp_specificity": 205
+  },
+  "mismatched_fields": [],
+  "limitation": "Agreement verifies saved-value consistency for matched headlines only; not semantic accuracy, independent human validation or API repeatability."
+}

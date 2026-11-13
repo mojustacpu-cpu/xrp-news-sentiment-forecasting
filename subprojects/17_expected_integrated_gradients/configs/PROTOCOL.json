@@ -1,0 +1,35 @@
+{
+  "method": "Deterministic expected integrated gradients averaged over all 32 original training references; Gauss Legendre quadrature",
+  "pilot_origins": [
+    21081,
+    21350,
+    21657,
+    21912,
+    22211,
+    22481,
+    22746,
+    23008,
+    23235,
+    23543,
+    23767,
+    24074,
+    24348,
+    24660,
+    24992,
+    25267,
+    25513,
+    25760,
+    26064,
+    26329
+  ],
+  "seed": 42,
+  "quadrature_points": [
+    16,
+    32,
+    64
+  ],
+  "checkpoint_sha256": "f3177dfd794759f8a5576f431f534a4113b21912f702dbcd5da60dbd8c620c71",
+  "preserves_original_outputs": true,
+  "not_exact_shap": true,
+  "purpose": "numerical convergence, not forecasting model selection"
+}

@@ -1,0 +1,113 @@
+{
+  "reuse_status": "REUSE",
+  "scope": "Existing main chronological validation result and frozen checkpoints; no new final evaluation performed.",
+  "name": "xrp-technical-btc-log-return-control",
+  "data": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/xrp-technical-btc-log-return-control/data/technical_only_v1/XRP_TECHNICAL_BTC_TRAINING_UNSCALED.csv",
+  "data_sha256": "5410191a2e372d7ea41de0f3a405d6dda9a0f001aeb46701edb8bd0d85755dd0",
+  "feature_order": [
+    "EMA_20",
+    "MACD_Signal",
+    "SMA_20",
+    "SMA_10",
+    "EMA_10",
+    "Volatility_10",
+    "MACD",
+    "MFI",
+    "OBV",
+    "BTC_Close",
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume",
+    "return",
+    "volatility",
+    "price_sma10",
+    "price_sma20"
+  ],
+  "architecture_source": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/xrp-technical-btc-log-return-control/reference/neural.py",
+  "architecture_source_sha256": "c3be76ab476c2de4113f4bf5d896b88fd423e5b97cf8fe5a9121e50601175a73",
+  "training_source": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/xrp-technical-btc-log-return-control/code/train.py",
+  "training_source_sha256": "0ac1e4227ae3ce9f28826300bd3cadc6dffb75486ad39850a7399d7bdbf46f91",
+  "target": "log(close[t+24]/close[t]); reconstruct price close[t]*exp(prediction)",
+  "window": 30,
+  "horizon_hours": 24,
+  "scaler_verified_train_only": true,
+  "scaler_path": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/xrp-technical-btc-log-return-control/runs/log_return_v1/log_return_scalers.joblib",
+  "scaler_sha256": "e2d677f8464825954f5efc8ae263b50a8630e42c3eaeec3df90d496994bfef99",
+  "splits": {
+    "train": {
+      "n": 18861,
+      "first_origin": "2023-10-24 10:00:00+00:00",
+      "last_origin": "2025-12-18 06:00:00+00:00",
+      "first_target": "2023-10-25 10:00:00+00:00",
+      "last_target": "2025-12-19 06:00:00+00:00"
+    },
+    "validation": {
+      "n": 2136,
+      "first_origin": "2025-12-19 07:00:00+00:00",
+      "last_origin": "2026-03-18 06:00:00+00:00",
+      "first_target": "2025-12-20 07:00:00+00:00",
+      "last_target": "2026-03-19 06:00:00+00:00"
+    },
+    "evaluation": {
+      "n": 5262,
+      "first_origin": "2026-03-19 07:00:00+00:00",
+      "last_origin": "2026-10-24 12:00:00+00:00",
+      "first_target": "2026-03-20 07:00:00+00:00",
+      "last_target": "2026-10-25 12:00:00+00:00"
+    }
+  },
+  "seeds": [
+    {
+      "seed": 42,
+      "checkpoint": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/xrp-technical-btc-log-return-control/runs/log_return_v1/technical_btc_seed42/best.pt",
+      "checkpoint_sha256": "1b4ff49ee7e599f6585604504d8023c34ee8973cce30ff59ee3284cda2d4c1fe",
+      "predictions": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/xrp-technical-btc-log-return-control/runs/log_return_v1/technical_btc_seed42/validation_predictions.csv",
+      "predictions_sha256": "31fa05de1cbcfb0edca90cba9303ef2f2368c29e2e56f4a2b2108b112624368e",
+      "selected_epoch": 3,
+      "checkpoint_prediction_max_error": 0.0,
+      "metric_verification": true
+    },
+    {
+      "seed": 123,
+      "checkpoint": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/xrp-technical-btc-log-return-control/runs/log_return_v1/technical_btc_seed123/best.pt",
+      "checkpoint_sha256": "9f3f660535633d3d50a0a4a307b6afbc36b971bf8bac9dc13c632186be87449b",
+      "predictions": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/xrp-technical-btc-log-return-control/runs/log_return_v1/technical_btc_seed123/validation_predictions.csv",
+      "predictions_sha256": "9e9522e7ff57d91bf31a6e7e4b8c72d004ef6b8fa80b0a2a9117dc0fbc6efca7",
+      "selected_epoch": 2,
+      "checkpoint_prediction_max_error": 0.0,
+      "metric_verification": true
+    },
+    {
+      "seed": 2026,
+      "checkpoint": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/xrp-technical-btc-log-return-control/runs/log_return_v1/technical_btc_seed2026/best.pt",
+      "checkpoint_sha256": "7ab9b34345674cfeda47c4471d7a3580876ca5148b87a9d8135e5f0dd69a9b6a",
+      "predictions": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/xrp-technical-btc-log-return-control/runs/log_return_v1/technical_btc_seed2026/validation_predictions.csv",
+      "predictions_sha256": "01e62a3f0e1433ace9f5aac54887b51a977681be893629924db9503235e24047",
+      "selected_epoch": 3,
+      "checkpoint_prediction_max_error": 0.0,
+      "metric_verification": true
+    },
+    {
+      "seed": 7,
+      "checkpoint": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/xrp-technical-btc-log-return-control/runs/log_return_v1/technical_btc_seed7/best.pt",
+      "checkpoint_sha256": "cbefdd571ac18b62619eed6b5a9f5a58760d3140ff3e18102d79f413e9e89a48",
+      "predictions": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/xrp-technical-btc-log-return-control/runs/log_return_v1/technical_btc_seed7/validation_predictions.csv",
+      "predictions_sha256": "f8b416a685ce1b221c9e91267b3a8620e902478c3299828917b70692cdcbb5ac",
+      "selected_epoch": 1,
+      "checkpoint_prediction_max_error": 0.0,
+      "metric_verification": true
+    },
+    {
+      "seed": 99,
+      "checkpoint": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/xrp-technical-btc-log-return-control/runs/log_return_v1/technical_btc_seed99/best.pt",
+      "checkpoint_sha256": "3606561f535910b954b5a6c340a57dc06dfbf8266a875e35115674f6a4f343be",
+      "predictions": "/Users/mahmoudali/Disk/Master 2025/cursor projects/crypto-forecasting-research/subprojects/xrp-technical-btc-log-return-control/runs/log_return_v1/technical_btc_seed99/validation_predictions.csv",
+      "predictions_sha256": "8c99fe04716fec2ccc397d255b04289664ea647bf566fb674009fa8e8a54dcde",
+      "selected_epoch": 2,
+      "checkpoint_prediction_max_error": 0.0,
+      "metric_verification": true
+    }
+  ]
+}
