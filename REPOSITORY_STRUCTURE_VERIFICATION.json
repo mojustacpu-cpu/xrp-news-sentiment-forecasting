@@ -149,7 +149,7 @@
   "python_syntax_errors": [],
   "credential_pattern_scan": "passed",
   "source_news_text_csvs": "excluded at staging; prepared numerical inputs retained",
-  "files": 1145,
-  "MB": 571.145858,
+  "files": 1154,
+  "MB": 571.744708,
   "new_training_runs": 0
 }

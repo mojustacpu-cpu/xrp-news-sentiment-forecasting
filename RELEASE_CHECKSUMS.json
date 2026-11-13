@@ -500,29 +500,74 @@
     "bytes": 295
   },
   {
+    "path": "manuscript/BASELINE.json",
+    "sha256": "05a8c8da5e0a753aa2fe70d06f12179065f3c001032df7bd289f497f3cfad468",
+    "bytes": 334
+  },
+  {
     "path": "manuscript/CHANGE_LOG.md",
     "sha256": "44ba9f20c618f4a8cfc66bde50e14d5f35e6b679bb37ec71447037fbe5cf6a10",
     "bytes": 2298
   },
   {
+    "path": "manuscript/CONTENT_PRESERVATION.json",
+    "sha256": "45b7c4cfc8ab700099314d3f2a9fe6a4d45517e5f875b13bc251029aa3acd523",
+    "bytes": 442
+  },
+  {
+    "path": "manuscript/EDITORIAL_CHANGE_LOG.md",
+    "sha256": "79ddfc5f325ec4cd757720c8cc1504fad436ab03ceedb49d760e0e6506c6502f",
+    "bytes": 9553
+  },
+  {
+    "path": "manuscript/EDITORIAL_EDITS.json",
+    "sha256": "04f5508f1298bb8a40ed6638703277dd024e2796baf8953cca09aa834cef24a4",
+    "bytes": 54471
+  },
+  {
     "path": "manuscript/FINAL_VERIFICATION.json",
-    "sha256": "545ed05c74e13a07d440d6f122dd79d88d55b77b86c00a99bf00156d0fe32823",
-    "bytes": 1844
+    "sha256": "9b34163618f84bedba24b9761fbedb720da8c4376336318e133b159fc37d2c13",
+    "bytes": 2292
+  },
+  {
+    "path": "manuscript/LAYOUT_CHANGE_LOG.md",
+    "sha256": "0268d7ed96979a6e460827e2134d5cd15f75c767c22dfe6c89cd8fc03ada88ad",
+    "bytes": 1753
+  },
+  {
+    "path": "manuscript/MANUSCRIPT_DIFF.patch",
+    "sha256": "f796b979151862ae7365843bf7439f48b723d407ba7916cc38e13b3451b3785c",
+    "bytes": 72646
   },
   {
     "path": "manuscript/Main_doc2.pdf",
-    "sha256": "f63bce46b875d97e3d1027777e3c0847eefa02a6e120cab11ef9463ebe341f68",
-    "bytes": 604257
+    "sha256": "070730a6a13d3ef880f8089b1905bc4098ea5a3d0ed0b916eb6e4f31fb2833f5",
+    "bytes": 604569
   },
   {
     "path": "manuscript/Main_doc2.tex",
-    "sha256": "7cf243e4bdbfde48193607a266a34a55a894ad741463d77df12e5b0c3a117433",
-    "bytes": 206164
+    "sha256": "0f4cfba0611377d66c456b19f0079fe6fe81d9954d2d65dd9a63c1f94feb8d4e",
+    "bytes": 206244
+  },
+  {
+    "path": "manuscript/README.md",
+    "sha256": "84610885260fa52a38179331e26b2c6b291500c201797a608f269343bd5d1e7c",
+    "bytes": 1241
+  },
+  {
+    "path": "manuscript/UNRESOLVED_ISSUES.md",
+    "sha256": "b5258a35450091f12bc070a132c544cc6a724af351a1fb4365846c070f640320",
+    "bytes": 2047
+  },
+  {
+    "path": "manuscript/XRP_EDITORIAL_OVERLEAF.zip",
+    "sha256": "8d0c294ebf1500716ec794a952bed99f6d5253ac24b5cb2d07092d4ebb0e68ca",
+    "bytes": 455306
   },
   {
     "path": "manuscript/XRP_OLU_REVISED_OVERLEAF.zip",
-    "sha256": "d64488cf1a818f502da08f988b015ec24df2b2c0905d61c1aecc0f1bd6925d00",
-    "bytes": 455089
+    "sha256": "8d0c294ebf1500716ec794a952bed99f6d5253ac24b5cb2d07092d4ebb0e68ca",
+    "bytes": 455306
   },
   {
     "path": "manuscript/figures/fig01_architecture.pdf",

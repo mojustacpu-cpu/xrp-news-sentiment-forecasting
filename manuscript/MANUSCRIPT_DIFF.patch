@@ -1,0 +1,533 @@
+--- before/Main_doc2.tex
++++ after/Main_doc2.tex
+@@ -2864,9 +2864,17 @@
+ 
+ \raggedbottom
+ % Compact, consistent float spacing; do not force white space around figures.
+-\setlength{\textfloatsep}{12pt plus 2pt minus 3pt}
+-\setlength{\floatsep}{10pt plus 2pt minus 2pt}
++\setlength{\textfloatsep}{10pt plus 2pt minus 2pt}
++\setlength{\floatsep}{9pt plus 2pt minus 2pt}
+ \setlength{\intextsep}{10pt plus 2pt minus 2pt}
++\setcounter{topnumber}{3}
++\setcounter{bottomnumber}{2}
++\setcounter{totalnumber}{5}
++\makeatletter
++\setlength{\@fptop}{0pt}
++\setlength{\@fpsep}{12pt}
++\setlength{\@fpbot}{0pt plus 1fil}
++\makeatother
+ \renewcommand{\topfraction}{0.90}
+ \renewcommand{\bottomfraction}{0.80}
+ \renewcommand{\textfraction}{0.08}
+@@ -2889,8 +2897,12 @@
+ \author[1]{Md Zia Ullah}\ead{m.ullah@napier.ac.uk}
+ \affiliation[1]{organization={School of Computing Engineering, Edinburgh Napier University},addressline={10 Colinton Road},city={Edinburgh},postcode={EH10 5DT},country={UK}}
+ \cortext[1]{Corresponding author.}
++\ExplSyntaxOn
++\seq_gclear:N \g_stm_prelimsau_seq
++\seq_gput_right:Nn \g_stm_prelimsau_seq {Mahmoud~Ali,\enspace Oluwaseun~Bamgboye,\enspace Md~Zia~Ullah}
++\ExplSyntaxOff
+ \begin{abstract}
+-Cryptocurrency price forecasting remains challenging because market movements are influenced by both historical trading patterns and external news. This study investigates whether GPT-4o-derived news sentiment improves 24-hour XRP/USDT forecasting beyond technical indicators. Using hourly market data from 23 October 2023 to 24 October 2026, we evaluate Long Short-Term Memory (LSTM) and Bidirectional LSTM (BiLSTM) models, the contribution of Bitcoin closing prices, and a statistical benchmark. The selected technical forecasting approach is then extended through early fusion of nine technical indicators and structured news features. Three configurations are compared: technical-only, direct-news integration, and relevance-weighted sentiment decay with half-lives of 3, 6, 12 and 24 hours. The main experiments use 30-hour input windows, chronological validation and five training seeds. Results show that direct-news integration achieves the lowest validation RMSE (0.063036), representing a 1.41\% improvement over the technical-only model (0.063935). Among the decay configurations, the six-hour setting performs best, achieving a 0.47\% improvement. However, these validation gains are not statistically robust after adjustment for multiple comparisons. In a later retrospective evaluation of 5,262 forecasts, the direct-news model records 5.36\% higher RMSE than the technical-only baseline (0.042118 versus 0.039976), indicating that the initial improvement does not persist. Exploratory analyses identify no robust forecasting advantage under specific market or news conditions. Feature attribution assigns 76.89\% of average absolute contributions to technical inputs and 23.11\% to news features, without establishing a corresponding improvement in predictive accuracy. A separate HBAR experiment also finds no forecasting benefit from news integration, alongside limited asset-specific news coverage. Overall, the findings show that although Generative AI-derived sentiment can influence cryptocurrency forecasting models, its inclusion does not consistently improve predictive performance. The study emphasises the importance of rigorous temporal evaluation, matched baselines and statistical validation when assessing news-enhanced forecasting.
++Cryptocurrency price forecasting remains challenging because market movements are influenced by both historical trading patterns and external news. This study investigates whether GPT-4o-derived news sentiment improves 24-hour XRP/USDT forecasting beyond technical indicators. Using hourly market data from 23 October 2023 to 24 October 2026, we evaluate Long Short-Term Memory (LSTM) and Bidirectional LSTM (BiLSTM) models, the contribution of Bitcoin closing prices, and a statistical benchmark. The selected technical forecasting approach is then extended through early fusion of nine technical indicators and structured news features. The principal comparisons examine technical-only forecasting, direct-news fusion and relevance-weighted sentiment decay with half-lives of 3, 6, 12 and 24 hours. The main experiments use 30-hour input windows, chronological validation and five training seeds. Results show that direct-news integration achieves the lowest validation RMSE (0.063036), representing a 1.41\% improvement over the technical-only model (0.063935). Among the decay configurations, the six-hour setting performs best, achieving a 0.47\% improvement. However, these validation gains are not statistically robust after adjustment for multiple comparisons. In a later retrospective evaluation of 5,262 forecasts, the direct-news model records 5.36\% higher RMSE than the technical-only baseline (0.042118 versus 0.039976), indicating that the initial improvement does not persist. Exploratory analyses identify no robust forecasting advantage under specific market or news conditions. Expected integrated gradients assigns 76.89\% of mean absolute attribution to technical and market inputs and 23.11\% to news-related inputs; these shares describe the fitted models, not improvements in predictive accuracy. A separate HBAR experiment also finds no forecasting benefit from news integration, alongside limited asset-specific news coverage. Overall, the fitted networks respond to news-related inputs, but this response does not establish a consistent forecasting benefit. The study emphasises the importance of rigorous temporal evaluation, matched baselines and statistical validation when assessing news-enhanced forecasting.
+ \par\noindent Research materials and reproducibility instructions: \ResearchRepository.
+ \end{abstract}
+ \begin{keywords}
+@@ -2903,8 +2915,8 @@
+ \item Integrates news relevance, publication timing and sentiment decay into hourly price predictions;
+ \item Identifies six-hour sentiment decay as the best-performing tested half-life, with a modest validation improvement;
+ 
+-\item Finds that news sentiment improves validation accuracy by 1.41\%, but reduces accuracy by 5.36\% in later XRP evaluation;
+-\item Validates feature attribution using expected gradients and tests model generalisation on a separate cryptocurrency dataset (HBAR)
++\item Lowers validation RMSE by 1.41\%, but raises RMSE by 5.36\% in later XRP evaluation;
++\item Checks expected-integrated-gradients attribution and evaluates a separate HBAR transfer experiment.
+ \end{highlights}
+ \maketitle
+ \section{Introduction}\label{sec:introduction}
+@@ -2917,7 +2929,7 @@
+ 
+ The study uses hourly cryptocurrency market data from 23 October 2023 to 24 October 2026. Its main forecasting experiments use 30 completed hourly observations to predict the XRP price change over the following 24 hours, expressed as a logarithmic return. The experimental design applies transformations fitted on training data, separates chronological validation from later evaluation, repeats model training using five random seeds and compares predictions with a persistence baseline at identical forecast origins.
+ 
+-The investigation begins by evaluating the technical forecasting approach. We compare standard Long Short-Term Memory (LSTM) and BiLSTM models to examine whether processing an observed sequence in both directions improves forecasting accuracy compared with one-directional processing \citep{Hochreiter1997,Schuster1997}. We also assess whether including Bitcoin closing prices provides useful additional market information. ARIMAX is included as a traditional statistical benchmark that combines historical price dynamics with external predictors \citep{Hyndman2021,Statsmodels2026}. These technical comparisons provide supporting evidence for model selection and are reported separately from the return-based news experiments.
++The investigation begins with supporting technical-only comparisons. Standard LSTM and BiLSTM models test the value of one-directional versus bidirectional processing within an observed window \citep{Hochreiter1997,Schuster1997}, while a Bitcoin-input ablation examines the additional market-context variable. ARIMAX provides a statistical reference with external predictors \citep{Hyndman2021,Statsmodels2026}. These analyses use price-based fitting objectives and are reported separately from the principal log-return news experiments; their scores are not pooled to estimate news's incremental value.
+ 
+ We then examine whether incorporating news sentiment improves the selected technical forecasting approach. To isolate the contribution of news, three experimental configurations are compared:
+ 
+@@ -2943,7 +2955,7 @@
+ 
+ \item[\textbf{RQ3}] How do direct news features and relevance-weighted sentiment decay affect forecasting accuracy, and which of the four predefined decay settings (3, 6, 12 or 24 hours) performs best during validation?
+ 
+-\item[\textbf{RQ4}] Under which observable market and news conditions do sentiment-enhanced models perform better or worse, and how are news publication times associated with significant XRP price movements?
++\item[\textbf{RQ4}] Under which observable market and news conditions do sentiment-enhanced models perform better or worse, and how are news publication times associated with large XRP price movements?
+ 
+ \item[\textbf{RQ5}] How much do technical indicators and news sentiment contribute to model predictions, how consistent are these contributions across different training seeds and reference samples, and what does evaluation on a separate HBAR dataset reveal about the approach's applicability to another cryptocurrency?
+ 
+@@ -2952,7 +2964,7 @@
+ Event-based and subgroup analyses are treated as exploratory rather than confirmatory. The study contributes a reproducible approach to aligning news with hourly market data, comparing alternative sentiment representations and evaluating forecasting performance across chronological periods. It also examines model attribution and evaluates the approach on a separate HBAR dataset. The findings distinguish improvements observed during validation from forecasting performance in later evaluation, providing a more cautious assessment of the predictive value of news sentiment.
+ 
+ 
+-The remainder of the paper is organised as follows. Section~\ref{sec:related} reviews sequence forecasting, sentiment fusion and interpretability. Section~\ref{sec:method} presents the predictor and feature construction. Section~\ref{sec:experiments} describes the experimental design and XRP results. Section~\ref{sec:hbar-transfer} presents the separate HBAR experiment. Sections~\ref{sec:discussion}--\ref{sec:Conclusion} discuss limitations, future work and conclusions.
++The remainder of the paper is organised as follows. Section~\ref{sec:related} reviews sequence forecasting and sentiment fusion. Section~\ref{sec:method} presents the predictor and feature construction. Section~\ref{sec:experiments} describes the experimental design and XRP results. Section~\ref{sec:hbar-transfer} presents the separate HBAR experiment. Sections~\ref{sec:discussion}--\ref{sec:Conclusion} discuss limitations, future work and conclusions.
+ 
+ 
+ \section{Related work}\label{sec:related}
+@@ -2979,28 +2991,26 @@
+ 
+ Natural language processing has also developed from relatively simple sentiment dictionaries towards models capable of interpreting financial language in context. \citet{Araci2019} introduced FinBERT for financial sentiment classification, demonstrating the value of domain-specific language modelling. More recently, \citet{LopezLira2023} investigated whether large language models could identify information in financial headlines associated with subsequent stock returns. These studies motivate the use of Generative AI to extract structured information from financial text, while leaving its incremental value for XRP forecasting to be established experimentally.
+ 
+-The present study uses GPT-4o to convert archived news headlines into numerical features describing sentiment and other relevant characteristics, including asset specificity, uncertainty and publication recency. These features are combined with nine technical indicators and Bitcoin closing prices. Bitcoin is included as a source of broader cryptocurrency market context, not as a direct measure of market liquidity. Using a limited technical feature set also makes it easier to examine whether news adds information beyond the existing market inputs.
++The present study uses GPT-4o to convert archived headlines into semantic attributes, including sentiment, asset specificity and uncertainty. Publication recency is constructed separately from archived timestamps, rather than generated by GPT-4o. The forecasting models combine the news representation with the technical and market inputs. BTC close supplies broader market context rather than a direct measure of liquidity. Keeping the market feature set fixed makes the incremental-news comparison interpretable.
+ 
+ Combining numerical market information with text-derived features is a form of multimodal learning, in which different information sources are used within a common predictive system \citep{Baltrusaitis2019}. This study adopts early fusion, meaning that technical and news features are combined before entering the BiLSTM network. The model can then learn relationships between market conditions and news information within the same historical input window. However, adding more features also increases model complexity and does not guarantee better predictions.
+ 
+-An additional challenge is deciding how long news should influence the forecasting model. A recently published headline may receive greater attention than an older article, but the duration of its predictive relevance is uncertain. This study therefore compares direct news features with relevance-weighted sentiment decay, using predefined half-lives of 3, 6, 12 and 24 hours. The decay function gives relatively greater weight to recent articles when constructing an aggregated sentiment feature. Because the sentiment measure is normalised, the half-life controls the relative weighting of articles rather than guaranteeing that the final sentiment value itself halves after the specified period. The most suitable setting is selected using validation data rather than assumed from previous research.
++A further question is how to represent information beyond its publication hour. The duration of any predictive relevance is uncertain, so the study compares direct hourly features with relevance-weighted sentiment decay under predefined half-lives of 3, 6, 12 and 24 hours. Recent articles receive greater relative weight. Because the feature is normalised, the half-life governs article weights rather than guaranteeing that the aggregate sentiment itself halves after that interval. The decay setting is selected using validation performance, not assumed to be optimal from prior research.
+ 
+ 
+ \section{Proposed cryptocurrency predictor}
+ \label{sec:method}
+ 
+-This section describes the forecasting framework developed to investigate whether Generative AI-derived news sentiment improves XRP/USDT price prediction. The framework combines historical cryptocurrency market information with structured news annotations and evaluates their contribution using a Bidirectional Long Short-Term Memory (BiLSTM) model.
+-
+-The methodology follows five stages. First, the forecasting objective and the information available at prediction time are defined. Second, market observations are transformed into technical features describing price trends, momentum, volatility and trading activity. Third, GPT-4o is used to extract structured information from cryptocurrency news headlines. Fourth, alternative methods are used to incorporate this information into the forecasting inputs. Finally, the resulting feature representations are evaluated using a common BiLSTM architecture.
+-
+-The principal comparison consists of three configurations: a technical-only model (E0), a model incorporating direct news features (E1B), and a model incorporating relevance-weighted sentiment decay (E2). These experiments are designed to assess whether news provides additional forecasting information beyond historical market data, rather than to introduce a new recurrent neural network architecture.
++This section defines the information available at each forecast origin and the transformations used to construct the forecasting inputs. The methodology proceeds from the prediction target and technical variables to GPT-4o headline annotations, hourly alignment and alternative news representations, before specifying the common BiLSTM design.
++
++The principal configurations are the technical-only baseline (E0), compact direct-news fusion (E1B) and relevance-weighted sentiment decay (E2). Their purpose is to test alternative information representations within a fixed forecasting design. The additional E1, E3 and E4 comparisons, introduced with their objectives in Section~\ref{subsec:news-representation-results}, examine a broader direct-news construction, combined features and corrections to a frozen technical forecast, respectively.
++
++The forecasting question is therefore whether the prepared news features add useful information to unchanged technical inputs, rather than whether a new recurrent architecture improves upon an unrelated model.
+ 
+ \subsection{Problem formulation and information set}
+ \label{sec:method_problem}
+ 
+-The objective of this study is to predict how the XRP/USDT closing price will change over the next 24 hours using information available at the time of prediction. Each forecast is generated from the preceding 30 hourly observations. This historical window contains the market and, where applicable, news features available up to the forecast origin.
+-
+-The forecasting task is formulated as supervised multivariate time-series regression. Unlike directional classification, which predicts whether the price will rise or fall, regression estimates the magnitude and direction of the expected price change.
++The objective of this study is to predict how the XRP/USDT closing price will change over the next 24 hours using information available at the time of prediction. Each forecast is generated from the preceding 30 hourly observations. This historical window contains the market and, where applicable, news features available up to the forecast origin. The forecasting task is formulated as supervised multivariate time-series regression. Unlike directional classification, which predicts whether the price will rise or fall, regression estimates the magnitude and direction of the expected price change.
+ 
+ Let $P_t>0$ denote the XRP/USDT closing price at completed-hour forecast origin $t$, and let $\mathbf{x}_t\in\mathbb{R}^{d}$ denote the vector of input features available at that time. The historical input sequence is defined as
+ 
+@@ -3072,17 +3082,13 @@
+ 
+ Technical analysis describes market behaviour using historical prices and trading activity. In this study, technical features provide the information against which the additional value of news sentiment is evaluated. They allow the forecasting model to observe recent price direction, changes in momentum, market volatility and trading-volume patterns before considering external news.
+ 
+-The technical-only model uses \textbf{19 input variables}, comprising five observed OHLCV variables, nine selected technical indicators, four additional derived variables and one Bitcoin closing-price variable. These are 19 input features, not 19 separate technical indicators.
+-
+-The feature definitions and ordering are kept consistent across the principal experiments. This ensures that the technical information remains unchanged when news features are added.
++The technical-only model uses \textbf{19 input variables}, comprising five observed OHLCV variables, nine selected technical indicators, four additional derived variables and one Bitcoin closing-price variable. These are 19 input features, not 19 separate technical indicators. The feature definitions and ordering are kept consistent across the principal experiments. This ensures that the technical information remains unchanged when news features are added.
+ 
+ \subsubsection{Selection and purpose of technical features}
+ 
+ The technical features were selected to represent complementary aspects of market behaviour without introducing an unnecessarily large collection of overlapping indicators. The selected variables cover the observed price and volume history, smoothed price trends, momentum, volatility, relative price movements and broader cryptocurrency market context.
+ 
+-The nine technical indicators are SMA10, SMA20, EMA10, EMA20, Volatility10, MACD, MACD signal, MFI14 and OBV. Four additional derived variables represent the one-hour simple return, 20-hour rolling return volatility, and the relative deviations of the current price from SMA10 and SMA20.
+-
+-Table~\ref{tab:technicalfeatures} summarises all 19 input variables and their purpose.
++The nine technical indicators are SMA10, SMA20, EMA10, EMA20, Volatility10, MACD, MACD signal, MFI14 and OBV. Four additional derived variables represent the one-hour simple return, 20-hour rolling return volatility, and the relative deviations of the current price from SMA10 and SMA20. Table~\ref{tab:technicalfeatures} summarises all 19 input variables and their purpose.
+ 
+ \begin{table}[htbp]
+ \centering
+@@ -3143,9 +3149,7 @@
+ \label{eq:sma}
+ \end{equation}
+ 
+-SMA10 provides a relatively responsive representation of recent price direction, while SMA20 provides a smoother reference over a longer period.
+-
+-The exponential moving average (EMA) gives greater weight to recent prices. Using $\alpha_n=2/(n+1)$ and $t_0$ as the first available calculation row, the finite-history, normalised calculation is
++SMA10 provides a relatively responsive representation of recent price direction, while SMA20 provides a smoother reference over a longer period. The exponential moving average (EMA) gives greater weight to recent prices. Using $\alpha_n=2/(n+1)$ and $t_0$ as the first available calculation row, the finite-history, normalised calculation is
+ 
+ \begin{equation}
+ \operatorname{EMA}_{n,t}
+@@ -3210,9 +3214,7 @@
+ \label{eq:rolling_volatility}
+ \end{equation}
+ 
+-where $\bar{u}_{n,t}$ is the average simple return over the corresponding window.
+-
+-Volatility10 and return volatility20 provide two views of recent price variability. They describe the magnitude of fluctuations without determining whether the future price will increase or decrease.
++where $\bar{u}_{n,t}$ is the average simple return over the corresponding window. Volatility10 and return volatility20 provide two views of recent price variability. They describe the magnitude of fluctuations without determining whether the future price will increase or decrease.
+ 
+ The study also includes the relative difference between the current closing price and its moving averages:
+ 
+@@ -3303,15 +3305,11 @@
+ \label{eq:obv}
+ \end{equation}
+ 
+-When the closing price increases, the current volume is added; when it decreases, the volume is subtracted. An unchanged closing price contributes zero.
+-
+-MFI and OBV therefore provide related but different descriptions of the relationship between prices and trading activity.
++When the closing price increases, the current volume is added; when it decreases, the volume is subtracted. An unchanged closing price contributes zero. MFI and OBV therefore provide related but different descriptions of the relationship between prices and trading activity.
+ 
+ \subsubsection{Bitcoin as a market-context variable}
+ 
+-Bitcoin closing prices are included because XRP trades within a wider cryptocurrency market in which assets may respond to common economic conditions and market developments. The Bitcoin feature provides the model with an additional cross-asset price signal.
+-
+-Bitcoin observations are aligned with XRP observations using the same completed-hour convention. Only Bitcoin closing prices available at or before the forecast origin are included.
++Bitcoin closing prices are included because XRP trades within a wider cryptocurrency market in which assets may respond to common economic conditions and market developments. The Bitcoin feature provides the model with an additional cross-asset price signal. Bitcoin observations are aligned with XRP observations using the same completed-hour convention. Only Bitcoin closing prices available at or before the forecast origin are included.
+ 
+ The inclusion of Bitcoin is evaluated through a separate technical-model comparison. It is not assumed that Bitcoin always improves XRP forecasting accuracy, nor is the Bitcoin closing price treated as a direct measure of market liquidity.
+ 
+@@ -3320,9 +3318,7 @@
+ \subsection{Sentiment analyser and direct news features}
+ \label{sec:method_sentiment}
+ 
+-The sentiment component is designed to examine whether information contained in cryptocurrency news contributes to forecasting beyond historical market observations.
+-
+-The process separates two distinct tasks. GPT-4o analyses the meaning and context of each headline, while the BiLSTM learns whether the resulting numerical features are associated with future XRP returns. GPT-4o is not used to predict the future XRP price directly.
++The sentiment component is designed to examine whether information contained in cryptocurrency news contributes to forecasting beyond historical market observations. The process separates two distinct tasks. GPT-4o analyses the meaning and context of each headline, while the BiLSTM learns whether the resulting numerical features are associated with future XRP returns. GPT-4o is not used to predict the future XRP price directly.
+ 
+ The news-processing pipeline consists of three steps: extracting structured annotations from headlines, aligning those annotations with the hourly market timeline, and aggregating them into numerical features suitable for the forecasting model.
+ 
+@@ -3347,9 +3343,7 @@
+ 
+ The recovered GPT-4o batch configuration uses \texttt{gpt-4o-2024-08-06}, temperature zero, JSON-object responses and a 200-token output limit. Each request supplies the saved headline together with instructions requiring a structured financial-news assessment. Saved identifiers link the model response to its corresponding headline.
+ 
+-The annotation schema contains seven fields: sentiment, XRP stance, uncertainty, XRP specificity, event type, regulatory access and surprise. These fields describe different aspects of the reported information. They are not observed price impacts or forecasts.
+-
+-The direct-news experiment uses four of these semantic fields. They were selected to represent complementary characteristics of each headline: its overall tone, its orientation towards XRP, the uncertainty of the information and its relevance to XRP. The remaining annotation fields are not included in the final direct-news input representation.
++The annotation schema contains seven fields: sentiment, XRP stance, uncertainty, XRP specificity, event type, regulatory access and surprise. These fields describe different aspects of the reported information. They are not observed price impacts or forecasts. The direct-news experiment uses four of these semantic fields. They were selected to represent complementary characteristics of each headline: its overall tone, its orientation towards XRP, the uncertainty of the information and its relevance to XRP. The remaining annotation fields are not included in the final direct-news input representation.
+ 
+ \subsubsection{Selection and interpretation of news features}
+ 
+@@ -3377,9 +3371,7 @@
+ \item \textbf{News recency:} measures the number of hours since the latest eligible archived headline, capped at 48 hours.
+ \end{itemize}
+ 
+-These two variables are calculated locally from timestamps and are not generated by GPT-4o. They allow the forecasting model to distinguish between an hour containing neutral news and an hour containing no recorded news.
+-
+-Table~\ref{tab:newsfeatures} summarises the complete direct-news representation and the additional features used by the decay configuration.
++These two variables are calculated locally from timestamps and are not generated by GPT-4o. They allow the forecasting model to distinguish between an hour containing neutral news and an hour containing no recorded news. Table~\ref{tab:newsfeatures} summarises the complete direct-news representation and the additional features used by the decay configuration.
+ 
+ \begin{table}[htbp]
+ \centering
+@@ -3429,9 +3421,7 @@
+ 
+ \subsubsection{News availability and hourly alignment}
+ 
+-For news information to be useful in a forecasting experiment, it must be assigned to the correct point on the market timeline. A headline published after a forecast is made must not be included in that forecast's input data.
+-
+-The study uses recorded publication timestamps as historical availability proxies. Because the market data are organised into completed hourly observations, each headline is assigned to the next completed-hour boundary.
++For news information to be useful in a forecasting experiment, it must be assigned to the correct point on the market timeline. A headline published after a forecast is made must not be included in that forecast's input data. The study uses recorded publication timestamps as historical availability proxies. Because the market data are organised into completed hourly observations, each headline is assigned to the next completed-hour boundary.
+ 
+ Let $p_i$ denote the recorded publication time of headline $i$. Its assigned availability time is
+ 
+@@ -3445,9 +3435,7 @@
+ 
+ where $\operatorname{ceil}_{1\mathrm{h}}$ rounds forward to the next hourly boundary and $\delta$ represents an optional publication-delay assumption.
+ 
+-The principal experiments use $\delta=0$. Additional delayed-input checks are considered separately.
+-
+-For example, a headline published at 07:49 UTC is first assigned to the completed 08:00 UTC observation. It is not available to an earlier hourly forecast.
++The principal experiments use $\delta=0$. Additional delayed-input checks are considered separately. For example, a headline published at 07:49 UTC is first assigned to the completed 08:00 UTC observation. It is not available to an earlier hourly forecast.
+ 
+ For each completed hour $t$, the eligible current-hour headlines are defined as
+ 
+@@ -3500,9 +3488,7 @@
+ \label{eq:news_recency}
+ \end{equation}
+ 
+-The semantic averages are set to zero when no headline is recorded in the current hour. The presence indicator distinguishes such an empty hour from an hour containing headlines with neutral average sentiment.
+-
+-The recency feature describes the age of the latest archived headline, not necessarily the age of the underlying event or the time when market participants first learned about it.
++The semantic averages are set to zero when no headline is recorded in the current hour. The presence indicator distinguishes such an empty hour from an hour containing headlines with neutral average sentiment. The recency feature describes the age of the latest archived headline, not necessarily the age of the underlying event or the time when market participants first learned about it.
+ 
+ \subsubsection{Illustrative GPT-4o annotations}
+ 
+@@ -3546,9 +3532,7 @@
+ 
+ \subsubsection{Publication timing and information availability}
+ 
+-An important limitation of historical news data is that the recorded publication time may differ from the time when the underlying information first became publicly available.
+-
+-For example, an official announcement may occur before a news publisher produces a secondary report. A headline may also describe a price movement that has already started. Consequently, a historical article appearing after a market movement does not establish that the movement was caused by that article.
++An important limitation of historical news data is that the recorded publication time may differ from the time when the underlying information first became publicly available. For example, an official announcement may occur before a news publisher produces a secondary report. A headline may also describe a price movement that has already started. Consequently, a historical article appearing after a market movement does not establish that the movement was caused by that article.
+ 
+ An illustrative case concerns the tariff announcement of 2 April 2025 \citep{GovInfo2025}. The first matching reaction report identified in the saved archive was published on 3 April 2025 and described an already declining market \citep{Young2025}. This illustrates a limitation of the available archive rather than establishing a general publication-delay estimate.
+ 
+@@ -3561,16 +3545,12 @@
+ \label{fig:timeline}
+ \end{figure}
+ 
+-The study therefore preserves recorded timestamps and assigns headlines forward to completed-hour boundaries. Headlines are never moved to earlier periods on the basis of subsequent price movements.
+-
+-This procedure prevents direct use of future-dated archived headlines, although it cannot establish the exact first-publication time of every underlying event.
++The study therefore preserves recorded timestamps and assigns headlines forward to completed-hour boundaries. Headlines are never moved to earlier periods on the basis of subsequent price movements. This procedure prevents direct use of future-dated archived headlines, although it cannot establish the exact first-publication time of every underlying event.
+ 
+ \subsection{Relevance-weighted sentiment decay}
+ \label{sec:method_decay}
+ 
+-The direct-news configuration uses the average semantic characteristics of headlines recorded within each hour. However, news may remain relevant beyond its publication hour, and older information may have a different relationship with future market behaviour than more recent information.
+-
+-To examine this possibility, the second news-enhanced configuration (E2) introduces relevance-weighted sentiment decay. This approach combines the sentiment polarity of eligible headlines while assigning greater weight to recent and XRP-specific articles.
++The direct-news configuration uses the average semantic characteristics of headlines recorded within each hour. However, news may remain relevant beyond its publication hour, and older information may have a different relationship with future market behaviour than more recent information. To examine this possibility, the second news-enhanced configuration (E2) introduces relevance-weighted sentiment decay. This approach combines the sentiment polarity of eligible headlines while assigning greater weight to recent and XRP-specific articles.
+ 
+ The purpose is to test whether a compact representation of recent news performs better than direct hourly news features. It does not assume that news has a known causal effect on prices or that its influence necessarily disappears after a fixed period.
+ 
+@@ -3588,9 +3568,7 @@
+ \label{eq:decay_window}
+ \end{equation}
+ 
+-Each eligible article receives a weight determined by two quantities: its XRP specificity and its age relative to the forecast observation.
+-
+-For half-life $h$, the article weight is
++Each eligible article receives a weight determined by two quantities: its XRP specificity and its age relative to the forecast observation. For half-life $h$, the article weight is
+ 
+ \begin{equation}
+ w_{i,t}^{(h)}
+@@ -3645,17 +3623,13 @@
+ \label{eq:decay_missing}
+ \end{equation}
+ 
+-The E2 model receives these two variables, $N_t^{(h)}$ and $M_t^{(h)}$, in addition to the technical inputs.
+-
+-The absence indicator is important because neutral relevant news and no relevant news can both produce a sentiment value near zero. The indicator allows the forecasting model to distinguish these situations.
++The E2 model receives these two variables, $N_t^{(h)}$ and $M_t^{(h)}$, in addition to the technical inputs. The absence indicator is important because neutral relevant news and no relevant news can both produce a sentiment value near zero. The indicator allows the forecasting model to distinguish these situations.
+ 
+ The decay equation uses GPT-4o sentiment polarity and XRP specificity. It does not incorporate an additional manually weighted actor-influence, engagement or event-impact formula.
+ 
+ \subsubsection{Illustrative decay calculation}
+ 
+-To demonstrate how the decay features are constructed, Table~\ref{tab:actualdecay} presents the six archived articles eligible at 19 August 2026, 08:00 UTC, using a six-hour half-life.
+-
+-The example includes all eligible articles, including one with zero XRP specificity. That article contributes no positive relevance weight even though it is present in the archived news.
++To demonstrate how the decay features are constructed, Table~\ref{tab:actualdecay} presents the six archived articles eligible at 19 August 2026, 08:00 UTC, using a six-hour half-life. The example includes all eligible articles, including one with zero XRP specificity. That article contributes no positive relevance weight even though it is present in the archived news.
+ 
+ \begin{table}[htbp]
+ \centering
+@@ -3700,16 +3674,12 @@
+ 
+ This calculation reproduces the documented six-hour decay input for the selected observation. It also illustrates a limitation of the representation: a broad market or regulatory article with zero XRP specificity contributes no sentiment weight, even though such information could potentially affect XRP indirectly.
+ 
+-The half-life determines the relative weighting of older and newer articles, not a guaranteed rate at which the aggregated sentiment value itself declines. Because the feature is a normalised weighted average, the common decay factor can largely cancel when the set of eligible articles remains unchanged.
+-
+-The four decay settings are therefore interpreted as alternative recency-weighting assumptions. Their forecasting performance is compared using validation data, rather than selecting a half-life by visually matching historical price movements.
++The half-life determines the relative weighting of older and newer articles, not a guaranteed rate at which the aggregated sentiment value itself declines. Because the feature is a normalised weighted average, the common decay factor can largely cancel when the set of eligible articles remains unchanged. The four decay settings are therefore interpreted as alternative recency-weighting assumptions. Their forecasting performance is compared using validation data, rather than selecting a half-life by visually matching historical price movements.
+ 
+ \subsection{Early fusion and BiLSTM forecasting network}
+ \label{sec:method_predictor}
+ 
+-The final stage combines the prepared inputs and generates the 24-hour XRP return forecast.
+-
+-The study uses early fusion, meaning that technical and news features are joined at each observed hour before being processed by the recurrent network. This allows the model to learn relationships between market conditions and news information within the same historical sequence.
++The final stage combines the prepared inputs and generates the 24-hour XRP return forecast. The study uses early fusion, meaning that technical and news features are joined at each observed hour before being processed by the recurrent network. This allows the model to learn relationships between market conditions and news information within the same historical sequence.
+ 
+ For example, a positive XRP-related headline may occur during an upward price trend, a period of high volatility or a period of relatively stable trading. Early fusion allows the model to examine these combinations rather than interpreting news sentiment independently of the market environment.
+ 
+@@ -3759,9 +3729,7 @@
+ \label{eq:input_dimensions}
+ \end{equation}
+ 
+-These configurations use the same recurrent architecture design but are trained independently. The term \emph{shared architecture} therefore refers to a common network structure, not to a single set of fitted weights shared across the experiments.
+-
+-Figure~\ref{fig:flow} illustrates the complete forecasting pipeline.
++These configurations use the same recurrent architecture design but are trained independently. The term \emph{shared architecture} therefore refers to a common network structure, not to a single set of fitted weights shared across the experiments. Figure~\ref{fig:flow} illustrates the complete forecasting pipeline.
+ 
+ \begin{figure}[htbp]
+ \centering
+@@ -3772,13 +3740,9 @@
+ 
+ \subsubsection{BiLSTM architecture}
+ 
+-The forecasting model uses a Bidirectional Long Short-Term Memory network. LSTM networks were developed to represent sequential relationships using memory states that regulate information retention and updating \citep{Hochreiter1997}. Bidirectional recurrence extends this approach by processing an observed sequence in both forward and backward directions \citep{Schuster1997}.
+-
+-In the present application, both directions operate exclusively within the 30-hour historical window. The backward direction does not access observations from the future 24-hour forecasting period.
+-
+-The implemented architecture contains two stacked bidirectional LSTM layers. Each layer uses 128 hidden units per direction, producing 256-dimensional bidirectional outputs. Dropout with probability $0.2$ is applied between the recurrent layers.
+-
+-The model reads the output at the final input time step. This representation is passed to a fully connected layer with 64 units and Rectified Linear Unit (ReLU) activation, followed by dropout with probability $0.2$ and a final linear layer producing one scalar forecast.
++The forecasting model uses a Bidirectional Long Short-Term Memory network. LSTM networks were developed to represent sequential relationships using memory states that regulate information retention and updating \citep{Hochreiter1997}. Bidirectional recurrence extends this approach by processing an observed sequence in both forward and backward directions \citep{Schuster1997}. In the present application, both directions operate exclusively within the 30-hour historical window. The backward direction does not access observations from the future 24-hour forecasting period.
++
++The implemented architecture contains two stacked bidirectional LSTM layers. Each layer uses 128 hidden units per direction, producing 256-dimensional bidirectional outputs. Dropout with probability $0.2$ is applied between the recurrent layers. The model reads the output at the final input time step. This representation is passed to a fully connected layer with 64 units and Rectified Linear Unit (ReLU) activation, followed by dropout with probability $0.2$ and a final linear layer producing one scalar forecast.
+ 
+ The architecture can be summarised as
+ 
+@@ -3800,7 +3764,7 @@
+ The network uses a final-time output readout rather than attention or pooling across all time steps. In particular, the final-time bidirectional output should not be interpreted as a symmetric concatenation of both full-window terminal directional states. Nevertheless, the stacked bidirectional layers allow information from different positions in the historical window to contribute to the learned representation.
+ 
+ 
+-The proposed framework therefore provides a consistent forecasting architecture for evaluating alternative input representations. The technical-only configuration establishes the baseline, while the direct-news and sentiment-decay configurations introduce different representations of GPT-4o-derived information. The experimental configurations, training procedures, baseline comparisons and evaluation methodology are described in Section~\ref{sec:experiments}.
++These input representations retain a common forecasting design while varying the news information supplied to it. Section~\ref{sec:experiments} specifies the chronological controls, training procedure and comparisons used to evaluate their incremental predictive value.
+ 
+ 
+ \section{Experimental Design and Results}
+@@ -3842,7 +3806,7 @@
+ \end{tabular}
+ \end{table}
+ 
+-The later block is reserved from fitting and checkpoint selection for the final E0/E1B comparison. It is termed \emph{retrospective} because the broader historical period had been examined during the development of the research programme; it is not represented as a prospective live-trading test.
++Table~\ref{tab:main_partitions} summarises the distinct roles of the three chronological partitions. The later block is reserved from fitting and checkpoint selection for the final E0/E1B comparison. It is termed \emph{retrospective} because the broader historical period had been examined during the development of the research programme; it is not represented as a prospective live-trading test.
+ 
+ \subsubsection{Target, baselines and performance measures}
+ 
+@@ -3855,7 +3819,7 @@
+ \end{equation}
+ The predicted return is inverse-scaled and converted back to a price before calculating the reported metrics. Bidirectional recurrence processes only the observed input window; it does not use future candles. The deterministic persistence benchmark predicts $\widehat P_{t+24}^{\mathrm{pers}}=P_t$ on exactly the same forecast origins.
+ 
+-The primary selection criterion is price-scale root mean squared error (RMSE). Mean absolute error (MAE), coefficient of determination ($R^2$) and directional accuracy provide complementary assessments:
++The configuration-selection criterion is reconstructed-price root mean squared error (RMSE); checkpoint selection within each run uses the validation loss specified below. Mean absolute error (MAE), coefficient of determination ($R^2$) and directional accuracy provide complementary assessments:
+ \begin{align}
+ \mathrm{RMSE}&=\sqrt{\frac{1}{N}\sum_{t=1}^{N}(P_{t+24}-\widehat P_{t+24})^2}, \\
+ \mathrm{MAE}&=\frac{1}{N}\sum_{t=1}^{N}|P_{t+24}-\widehat P_{t+24}|,\\
+@@ -3869,7 +3833,7 @@
+ 
+ E0--E3 share two stacked BiLSTM layers with 128 hidden units per direction, dropout $0.2$, a 64-unit ReLU dense layer and one scalar output. The network uses the final recurrent representation, without attention. E0 has 19 technical and market inputs, including BTC close, and 564,353 parameters. E1B has 25 inputs and 570,497 parameters. The 1.09\% parameter increase follows from the additional input columns; the architecture and optimisation design remain the same.
+ 
+-Five fixed seeds ($42$, $123$, $2026$, $7$ and $99$) are used throughout the matched neural experiments. Models are trained with Adam (learning rate $0.001$), batch size 32, at most 200 epochs and early-stopping patience 15. The checkpoint minimising validation scaled-return mean squared error is retained. Input RobustScaler and target MinMaxScaler transformations are fitted using training observations only. Validation rankings use the arithmetic mean of the five separately calculated seed RMSE values, not the best seed and not an ensemble forecast.
++Five fixed seeds ($42$, $123$, $2026$, $7$ and $99$) are used throughout the matched neural experiments. Models are trained with Adam (learning rate $0.001$), batch size 32, at most 200 epochs and early-stopping patience 15. The checkpoint minimising validation scaled-return mean squared error is retained. Selected epochs are recorded in Tables~\ref{tab:epochs} and \ref{tab:benchepochs}; Figure~\ref{fig:training} shows representative saved histories. Input RobustScaler and target MinMaxScaler transformations are fitted using training observations only. Validation rankings use the arithmetic mean of the five separately calculated seed RMSE values, not the best seed and not an ensemble forecast.
+ 
+ The principal programme evaluates ten configurations at five seeds each, comprising 40 newly trained and ten preserved E0/E1 runs. The complete ranking retains all 50 configuration--seed outcomes. E4 differs from E0--E3 by using a separate 16-unit GRU correction network on frozen, seed-matched E0 predictions and is therefore identified explicitly as a different model family.
+ 
+@@ -3882,7 +3846,7 @@
+ 
+ \begin{table}[!htbp]
+ \centering\small
+-\caption{Apples-to-apples technical reference on the common 2,136-origin validation block. E0 is the five-seed mean; persistence is deterministic. All targets are exactly 24 hours ahead.}
++\caption{Matched technical reference on the common 2,136-origin validation block. E0 is the five-seed mean; persistence is deterministic. All targets are exactly 24 hours ahead.}
+ \label{tab:technical_matched_reference}
+ \begin{tabular}{lrrrr}
+ \toprule
+@@ -3894,7 +3858,7 @@
+ \end{tabular}
+ \end{table}
+ 
+-This result defines the technical reference against which news representations are evaluated. It is a comparison of the same price targets, rather than a comparison of unrelated historical model scores.
++Table~\ref{tab:technical_matched_reference} establishes the matched reference for RQ2 and RQ3. Its small validation benefit over persistence is specific to this period; the later frozen comparison in Table~\ref{tab:final} assesses whether the ordering persists.
+ 
+ \subsubsection{Supporting technical architecture comparison}
+ 
+@@ -3919,7 +3883,7 @@
+ \end{tabular}}
+ \end{table}
+ 
+-Among the recurrent networks in this supporting experiment, BiLSTM with BTC had $5.70\%$ lower mean RMSE than LSTM 128 and $10.61\%$ lower mean RMSE than LSTM 210. The latter was designed as an approximate parameter-capacity comparison (562,089 versus 564,353 parameters). Removing BTC increased the BiLSTM's RMSE, supporting the inclusion of broader cryptocurrency-market context. ARIMAX and persistence achieved lower RMSE than the recurrent models in this separate price-target experiment. These observations motivate the selected BiLSTM architecture without implying that the numerical scores of different target-fitting protocols are interchangeable.
++Table~\ref{tab:technical_architecture_context} reports the supporting price-target comparison. Among its recurrent networks, BiLSTM with BTC had $5.70\%$ lower mean RMSE than LSTM 128 and $10.61\%$ lower mean RMSE than LSTM 210. The latter was designed as an approximate parameter-capacity comparison (562,089 versus 564,353 parameters). Removing BTC increased the BiLSTM's RMSE, supporting the inclusion of broader cryptocurrency-market context. ARIMAX and persistence achieved lower RMSE than the recurrent models in this separate price-target experiment. These observations motivate the selected BiLSTM architecture without implying that the numerical scores of different target-fitting protocols are interchangeable.
+ 
+ The wider archive also contains a GARCH volatility evaluation. Because its outcome is conditional variance rather than the future closing price, its variance errors are not included in the price-forecast ranking. No unverified SVM, plain-RNN or EGARCH price results are added.
+ 
+@@ -3931,7 +3895,7 @@
+ 
+ \subsubsection{News configurations and controlled comparisons}
+ 
+-The main experiment compares alternative ways of representing GPT-4o-derived information within the fixed forecasting task. E1 is a preserved earlier direct-news construction with eight news-related inputs. E1B is the compact direct-news model with six inputs: hourly means of GPT-4o polarity, XRP specificity, XRP stance and uncertainty, plus news presence and capped recency. E2 introduces a specificity-weighted, trailing 48-hour sentiment representation using the predefined half-lives $h\in\{3,6,12,24\}$ hours (Equation~\eqref{eq:decay}). E3 combines E1B with the six-hour E2 representation. E4 applies gated or ungated GRU corrections to frozen E0 forecasts.
++The news comparisons ask whether different representations add useful information to E0. E1 retains an earlier direct-news construction with eight news-related inputs; E1B tests a compact representation comprising hourly means of GPT-4o polarity, XRP specificity, XRP stance and uncertainty, plus presence and capped recency. E2 tests whether specificity weighting and a trailing 48-hour representation are preferable to direct hourly features, using the predefined half-lives $h\in\{3,6,12,24\}$ hours (Equation~\eqref{eq:decay}). E3 asks whether combining E1B with the validation-selected six-hour E2 representation improves upon either alone. E4 instead tests gated and ungated GRU corrections to frozen E0 forecasts, changing the correction system as well as its news inputs. Table~\ref{tab:matched_configuration_design} separates these objectives and input dimensions.
+ 
+ \begin{table}[!htbp]
+ \centering\small
+@@ -4006,7 +3970,7 @@
+ \label{fig:validation_predictions}
+ \end{figure}
+ 
+-The price trajectories in Figure~\ref{fig:validation_predictions} show that the models track broad movements but can exhibit larger errors around abrupt changes. The residual panel complements the aggregate metrics by making those periods visible. The close visual agreement between model curves is consistent with the relatively small differences in validation RMSE.
++Figure~\ref{fig:validation_predictions} complements the ranking by showing where errors occur. The models follow broad price movements, but the residual panel reveals larger deviations around abrupt changes. Their close visual agreement is consistent with the small aggregate RMSE differences; it does not establish that a model anticipates a turning point or that the validation ordering generalises.
+ 
+ 
+ \subsection{Statistical Robustness and Later-Period Generalisation}
+@@ -4020,7 +3984,7 @@
+ 
+ \subsubsection{Frozen retrospective evaluation}
+ 
+-The validation-selected E1B configuration and the matched E0 control were then assessed using their saved checkpoints on 5,262 later forecast origins. Model weights, feature definitions and training scalers were not refitted using later evaluation targets. The comparison retains the same 24-hour return target and the same origin timestamps for E0, E1B and persistence.
++After validation selection, the saved E1B checkpoints and matched E0 control were assessed on 5,262 later forecast origins; individual seed outcomes are retained in Table~\ref{tab:seeds}. Model weights, feature definitions and training scalers were not refitted using later evaluation targets. The comparison retains the same 24-hour return target and the same origin timestamps for E0, E1B and persistence.
+ 
+ \begin{table}[!htbp]
+ \centering\small
+@@ -4073,7 +4037,7 @@
+ \end{equation}
+ where $f$ denotes the saved model's inverse-scaled predicted-return function. Attributions are aggregated in absolute value over the 30 historical lags and averaged over forecast origins.
+ 
+-The verification uses all five E1B checkpoints, two frozen training-reference sets per seed, 32 references per set and 1,000 fixed forecast origins per pass, yielding 10,000 explanations. Adaptive Gauss--Legendre integration uses 64, 128 or 256 quadrature points as needed. Of the 10,000 explanations, 9,948 met the stated completeness tolerance and 52 retained explanations did not; no seed or reference set was discarded. The global percentages are the equal-pass mean of absolute attribution shares.
++The attribution verification uses all five E1B checkpoints, two frozen training-reference sets per seed, 32 references per set and 1,000 fixed forecast origins per pass, yielding 10,000 explanations. Adaptive Gauss--Legendre integration uses 64, 128 or 256 quadrature points as needed. Of the 10,000 explanations, 9,948 met the stated completeness tolerance and 52 retained explanations did not; no seed or reference set was discarded. The global percentages are the equal-pass mean of absolute attribution shares. Table~\ref{tab:shares} retains every seed--reference pass, and Figure~\ref{fig:precision} reports the completeness diagnostics.
+ 
+ \begin{table}[!htbp]
+ \centering\small
+@@ -4097,7 +4061,7 @@
+ \label{fig:attribution}
+ \end{figure}
+ 
+-The attribution result establishes that E1B's fitted forecasting function is sensitive to both market and news-related variables. The news group includes publication presence and recency, so its share cannot be interpreted as semantic sentiment alone. News attribution ranged from 18.45\% to 31.32\% across the ten seed--reference passes; the alternative pooled calculation yielded 22.82\%. These diagnostics characterise sensitivity to reference choice and model initialisation. The residual completeness exceptions are retained in the reported calculation.
++Table~\ref{tab:eig_attribution} and Figure~\ref{fig:attribution} show that E1B's fitted forecasting function is sensitive to both market and news-related variables. The news group includes publication presence and recency, so its share cannot be interpreted as semantic sentiment alone. News attribution ranged from 18.45\% to 31.32\% across the ten seed--reference passes; the alternative pooled calculation yielded 22.82\%. These diagnostics characterise sensitivity to reference choice and model initialisation. The residual completeness exceptions are retained in the reported calculation.
+ 
+ Crucially, attribution measures how the model uses an input, not whether that input improves future predictions. The later-period forecasting results and the EIG results are therefore consistent: a model can respond measurably to news features while forecasting less accurately than its technical-only control.
+ 
+@@ -4180,21 +4144,21 @@
+ \subsection{Incremental Predictive Value of News}
+ \label{subsec:discussion-news-value}
+ 
+-The central objective was to determine whether GPT-4o-derived news information provides incremental forecasting value beyond historical market data, technical indicators and BTC market context. The matched experiments provide a conditional answer. Both compact direct news and the best-performing sentiment-decay configuration achieved numerical improvements in validation RMSE relative to the technical-only BiLSTM. E1B achieved the largest improvement, reducing mean RMSE by 1.406\%, but this advantage was not statistically robust after the predefined multiple-comparison adjustment. The six-hour decay configuration achieved a smaller improvement of 0.466\%, and its adjusted uncertainty interval also included zero.
++For RQ2 and RQ3, the relevant distinction is between selecting a news representation and establishing a forecasting advantage beyond unchanged technical and market inputs. Both compact direct news and the best-performing sentiment-decay configuration achieved numerical improvements in validation RMSE relative to the technical-only BiLSTM. E1B achieved the largest improvement, reducing mean RMSE by 1.406\%, but this advantage was not statistically robust after the predefined multiple-comparison adjustment. The six-hour decay configuration achieved a smaller improvement of 0.466\%, and its adjusted uncertainty interval also included zero.
+ 
+ The later reserved retrospective evaluation assessed whether the selected validation advantage persisted. E1B produced 5.358\% higher arithmetic mean-seed RMSE than E0, while persistence achieved the lowest error. The tested news representations therefore did not establish a sustained forecasting advantage across the evaluated periods. This distinction matters because model selection and later-period evaluation answer different questions: a favourable validation result identifies a candidate, but it does not independently establish effectiveness under changing market conditions.
+ 
+ \subsection{Interpretation of the Sentiment-Decay Model}
+ \label{subsec:discussion-decay}
+ 
+-The sentiment-decay formulation provides an explicit mechanism for incorporating relevance and recency through specificity weighting and exponential temporal decay. The six-hour half-life achieved the strongest validation result within the tested grid. However, this mechanism is a feature-representation strategy, not a calibrated estimate of the causal market impact of an individual news event. Its transparency does not by itself establish predictive validity.
+-
+-A supplementary evaluation of the frozen six-hour configuration also performed worse than E0 during the later retrospective period, with RMSE 1.426\% higher than the technical-only model. Because this check followed examination of the selected E1B results, it remains exploratory and cannot replace the original validation-selected model as the primary comparison. Taken together, the findings support treating the decay equation as a transparent experimental representation while leaving its generalisable predictive advantage unestablished.
++For RQ3, the sentiment-decay formulation makes the relevance and recency assumptions explicit through specificity weighting and exponential temporal decay. The six-hour half-life achieved the strongest validation result within the tested grid. However, this mechanism is a feature-representation strategy, not a calibrated estimate of the causal market impact of an individual news event. Its transparency does not by itself establish predictive validity.
++
++A supplementary evaluation of the frozen six-hour configuration also performed worse than E0 during the later retrospective period, with RMSE 1.426\% higher than the technical-only model (Table~\ref{tab:e2laterseeds}). Because this check followed examination of the selected E1B results, it remains exploratory and cannot replace the original validation-selected model as the primary comparison. Taken together, the findings support treating the decay equation as a transparent experimental representation while leaving its generalisable predictive advantage unestablished.
+ 
+ \subsection{Temporal Alignment and Information Availability}
+ \label{subsec:discussion-timing}
+ 
+-The relationship between news publication and market movement is critical to cryptocurrency forecasting. Historical archives generally provide recorded publication timestamps, which may differ from the earliest public availability of the underlying information. An article describing a significant event may therefore appear after prices have already adjusted. Tariff announcements, regulatory developments and other XRP-related episodes illustrate the need to distinguish the underlying event, the archived publication and the observed market response.
++RQ4 requires distinguishing the recorded availability of a report from the market response to its underlying information. Historical archives generally provide recorded publication timestamps, which may differ from the earliest public availability of the underlying information. An article describing a significant event may therefore appear after prices have already adjusted. Tariff announcements, regulatory developments and other XRP-related episodes illustrate the need to distinguish the underlying event, the archived publication and the observed market response.
+ 
+ For a forecast generated at time $t$, only information available at or before $t$ can legitimately contribute to the prediction; later publications must not enter its historical input sequence. Even when an article is correctly aligned to its recorded timestamp, its information may already be reflected in market prices. The forecasting task is therefore to determine whether the available features add information about the subsequent 24-hour movement, rather than merely recognise an important historical event.
+ 
+@@ -4203,14 +4167,14 @@
+ \subsection{Model Interpretability and Predictive Utility}
+ \label{subsec:discussion-interpretability}
+ 
+-Expected integrated gradients provides complementary evidence about the fitted model. Across the verified calculations, technical and market features accounted for 76.89\% of mean absolute attribution and news-related features for 23.11\%. The saved networks therefore respond to news-related inputs rather than ignoring them. These shares measure contributions within the trained forecasting function; they do not measure the causal contribution of news to prices or its incremental contribution to forecast accuracy.
++For RQ5, expected integrated gradients characterises the fitted model rather than the value of retraining with news. Across the verified calculations, technical and market features accounted for 76.89\% of mean absolute attribution and news-related features for 23.11\%. The saved networks therefore respond to news-related inputs rather than ignoring them. These shares measure contributions within the trained forecasting function; they do not measure the causal contribution of news to prices or its incremental contribution to forecast accuracy.
+ 
+ The shares depend on the explained output, reference distribution, aggregation procedure and checkpoint. The verification retained the numerical completeness exceptions and documented variation across seeds and reference sets. Accordingly, the attribution and forecasting results are consistent: a model may use additional information without predicting more accurately than its technical-only control. Distinguishing \emph{feature utilisation} from \emph{predictive utility} is a central methodological finding of this study.
+ 
+ \subsection{Generalisation and Experimental Boundaries}
+ \label{subsec:discussion-generalisation}
+ 
+-Differences between validation and later-period performance may reflect changing market conditions, noisy annotations, overlap between technical and textual information, or sensitivity to model initialisation. The experiments establish the reversal in forecasting performance, the larger E1B seed variability and the absence of a statistically robust adjusted validation advantage. They do not identify which mechanism caused the deterioration.
++Across RQ1--RQ5, differences between validation and later-period performance may reflect changing market conditions, noisy annotations, overlap between technical and textual information, or sensitivity to model initialisation. The experiments establish the reversal in forecasting performance, the larger E1B seed variability and the absence of a statistically robust adjusted validation advantage. They do not identify which mechanism caused the deterioration.
+ 
+ Several design limitations define the scope of that conclusion. First, the archive provides retrospective publication timestamps rather than complete independently verified first-seen records, and empty intervals may indicate incomplete collection. Second, headline annotations do not capture all article content or related communications. GPT-4o scores are model-generated assessments rather than observed economic impacts. The 300-article provenance check concerns consistency of archived scoring records; it does not replace independent human assessment of annotation accuracy or inter-annotator agreement.
+ 
+@@ -4237,17 +4201,11 @@
+ \section{Conclusion}
+ \label{sec:Conclusion}
+ 
+-This research investigated whether generative-AI-derived news information can enhance technical cryptocurrency price forecasting within a controlled bidirectional LSTM framework. The proposed approach combined historical XRP/USDT market observations, technical indicators, BTC market context and structured GPT-4o news features. The experimental protocol employed 30-hour historical input sequences, an exact 24-hour prediction horizon, chronological data partitions, training-only scaling and five-seed evaluation. 
+-
+-The principal matched experiments demonstrated that compact direct-news features achieved the lowest validation RMSE among the evaluated configurations, with a numerical improvement of 1.406\% relative to technical-only BiLSTM. The proposed relevance-weighted sentiment-decay formulation provided a transparent alternative representation, with the six-hour half-life achieving the strongest result within its tested parameter grid. However, neither the direct-news advantage nor the decay-model improvement was established as statistically robust under the reported adjusted validation analysis. 
+-
+-The reserved retrospective evaluation further demonstrated that the validation-selected news-enhanced model did not maintain its advantage. Its mean-seed RMSE was 5.358\% higher than the technical-only configuration, while persistence achieved the lowest error. 
+-
+-The refined expected-integrated-gradients analysis attributed 76.89\% of mean absolute model sensitivity to technical and market inputs and 23.11\% to news-related features. These results confirm that the trained network incorporated the additional news information, while demonstrating that feature utilisation does not necessarily translate into improved forecasting performance. 
+-
+-The separate HBAR transfer experiment also failed to establish an incremental benefit from the XRP-selected news representation. Its substantially lower asset-specific news coverage provides useful context, although coverage alone was not established as the cause of the observed result. 
+-
+-The principal contribution of this study is a systematic and auditable evaluation of generative-AI-derived news features within a technical cryptocurrency forecasting framework. By distinguishing validation performance, statistical reliability, later-period generalisation, temporal information availability and model interpretability, the research provides evidence about both the potential and the boundaries of news-enhanced forecasting. The findings establish that successful integration of structured news information into a forecasting network does not, by itself, guarantee sustained predictive improvement.
++This study evaluated whether GPT-4o-derived news features improve technical XRP/USDT forecasting within an early-fusion BiLSTM framework. Historical market observations, technical indicators and BTC context were compared with alternative news representations using 30-hour sequences, an exact 24-hour horizon, chronological partitions, training-only scaling and five seeds. The contribution is an auditable comparison that separates validation selection, later-period forecasting, information timing and model attribution.
++
++Compact direct news achieved the lowest validation RMSE, a numerical improvement of 1.406\% over the technical-only model. The six-hour half-life was the strongest tested decay setting, but neither news representation established a statistically robust adjusted validation gain. In the later retrospective evaluation, the validation-selected model had 5.358\% higher mean-seed RMSE than its technical control, while persistence performed best. The separate HBAR transfer experiment also showed no incremental benefit; sparse HBAR-specific coverage provides context but was not isolated as the cause.
++
++Expected integrated gradients assigned 76.89\% of mean absolute attribution to technical and market inputs and 23.11\% to news-related inputs. These shares demonstrate model use of news, not a contribution to forecasting accuracy or a causal effect on prices. The evidence therefore supports a bounded conclusion: integrating structured news into a network does not ensure sustained predictive improvement. Retrospective availability, repeated validation selection and limited market coverage constrain generalisation; the existing future-work priorities address the stability and practical utility that remain unestablished.
+ 
+ \section*{Declarations}
+ \begingroup\small
+@@ -4279,10 +4237,10 @@
+ 
+ \endgroup
+ 
+-\clearpage
++\FloatBarrier
+ \appendix
+ \section{Additional reproducibility results}\label{app:additional}
+-Tables~\ref{tab:epochs}--\ref{tab:shares} preserve selected epochs, every final-evaluation seed and every attribution pass. The technical controls retain their own target definition and selected epochs.
++The following material supports the main comparisons without replacing their five-seed summaries. Tables~\ref{tab:epochs} and \ref{tab:benchepochs} record selected epochs for the return-based news experiments and separate price-based technical controls, respectively. Table~\ref{tab:seeds} retains every final XRP evaluation seed, and Table~\ref{tab:shares} retains every attribution pass. Table~\ref{tab:validationseeds} provides the primary validation seed metrics; Table~\ref{tab:e2laterseeds} reports the exploratory frozen six-hour evaluation. Tables~\ref{tab:conditionalall} and \ref{tab:conditionallater} report RQ4's conditional-risk analyses for validation and the later period. Their adjusted intervals do not establish a subgroup improvement. Figures~\ref{fig:training} and \ref{fig:precision} provide the saved training-loss and attribution-precision diagnostics.
+ 
+ \begin{table}[!htbp]\centering\small
+ \caption{Selected validation epochs for seeds in fixed order.}\label{tab:epochs}

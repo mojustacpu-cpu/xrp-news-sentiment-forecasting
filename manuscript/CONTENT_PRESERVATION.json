@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "equation_blocks_unchanged": 39,
+  "align_blocks_unchanged": 1,
+  "tables": 20,
+  "every_tabular_body_byte_identical": true,
+  "figures": 9,
+  "every_figure_environment_byte_identical": true,
+  "bibliography_byte_identical": true,
+  "citation_occurrences_preserved": 33,
+  "section_hierarchy_and_headings_unchanged": true,
+  "all_original_numerical_literals_retained": true,
+  "new_training_runs": 0,
+  "edits": 61
+}
