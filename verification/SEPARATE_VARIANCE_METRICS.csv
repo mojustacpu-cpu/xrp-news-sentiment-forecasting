@@ -1,0 +1,2 @@
+file,n,variance_mae,variance_rmse,qlike
+subprojects/15_xrp_garch_volatility/results/garch/evaluation_predictions.csv,5262,12.066565804738016,21.482558629464144,3.2199090254161717

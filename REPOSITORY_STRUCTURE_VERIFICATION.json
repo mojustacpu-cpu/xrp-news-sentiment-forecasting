@@ -99,7 +99,7 @@
     },
     {
       "folder": "13_xrp_technical_architecture_comparison",
-      "python_files": 10,
+      "python_files": 50,
       "configuration_files": 82,
       "prediction_csvs": 40,
       "checkpoints": 20,
@@ -149,7 +149,7 @@
   "python_syntax_errors": [],
   "credential_pattern_scan": "passed",
   "source_news_text_csvs": "excluded at staging; prepared numerical inputs retained",
-  "files": 1082,
-  "MB": 569.396829,
+  "files": 1145,
+  "MB": 571.145858,
   "new_training_runs": 0
 }

@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "prediction_csv_metrics": 101,
+  "separate_variance_rows": 1,
+  "matched_seed_rows": 62,
+  "matched_summaries": 14,
+  "attribution_passes": 10,
+  "news_attribution_share_percent": 23.11188836273076,
+  "attribution_tolerance_failures": 52,
+  "training_runs": 0,
+  "api_calls": 0,
+  "original_absolute_paths_required": false,
+  "skipped_non_price_csvs": []
+}

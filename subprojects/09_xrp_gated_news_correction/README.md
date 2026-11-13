@@ -9,3 +9,11 @@ Target: `frozen_base_plus_return_correction`.
 
 Run `python tools/reproduce_saved_metrics.py --output reproduced` from the repository root to reproduce saved price metrics without fitting. Read the root reproducibility guide before training: archived scripts preserve no-restart guards and historical paths; do not run stage pipelines blindly. No new models were fitted for this release.
 
+
+## Source entry points
+
+- [verify_and_analyse.py](code/original/verify_and_analyse.py)
+- [train_e4.py](code/original/train_e4.py)
+- [gated_model.py](code/original/gated_model.py)
+- [prepare.py](code/original/prepare.py)
+- [build_reports.py](code/original/build_reports.py)

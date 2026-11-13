@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "pdf_pages": 33,
+  "numbered_article_pages": 32,
+  "latest_layout_visual_review": "All pages inspected; after the final declarations adjustment, changed pages27\u201330 were inspected again; first highlights page unchanged.",
+  "bibliography_entries_preserved": 31,
+  "equations_unchanged": true,
+  "retained_result_tables_numerically_unchanged": 20,
+  "removed_duplicate": "Section4 HBAR duplicate; Section5 retained unchanged numerical cells",
+  "figure_files": 9,
+  "conceptual_schematic_label_layout_only": [
+    "fig02_availability_timeline.pdf"
+  ],
+  "unresolved_references": false,
+  "github_url": "https://github.com/mojustacpu-cpu/xrp-news-sentiment-forecasting",
+  "github_link_annotations": 4,
+  "github_public_access_verified": true,
+  "repository_subprojects": 18,
+  "technical_comparison_child_models": 4,
+  "new_training_runs": 0,
+  "secret_scan": "passed",
+  "saved_output_reproduction": {
+    "status": "passed",
+    "prediction_csv_metrics": 101,
+    "separate_variance_rows": 1,
+    "matched_seed_rows": 62,
+    "matched_summaries": 14,
+    "attribution_passes": 10,
+    "news_attribution_share_percent": 23.11188836273076,
+    "attribution_tolerance_failures": 52,
+    "training_runs": 0,
+    "api_calls": 0,
+    "original_absolute_paths_required": false,
+    "skipped_non_price_csvs": []
+  },
+  "remaining_note": "Archived training scripts retain historical path constants; this is documented separately from the verified portable saved-output reproduction. Raw third-party source text is not asserted freely redistributable.",
+  "template_warning": "An inherited CAS maketitle overfull-hbox warning has no corresponding visible clipping; headline table overflow fixed.",
+  "clean_zip_compilation": {
+    "passed": true,
+    "pages": 33,
+    "page_text_matches_visually_inspected_PDF": true
+  }
+}

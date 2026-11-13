@@ -9,3 +9,13 @@ Target: `log_return`.
 
 Run `python tools/reproduce_saved_metrics.py --output reproduced` from the repository root to reproduce saved price metrics without fitting. Read the root reproducibility guide before training: archived scripts preserve no-restart guards and historical paths; do not run stage pipelines blindly. No new models were fitted for this release.
 
+
+## Source entry points
+
+- [verify_and_analyse.py](code/original/verify_and_analyse.py)
+- [check_phase1.py](code/original/check_phase1.py)
+- [prepare_phase1.py](code/original/prepare_phase1.py)
+- [build_phase1_reports.py](code/original/build_phase1_reports.py)
+- [pipeline.py](code/original/pipeline.py)
+- [build_phase_runner.py](code/original/build_phase_runner.py)
+- [train_candidate.py](code/original/train_candidate.py)

@@ -10,3 +10,16 @@ Target: `conditional_variance`.
 Run `python tools/reproduce_saved_metrics.py --output reproduced` from the repository root to reproduce saved price metrics without fitting. Read the root reproducibility guide before training: archived scripts preserve no-restart guards and historical paths; do not run stage pipelines blindly. No new models were fitted for this release.
 
 This supporting experiment uses a different target from E0/E1B. Do not pool its scores to infer the incremental value of news.
+
+## Source entry points
+
+- [statistical.py](code/original/statistical.py)
+- [neural.py](code/original/neural.py)
+- [build_report.py](code/original/build_report.py)
+- [verify_completed.py](code/original/verify_completed.py)
+- [common.py](code/original/common.py)
+- [check_setup.py](code/original/check_setup.py)
+- [pipeline.py](code/original/pipeline.py)
+- [summarise.py](code/original/summarise.py)
+- [build_comparison_report.py](code/original/build_comparison_report.py)
+- [prepare.py](code/original/prepare.py)

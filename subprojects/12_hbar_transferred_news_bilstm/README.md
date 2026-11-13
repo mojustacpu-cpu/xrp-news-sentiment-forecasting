@@ -10,3 +10,11 @@ Target: `log_return`.
 Run `python tools/reproduce_saved_metrics.py --output reproduced` from the repository root to reproduce saved price metrics without fitting. Read the root reproducibility guide before training: archived scripts preserve no-restart guards and historical paths; do not run stage pipelines blindly. No new models were fitted for this release.
 
 Transferred stance/specificity remain XRP-scored signals; sparse HBAR-specific coverage is not isolated as the cause of the result.
+
+## Source entry points
+
+- [resume_candidate_20261107.py](code/original/resume_candidate_20261107.py)
+- [verify_and_analyse.py](code/original/verify_and_analyse.py)
+- [train_candidate.py](code/original/train_candidate.py)
+- [prepare.py](code/original/prepare.py)
+- [build_reports.py](code/original/build_reports.py)

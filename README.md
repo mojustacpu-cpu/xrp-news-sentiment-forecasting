@@ -58,3 +58,7 @@ The release includes prepared numerical market/news feature tables used by the m
 The authors retain rights in their original work. No new blanket software/data licence has been assigned on behalf of the coauthors or third-party providers. Contact the corresponding author for permissions beyond applicable terms. The Elsevier CAS support retains its included LPPL notice.
 
 No model was retrained for this public release.
+
+## Revised manuscript
+
+The supervisor-comment revision is in [`manuscript/`](manuscript/), including the PDF, LaTeX, figures and clean Overleaf ZIP. The research results and design are unchanged.

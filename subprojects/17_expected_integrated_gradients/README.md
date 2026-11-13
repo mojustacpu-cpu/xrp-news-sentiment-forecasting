@@ -10,3 +10,10 @@ Target: `inverse-scaled_predicted_log_return`.
 Run `python tools/reproduce_saved_metrics.py --output reproduced` from the repository root to reproduce saved price metrics without fitting. Read the root reproducibility guide before training: archived scripts preserve no-restart guards and historical paths; do not run stage pipelines blindly. No new models were fitted for this release.
 
 This method is expected integrated gradients, not exact SHAP or a causal price decomposition. All numerical exceptions are retained.
+
+## Source entry points
+
+- [pilot.py](code/original/pilot.py)
+- [run.py](code/original/run.py)
+- [build_report.py](code/original/build_report.py)
+- [review.py](code/original/review.py)

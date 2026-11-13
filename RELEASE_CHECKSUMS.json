@@ -15,14 +15,9 @@
     "bytes": 2
   },
   {
-    "path": "PUBLICATION_FILE_MANIFEST.json",
-    "sha256": "977244d3b15e78b4d11aa33f8fa6436921530ee82d7616e055493a3f82399fe7",
-    "bytes": 214522
-  },
-  {
     "path": "README.md",
-    "sha256": "c933cdfc481543caf46d4ed68c72bd0942f105bd5e321e4ff8d2c07e4939adfc",
-    "bytes": 6070
+    "sha256": "6f53d5d50f4a4114692ae7de3908559f36479d7ad5a61853c081bbe29e2e0f3d",
+    "bytes": 6267
   },
   {
     "path": "REPRODUCIBILITY.md",
@@ -505,6 +500,76 @@
     "bytes": 295
   },
   {
+    "path": "manuscript/CHANGE_LOG.md",
+    "sha256": "44ba9f20c618f4a8cfc66bde50e14d5f35e6b679bb37ec71447037fbe5cf6a10",
+    "bytes": 2298
+  },
+  {
+    "path": "manuscript/FINAL_VERIFICATION.json",
+    "sha256": "545ed05c74e13a07d440d6f122dd79d88d55b77b86c00a99bf00156d0fe32823",
+    "bytes": 1844
+  },
+  {
+    "path": "manuscript/Main_doc2.pdf",
+    "sha256": "f63bce46b875d97e3d1027777e3c0847eefa02a6e120cab11ef9463ebe341f68",
+    "bytes": 604257
+  },
+  {
+    "path": "manuscript/Main_doc2.tex",
+    "sha256": "7cf243e4bdbfde48193607a266a34a55a894ad741463d77df12e5b0c3a117433",
+    "bytes": 206164
+  },
+  {
+    "path": "manuscript/XRP_OLU_REVISED_OVERLEAF.zip",
+    "sha256": "d64488cf1a818f502da08f988b015ec24df2b2c0905d61c1aecc0f1bd6925d00",
+    "bytes": 455089
+  },
+  {
+    "path": "manuscript/figures/fig01_architecture.pdf",
+    "sha256": "d9f0a41da41b7f70d13db58cf754686b83b074d01f15a62a8cec2bef7c1bd5eb",
+    "bytes": 23295
+  },
+  {
+    "path": "manuscript/figures/fig02_availability_timeline.pdf",
+    "sha256": "d770df34f88aacef4949ab54f74e7583e682aa264167f8b79c11b3fa806da491",
+    "bytes": 15754
+  },
+  {
+    "path": "manuscript/figures/fig15_hbar_transfer.pdf",
+    "sha256": "7db0a37591c0c0b37e36c6a74b12eb95cc98e1b76626f3f4895a917144f45025",
+    "bytes": 24116
+  },
+  {
+    "path": "manuscript/figures/figS01_training_diagnostics.pdf",
+    "sha256": "35a677be870ec9e3430a3ccc52ba1a94abb7225223adbc0daf5d678386b5753e",
+    "bytes": 23033
+  },
+  {
+    "path": "manuscript/figures/figS02_precision_diagnostics.pdf",
+    "sha256": "606691d1d31dd83bc826e2a1f96cdd54a0954139f6133b5d96382b966d16ae22",
+    "bytes": 29725
+  },
+  {
+    "path": "manuscript/figures/new_attribution.pdf",
+    "sha256": "4c3267d83eb5e05d2680da946f51c0e86cdc8d6e50db78cd2413ed68f6c33c35",
+    "bytes": 14943
+  },
+  {
+    "path": "manuscript/figures/new_final_comparison.pdf",
+    "sha256": "7e216aa1844cc7969d3ccc208acc41fb821e077351cdfbc31a42aa1e3c7fb366",
+    "bytes": 14825
+  },
+  {
+    "path": "manuscript/figures/new_validation_ranking.pdf",
+    "sha256": "e1902b6c765c69eddcfce4e8ce9cc3aa8d309c8d02d0878cc5d9a52eae3330c3",
+    "bytes": 16705
+  },
+  {
+    "path": "manuscript/figures/validation_predictions.png",
+    "sha256": "1f802ef2f0acb1c2838279b6421887067e85d3d3e4476df775d4a4f238045b4b",
+    "bytes": 273193
+  },
+  {
     "path": "requirements-metrics.txt",
     "sha256": "32fd88e188d8911a2670fa38385e4d55195733157f148a59b195945d4200a98c",
     "bytes": 28
@@ -526,8 +591,8 @@
   },
   {
     "path": "subprojects/01_xrp_technical_bilstm/README.md",
-    "sha256": "83f5a8ff4c77d86451553d243db057ab73d797e493df89b62458da63764ed7ed",
-    "bytes": 801
+    "sha256": "3fda2dc27452075b34b2f28868a5aaa83780bbacb546ead2f11450086dc18656",
+    "bytes": 863
   },
   {
     "path": "subprojects/01_xrp_technical_bilstm/code/original/reference/common.py",
@@ -771,8 +836,8 @@
   },
   {
     "path": "subprojects/02_xrp_earlier_direct_news_bilstm/README.md",
-    "sha256": "10cc491d9eecf163737721d5f0aa27f15d1e963f22c0d723900996227e8b55ef",
-    "bytes": 811
+    "sha256": "2aef83a634f42598eebe6855f69d2542023c1c71889b20427ecee2971e5d1136",
+    "bytes": 873
   },
   {
     "path": "subprojects/02_xrp_earlier_direct_news_bilstm/code/original/reference/common.py",
@@ -1021,8 +1086,8 @@
   },
   {
     "path": "subprojects/03_xrp_compact_direct_news_bilstm/README.md",
-    "sha256": "a6de1a30f50a4829b6912427e5c5b332441ea6dc05e30c61c55889e406b9ad33",
-    "bytes": 807
+    "sha256": "d9cb5176b6f5e0e83e4106d77f29b20f58c4f7d7f27477a630b22fd750abea0d",
+    "bytes": 1231
   },
   {
     "path": "subprojects/03_xrp_compact_direct_news_bilstm/code/original/build_phase1_reports.py",
@@ -1296,8 +1361,8 @@
   },
   {
     "path": "subprojects/04_xrp_sentiment_decay_3h/README.md",
-    "sha256": "503f5cb2db54e773768d84f3dba3c5da1bd88ddf312aeb47ea9829ca8d6298de",
-    "bytes": 827
+    "sha256": "15a387150d816d4d8788c113ad51e1b14b7010aca558b74755ef7ff26b086803",
+    "bytes": 1251
   },
   {
     "path": "subprojects/04_xrp_sentiment_decay_3h/code/original/build_phase1_reports.py",
@@ -1571,8 +1636,8 @@
   },
   {
     "path": "subprojects/05_xrp_sentiment_decay_6h/README.md",
-    "sha256": "8fa06473c95e4cfbbabff86dba410a2d82eed6806eb62f5c665445925c28e85d",
-    "bytes": 827
+    "sha256": "aba57ebca762f2f263c50f9594193db6f8df32f24d2604e3528454437b0cd21d",
+    "bytes": 1251
   },
   {
     "path": "subprojects/05_xrp_sentiment_decay_6h/code/original/build_phase1_reports.py",
@@ -1846,8 +1911,8 @@
   },
   {
     "path": "subprojects/06_xrp_sentiment_decay_12h/README.md",
-    "sha256": "60f7ae90f672c2074e3ae854c124307519e41b204c73ded91177bf528a272a14",
-    "bytes": 828
+    "sha256": "2917202fb015f72059f659aa32465fc6e332042c9fc4f60a0dff9659fe326596",
+    "bytes": 1252
   },
   {
     "path": "subprojects/06_xrp_sentiment_decay_12h/code/original/build_phase1_reports.py",
@@ -2121,8 +2186,8 @@
   },
   {
     "path": "subprojects/07_xrp_sentiment_decay_24h/README.md",
-    "sha256": "bc01abab0875ffa4e6be9092fc3e3a8590d6413d8d9acbb54f0ae30f530c2a9e",
-    "bytes": 828
+    "sha256": "837ce176d2a25647afae9e03bf8af0c8315540649d4315b23b19ab87b382d7e5",
+    "bytes": 1252
   },
   {
     "path": "subprojects/07_xrp_sentiment_decay_24h/code/original/build_phase1_reports.py",
@@ -2396,8 +2461,8 @@
   },
   {
     "path": "subprojects/08_xrp_combined_direct_news_and_decay/README.md",
-    "sha256": "dda4eef1d5796c66257414390b90fc15fa7ff70f69866dc52afd956b34fbf976",
-    "bytes": 819
+    "sha256": "21111948413dc3a9e77fa11a1bc27d825f479871de1ef097522b551643dc3980",
+    "bytes": 1070
   },
   {
     "path": "subprojects/08_xrp_combined_direct_news_and_decay/code/original/build_e3_reports.py",
@@ -2651,8 +2716,8 @@
   },
   {
     "path": "subprojects/09_xrp_gated_news_correction/README.md",
-    "sha256": "c885b726e87cef598a8b08097fad672d7baa475e90fcf220e3e57f54c992a029",
-    "bytes": 851
+    "sha256": "b248d69538bd7f4803e9b153e149ec72b262eb1ba2fa1bbd06461af9c4703acb",
+    "bytes": 1125
   },
   {
     "path": "subprojects/09_xrp_gated_news_correction/code/original/build_reports.py",
@@ -2926,8 +2991,8 @@
   },
   {
     "path": "subprojects/10_xrp_ungated_news_correction/README.md",
-    "sha256": "07890ca681a6375d9996a458dab750201a3bc516cc9faa9ce7ec071bd8e575a6",
-    "bytes": 853
+    "sha256": "4ae39ac8209bf35003ac401885ebb884cbbb2e9d869f69942c451f27d1e1abb2",
+    "bytes": 1127
   },
   {
     "path": "subprojects/10_xrp_ungated_news_correction/code/original/build_reports.py",
@@ -3201,8 +3266,8 @@
   },
   {
     "path": "subprojects/11_hbar_technical_bilstm/README.md",
-    "sha256": "792949b17b953182b8ab65b3f08e761efce2ac64ea9901b98c9b26997ce50883",
-    "bytes": 797
+    "sha256": "2d03246473e1fb096eaa56138576dd5435c4e68835a725eb157d92dcfd41c1fb",
+    "bytes": 859
   },
   {
     "path": "subprojects/11_hbar_technical_bilstm/code/original/reference/common.py",
@@ -3476,8 +3541,8 @@
   },
   {
     "path": "subprojects/12_hbar_transferred_news_bilstm/README.md",
-    "sha256": "98d129e0e184205c73c4226677b77ebc3d9cd2b1d94c31941338f0ba8444e004",
-    "bytes": 942
+    "sha256": "1b850e35d57729f4d01b6797cee593f36566a331b4f4b126e13a5637ea3c362b",
+    "bytes": 1258
   },
   {
     "path": "subprojects/12_hbar_transferred_news_bilstm/code/original/build_reports.py",
@@ -3745,9 +3810,1129 @@
     "bytes": 304490
   },
   {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/README.md",
+    "sha256": "9499f996d1048c238b58c0e9dac3b7497d10241ffb05227e338fd1ae8a31e7ff",
+    "bytes": 499
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/code/original/build_comparison_report.py",
+    "sha256": "0f272649d9e53fbb13b24544ddd8330b0b1c3b5a1330375dee42895c42260931",
+    "bytes": 8267
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/code/original/build_report.py",
+    "sha256": "793f114a617f1a0eb4c7ae91d268e293e17b3a0d11a287528c11307b0cd70eec",
+    "bytes": 17934
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/code/original/check_setup.py",
+    "sha256": "6d790e055ed8e8f0f8d03b4a3561c77c44bb0c3c181c6b8e610c9f04cae4b3e0",
+    "bytes": 1559
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/code/original/common.py",
+    "sha256": "5613e92acf44bbc04d84b440b1e7b6339b5334c778cc4a15eed96c426888a4a6",
+    "bytes": 1603
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/code/original/neural.py",
+    "sha256": "c3be76ab476c2de4113f4bf5d896b88fd423e5b97cf8fe5a9121e50601175a73",
+    "bytes": 4863
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/code/original/pipeline.py",
+    "sha256": "b2cbf83b3e866999e0551fa1bc31f50b5400e81308e07290014b24e301f73499",
+    "bytes": 1914
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/code/original/prepare.py",
+    "sha256": "50bc6dacf9c1e27acc198c6534b234a32480e7101349f317d16116c00601b4ba",
+    "bytes": 4015
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/code/original/statistical.py",
+    "sha256": "fbf1c66b0e97e4ea9b34b793f0a96f61263fc5849c93b5eab6a0347ffee8b4e2",
+    "bytes": 4168
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/code/original/summarise.py",
+    "sha256": "ebfc3e89dd9681f8ca107c4e9fdbdec61d95210f7295e1a321c620b1d539ad9f",
+    "bytes": 6592
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/code/original/verify_completed.py",
+    "sha256": "61f8374905edcca015a0c993979f95c412bce29aab030f62ef18d99b39be2de2",
+    "bytes": 3488
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed123/COMPLETE.json",
+    "sha256": "24144f225f759daef0b1d25cb7dfcdd9ccde8a74042aa006b970f165b885a1f4",
+    "bytes": 486
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed123/EVALUATION.json",
+    "sha256": "6ec3b94514e8b85493ea46b1f5378c8f7d10bc6c15dca62991d1151458fb1e6a",
+    "bytes": 240
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed123/PROGRESS.json",
+    "sha256": "f433a60d1d9e0f3b942ae6a16285523e14d0a46d250839fec627e4f722dc8be7",
+    "bytes": 192
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed123/STARTED.json",
+    "sha256": "7be4036d8482877a8d22505f0bd8b1047c681cb49353c01b4a9fe589b7188045",
+    "bytes": 219
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed123/best.pt",
+    "sha256": "0beb54bdc041cf1f87587044fa2fdf1fc00efa0cac379043d7b0c4fd277fc0fe",
+    "bytes": 2263513
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed123/evaluation_predictions.csv",
+    "sha256": "ed2932e146279dcad678b3c27805fc27ec5ba55a3fdaa5ef316f54ffefec8a0d",
+    "bytes": 398258
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed123/history.csv",
+    "sha256": "9711aeffc3171ddd63c429b35ab62fdadb07532bdd9ab757da3d5e10dc6130c7",
+    "bytes": 1138
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed123/scalers.pkl",
+    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
+    "bytes": 152235
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed123/validation_predictions.csv",
+    "sha256": "69f9b6ef7d4b8dcec00e6e752ed49e58d4b5ab692c26f190e87a606b9bf2aa3f",
+    "bytes": 161558
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed2026/COMPLETE.json",
+    "sha256": "ce94aa14251e877d9b3eefb78e9e91952949a7c97ff642b0516862f3abff240f",
+    "bytes": 489
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed2026/EVALUATION.json",
+    "sha256": "40ad494f919ae36a4e1cbcb4f47ae3d2a0d0d6b306b0ec192bc7385e15fd1d18",
+    "bytes": 242
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed2026/PROGRESS.json",
+    "sha256": "f935b1693dc2d3ab5325f5895dc125219e3589929d707a89322051f42116612b",
+    "bytes": 192
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed2026/STARTED.json",
+    "sha256": "3e9499a4e530b54bb2de0d524cd98eb197b0be08d638a275ca07730b9fe4d630",
+    "bytes": 220
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed2026/best.pt",
+    "sha256": "e87fc9d1ccb972a457b90e0eb4a787a4470909c7311ba38a0cd4c90d3efd5d0c",
+    "bytes": 2263513
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed2026/evaluation_predictions.csv",
+    "sha256": "cb2470935db6e3ed2a8755537511e1a06651babf82b07d6d71af384510d044c8",
+    "bytes": 398165
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed2026/history.csv",
+    "sha256": "2c65d0af8c3faff847d585549024d2d718e2f2be88a7138084cbbf6889db9918",
+    "bytes": 1148
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed2026/scalers.pkl",
+    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
+    "bytes": 152235
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed2026/validation_predictions.csv",
+    "sha256": "9ec8bcd30b61fed4d457d12334b62343d634302578bbaa25b4d090166a7a589a",
+    "bytes": 161556
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed42/COMPLETE.json",
+    "sha256": "a057b373ed62ac2c0a62bf4f813bcb24131f6e76d47061133bbb8cb88fb3fc0e",
+    "bytes": 485
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed42/EVALUATION.json",
+    "sha256": "8571f7efad7dab531536762b656df99d26cf7b432092cff7a404b8d8c0403fa1",
+    "bytes": 240
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed42/PROGRESS.json",
+    "sha256": "55104595c32522d12dc2e1ef8dd6b5aad1f95af5dea1d44cdd52fc6f450b6c81",
+    "bytes": 193
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed42/STARTED.json",
+    "sha256": "5d653753078ea1a417aab4f47da21bbf189fb085035347082a3aaf62b963c3e0",
+    "bytes": 218
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed42/best.pt",
+    "sha256": "d7cb353b1a9e483ad846fd2faf84a8b4e32c934929620b30bb09e666abf07afd",
+    "bytes": 2263513
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed42/evaluation_predictions.csv",
+    "sha256": "c65a2c932f7641e969de80861992b52dd4412af6a1b0bd81c436a7f22a3fe470",
+    "bytes": 398122
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed42/history.csv",
+    "sha256": "3d98a20244f5750191ac2223b13bbaa15371a139195fd2e9041728ff245b3e86",
+    "bytes": 1079
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed42/scalers.pkl",
+    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
+    "bytes": 152235
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed42/validation_predictions.csv",
+    "sha256": "9a8145eebb9b5055f992c27a4f199eb499cd1bf5fe4c5daaf45b1667309970a1",
+    "bytes": 161537
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed7/COMPLETE.json",
+    "sha256": "e8b78d5884a532647a743c170d842a9993947e0eb6a80485efeed31eae61b0a9",
+    "bytes": 483
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed7/EVALUATION.json",
+    "sha256": "26a07eba7e2d2eef9078b5a7b9f117d8e64090939147fc529818a3f289ebd380",
+    "bytes": 238
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed7/PROGRESS.json",
+    "sha256": "10b9f385b14b1050b298c2d8037b71d63ef8b7801ca2830994819d753c3c2a39",
+    "bytes": 193
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed7/STARTED.json",
+    "sha256": "ece4b46795dcbaa300edfb5e00dbcd00de24723e13bf023822790870dba0f710",
+    "bytes": 217
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed7/best.pt",
+    "sha256": "66509c71ed1ee8a4d1ba0c7dc2508d0771237bc1ed4f241771da725509064131",
+    "bytes": 2263513
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed7/evaluation_predictions.csv",
+    "sha256": "9d72ebf1454515196ea92da1bbbcb0fd243285431424ead722b9f490b8535dbb",
+    "bytes": 398147
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed7/history.csv",
+    "sha256": "32716a6f97d9cd29e49e44c63b346a53aebf1b1fe7ccad2d10913b37ac0af1dd",
+    "bytes": 1078
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed7/scalers.pkl",
+    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
+    "bytes": 152235
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed7/validation_predictions.csv",
+    "sha256": "f9b1fe42861ed50a42e4ba1203c39f045ecb954089e5615a8ee7872257cbf95e",
+    "bytes": 161475
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed99/COMPLETE.json",
+    "sha256": "82340c1f873a9e266fa64340fea6d298a68b09c9acd1aecb350ded977ac48bec",
+    "bytes": 485
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed99/EVALUATION.json",
+    "sha256": "86ae59f507c8aac23a05c4f5c436d497ee51c28de0cc3677a70b3fcfa65a7664",
+    "bytes": 240
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed99/PROGRESS.json",
+    "sha256": "3c55ff5d3b0544e0224554b1791faa17559cec0d7ff0a0eb9b37253dc493569e",
+    "bytes": 194
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed99/STARTED.json",
+    "sha256": "c088f501ecc387b26bd5784f8d5aa58e2264526f0f84be803c2db1f61384dec6",
+    "bytes": 218
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed99/best.pt",
+    "sha256": "f5a2933c0bd863b7d0d54a2fdb7f872007bfa2dd51c90355abba95e3e3f067fc",
+    "bytes": 2263513
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed99/evaluation_predictions.csv",
+    "sha256": "772f73209c097cc5d0d38faddb41005f0b130822abb38f89bf9f991424bf4641",
+    "bytes": 398346
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed99/history.csv",
+    "sha256": "e5a1a973a8a1601e96258f69ca403b33df34a2794928678ec61ac6ce9ccecd22",
+    "bytes": 1088
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed99/scalers.pkl",
+    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
+    "bytes": 152235
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/01_bilstm_with_bitcoin/results/bilstm_btc_seed99/validation_predictions.csv",
+    "sha256": "962be5bd5c95d87540546f299ac30874bca0f980c6e4af249c7bf0b293256964",
+    "bytes": 161540
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/README.md",
+    "sha256": "ff23f6a91a74aa2739f31cd1e9ab5a730ec508ec5f60f72118463d822949fb9d",
+    "bytes": 502
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/code/original/build_comparison_report.py",
+    "sha256": "0f272649d9e53fbb13b24544ddd8330b0b1c3b5a1330375dee42895c42260931",
+    "bytes": 8267
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/code/original/build_report.py",
+    "sha256": "793f114a617f1a0eb4c7ae91d268e293e17b3a0d11a287528c11307b0cd70eec",
+    "bytes": 17934
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/code/original/check_setup.py",
+    "sha256": "6d790e055ed8e8f0f8d03b4a3561c77c44bb0c3c181c6b8e610c9f04cae4b3e0",
+    "bytes": 1559
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/code/original/common.py",
+    "sha256": "5613e92acf44bbc04d84b440b1e7b6339b5334c778cc4a15eed96c426888a4a6",
+    "bytes": 1603
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/code/original/neural.py",
+    "sha256": "c3be76ab476c2de4113f4bf5d896b88fd423e5b97cf8fe5a9121e50601175a73",
+    "bytes": 4863
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/code/original/pipeline.py",
+    "sha256": "b2cbf83b3e866999e0551fa1bc31f50b5400e81308e07290014b24e301f73499",
+    "bytes": 1914
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/code/original/prepare.py",
+    "sha256": "50bc6dacf9c1e27acc198c6534b234a32480e7101349f317d16116c00601b4ba",
+    "bytes": 4015
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/code/original/statistical.py",
+    "sha256": "fbf1c66b0e97e4ea9b34b793f0a96f61263fc5849c93b5eab6a0347ffee8b4e2",
+    "bytes": 4168
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/code/original/summarise.py",
+    "sha256": "ebfc3e89dd9681f8ca107c4e9fdbdec61d95210f7295e1a321c620b1d539ad9f",
+    "bytes": 6592
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/code/original/verify_completed.py",
+    "sha256": "61f8374905edcca015a0c993979f95c412bce29aab030f62ef18d99b39be2de2",
+    "bytes": 3488
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed123/COMPLETE.json",
+    "sha256": "30e1c36a831ad859346e263fa5b7de5cf436a05cec47835a1eaae9f37e700c61",
+    "bytes": 491
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed123/EVALUATION.json",
+    "sha256": "b3b009411139de2f5bdbb959d38748f85450ff51c7a2bf04ba2d3747a2881318",
+    "bytes": 243
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed123/PROGRESS.json",
+    "sha256": "f458bf8b6da6e5edf9e1704e3d492fe14f509071d800e2a59181e2190c73dea1",
+    "bytes": 193
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed123/STARTED.json",
+    "sha256": "757dc11099ceb454adf8c210f2f89c9a8494802ab268337ec62e2aa9d2e6cb87",
+    "bytes": 223
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed123/best.pt",
+    "sha256": "1b838d4949167648bc46837ea70b93d9a71cfbd06491d8e4ebe12abe11e5db39",
+    "bytes": 2259417
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed123/evaluation_predictions.csv",
+    "sha256": "3ee5a9d4b8c39548e1a34e280ee77446502888cdca29cc7ff79d5c97bd478182",
+    "bytes": 398426
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed123/history.csv",
+    "sha256": "246860d1aa0557f020b7be3d9c2f048ff34aec45349c2eb1d821b0df3c029f98",
+    "bytes": 1785
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed123/scalers.pkl",
+    "sha256": "9a1121250b6a01536078f64e8c02b6bd20ddd27674ff7c85e90b044d7cc53ed7",
+    "bytes": 152207
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed123/validation_predictions.csv",
+    "sha256": "f8ea8c92c87cb9a51d2693193f308b42a202dd8e64b8794dd5b65b74c4cf51f4",
+    "bytes": 161542
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed2026/COMPLETE.json",
+    "sha256": "c6b3a1f6d32c4e965132c07af82ff327f7f7ca0c01a6c8b1ef947555b92af17b",
+    "bytes": 490
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed2026/EVALUATION.json",
+    "sha256": "e8dbc361d2ba6ecaac8920f7e5469e34281e4706e5bf099c3710b1276bad8893",
+    "bytes": 242
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed2026/PROGRESS.json",
+    "sha256": "76ccf1fb771f874ef5d663428af2cc1334bb24c7f445f601b48403543840cd80",
+    "bytes": 193
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed2026/STARTED.json",
+    "sha256": "037544281258c840e8766fe5f2711b01c9bd62d3f0dea9c1916a171f3dc66d8e",
+    "bytes": 224
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed2026/best.pt",
+    "sha256": "d38eec2e8323289eb65e11b081d74c69b19a8e06623500b38efdb2574c7b6000",
+    "bytes": 2259417
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed2026/evaluation_predictions.csv",
+    "sha256": "924109d72dc43f9b56c0a53aae8aa1623afed0bba256fea4bf9cc427c467dd8f",
+    "bytes": 398071
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed2026/history.csv",
+    "sha256": "1cbadf249d0ec009cf697dc040c24abbf313e0d4f053a2d1fa5e3e65ac6bf497",
+    "bytes": 1150
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed2026/scalers.pkl",
+    "sha256": "9a1121250b6a01536078f64e8c02b6bd20ddd27674ff7c85e90b044d7cc53ed7",
+    "bytes": 152207
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed2026/validation_predictions.csv",
+    "sha256": "234382738d82116db1a639f16711a5da922d8c10ba3b89cd1604c97c69fea221",
+    "bytes": 161555
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed42/COMPLETE.json",
+    "sha256": "5e2dc554c935af07e0020a7bdfafbff9a24f23683324a3b5fa3c881c674db4c1",
+    "bytes": 489
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed42/EVALUATION.json",
+    "sha256": "1b003d0cd749faf5d73ce5f8a42f50d367e1e28b5b6195c178dd87dcf4dc0bcb",
+    "bytes": 243
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed42/PROGRESS.json",
+    "sha256": "b0d0205596c2e4257eebf4ff06a445311ed105b9075f907b6195583da2db0880",
+    "bytes": 194
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed42/STARTED.json",
+    "sha256": "9b4a6319b72e4953b548bfcc967e9ca6b4cf389ca0fb7c9e6e13266845eb55fd",
+    "bytes": 222
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed42/best.pt",
+    "sha256": "a96ee096b931dc7e233c9549a8ecc00a1cd2f0115b6a921b745dc2938460665c",
+    "bytes": 2259417
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed42/evaluation_predictions.csv",
+    "sha256": "ebd3e2fdc460f76de0009335445caf50871e5619677b97ae21e381a60108909d",
+    "bytes": 398059
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed42/history.csv",
+    "sha256": "17addda271b215f7e2fa7698851b3d59606f855a0baa94ef7d0362bb4c435aa6",
+    "bytes": 1142
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed42/scalers.pkl",
+    "sha256": "9a1121250b6a01536078f64e8c02b6bd20ddd27674ff7c85e90b044d7cc53ed7",
+    "bytes": 152207
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed42/validation_predictions.csv",
+    "sha256": "477b830b662557089ce9b5d61f3e52be0da59cc8dd0d2a674a90d4fdf1e1df41",
+    "bytes": 161509
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed7/COMPLETE.json",
+    "sha256": "6f4d04b009c317c2448441528b6603d02b93ac8d476c701e6ee3901dde677e60",
+    "bytes": 488
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed7/EVALUATION.json",
+    "sha256": "b3b775df77c4a899bee577f12df2da49ef69e5e9b5815c09680175fe758473b5",
+    "bytes": 241
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed7/PROGRESS.json",
+    "sha256": "39fbc144035eb1dfb2183a73d62c2cb2af74ac3bc78cea59dc0e8a997794e133",
+    "bytes": 193
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed7/STARTED.json",
+    "sha256": "4b48efda4e65d917bbd1000bc5cac242d6e4e97ae55c18177445b61f920d9bc9",
+    "bytes": 221
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed7/best.pt",
+    "sha256": "a21052f08f728f5695d1523199da1dc239044d33a3dc7d37785a458e47b89e62",
+    "bytes": 2259417
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed7/evaluation_predictions.csv",
+    "sha256": "8320bd948874bcdaac0d162d4b7a785e04519a95ab734625a5060053002836e6",
+    "bytes": 398258
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed7/history.csv",
+    "sha256": "dbe0fede605d69ca726ba46dfb2d72f027de6bea5d48b3d7de93a39293ae8a89",
+    "bytes": 1728
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed7/scalers.pkl",
+    "sha256": "9a1121250b6a01536078f64e8c02b6bd20ddd27674ff7c85e90b044d7cc53ed7",
+    "bytes": 152207
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed7/validation_predictions.csv",
+    "sha256": "20a072439293c997e3fc8ad5cc5df3d5285c01059d00d45542cc268588857c90",
+    "bytes": 161565
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed99/COMPLETE.json",
+    "sha256": "1e79e402956331e268c1d4f3490e77f1c4e2a26c961769f85846e6e9b4426faf",
+    "bytes": 490
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed99/EVALUATION.json",
+    "sha256": "5e12a85500e1dd8d9156ddb3f090e6425cb13d19e6f1698f1bbca2006b4d3208",
+    "bytes": 245
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed99/PROGRESS.json",
+    "sha256": "f9e8bd2033ded592e2d9cdda7e137d0947f661ce0f14bac499c97010eb3ccbfb",
+    "bytes": 193
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed99/STARTED.json",
+    "sha256": "1441ec940d3c0c57dcf9fed4db159d0f8b0187593eab226202cada1a7f6d2868",
+    "bytes": 222
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed99/best.pt",
+    "sha256": "56b62326b317f3f0ba54940af954dee4c7e435fc99af11ec988e0ba589380732",
+    "bytes": 2259417
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed99/evaluation_predictions.csv",
+    "sha256": "69c21db2601d21dda5208a72b8099406d854278b9a0808b0d9ee11fab78956a9",
+    "bytes": 398222
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed99/history.csv",
+    "sha256": "2b3bcda51855a4e998ad7a9771d0fbb7f99cf015988cf0db0c094e6823074390",
+    "bytes": 1411
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed99/scalers.pkl",
+    "sha256": "9a1121250b6a01536078f64e8c02b6bd20ddd27674ff7c85e90b044d7cc53ed7",
+    "bytes": 152207
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/02_bilstm_without_bitcoin/results/bilstm_no_btc_seed99/validation_predictions.csv",
+    "sha256": "3bb97a1d43a5e6a90f1303a60c6312a7c5e2df7c91c612b817b6edc3e9333ca7",
+    "bytes": 161517
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/README.md",
+    "sha256": "d8ef7d96302b155bff0812c46b5b6fcaefcef7bf3bd3642123a47c102b629467",
+    "bytes": 500
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/code/original/build_comparison_report.py",
+    "sha256": "0f272649d9e53fbb13b24544ddd8330b0b1c3b5a1330375dee42895c42260931",
+    "bytes": 8267
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/code/original/build_report.py",
+    "sha256": "793f114a617f1a0eb4c7ae91d268e293e17b3a0d11a287528c11307b0cd70eec",
+    "bytes": 17934
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/code/original/check_setup.py",
+    "sha256": "6d790e055ed8e8f0f8d03b4a3561c77c44bb0c3c181c6b8e610c9f04cae4b3e0",
+    "bytes": 1559
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/code/original/common.py",
+    "sha256": "5613e92acf44bbc04d84b440b1e7b6339b5334c778cc4a15eed96c426888a4a6",
+    "bytes": 1603
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/code/original/neural.py",
+    "sha256": "c3be76ab476c2de4113f4bf5d896b88fd423e5b97cf8fe5a9121e50601175a73",
+    "bytes": 4863
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/code/original/pipeline.py",
+    "sha256": "b2cbf83b3e866999e0551fa1bc31f50b5400e81308e07290014b24e301f73499",
+    "bytes": 1914
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/code/original/prepare.py",
+    "sha256": "50bc6dacf9c1e27acc198c6534b234a32480e7101349f317d16116c00601b4ba",
+    "bytes": 4015
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/code/original/statistical.py",
+    "sha256": "fbf1c66b0e97e4ea9b34b793f0a96f61263fc5849c93b5eab6a0347ffee8b4e2",
+    "bytes": 4168
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/code/original/summarise.py",
+    "sha256": "ebfc3e89dd9681f8ca107c4e9fdbdec61d95210f7295e1a321c620b1d539ad9f",
+    "bytes": 6592
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/code/original/verify_completed.py",
+    "sha256": "61f8374905edcca015a0c993979f95c412bce29aab030f62ef18d99b39be2de2",
+    "bytes": 3488
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed123/COMPLETE.json",
+    "sha256": "fbb81af26934f501099a73a17caff416e785d67b141a0383be8be04d261821ba",
+    "bytes": 485
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed123/EVALUATION.json",
+    "sha256": "fbb98b77fe106e251621823d0128ec21ec343c10434cc27f99bf15cd1c24ba26",
+    "bytes": 240
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed123/PROGRESS.json",
+    "sha256": "e81f62d00218389636c30d93026360414a355745bfde9d95df597effe69e9b35",
+    "bytes": 193
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed123/STARTED.json",
+    "sha256": "035210632dc3308f1c0648a450a9a24b406963fe9d46a3cae80b29bf25b426d2",
+    "bytes": 218
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed123/best.pt",
+    "sha256": "7d2296df5f115be971850f3c1c203610452532605276a6c9afc07faddef0451f",
+    "bytes": 871241
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed123/evaluation_predictions.csv",
+    "sha256": "f14e26c03695276f8caaf0d22616d61f299bc3b21686443775e6038c8debfa7d",
+    "bytes": 398166
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed123/history.csv",
+    "sha256": "54c529bc4cc43a14594a025d2198dcfc3edebbd1cd1468989344b2ecf6ba60a6",
+    "bytes": 1147
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed123/scalers.pkl",
+    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
+    "bytes": 152235
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed123/validation_predictions.csv",
+    "sha256": "77f2e24a223a29de62fe49a9c950daa7e99505dbbd71a16063a8e4271fc643ee",
+    "bytes": 161532
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed2026/COMPLETE.json",
+    "sha256": "4c1f9b0de670fe2b47e98308404a3590bc854eb6588f064df73634fa7495a679",
+    "bytes": 482
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed2026/EVALUATION.json",
+    "sha256": "a8c47dbbc2f70d2430ab532e85dab90cc05d1b37a6f0fb5044967b2046554ef6",
+    "bytes": 241
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed2026/PROGRESS.json",
+    "sha256": "5cb278ff29dbf266fbd159c9a08f422485056396c818e0f7887a9fbdaee5260a",
+    "bytes": 194
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed2026/STARTED.json",
+    "sha256": "292072121aef7293a0235cdacfa94d1268aae7b73b8b96f9b61c6e0cc650c779",
+    "bytes": 219
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed2026/best.pt",
+    "sha256": "d86af6fce78ba34370a896db8d67ec0d83736ee2d477312344e609d0ea5a9cdc",
+    "bytes": 871241
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed2026/evaluation_predictions.csv",
+    "sha256": "160a069446ba5eccba16a673b13f7a4dc1f4a19e96159ed6c186441a1cd269c0",
+    "bytes": 398272
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed2026/history.csv",
+    "sha256": "582c1f19d6a6326a8e725f3547069f45a96e5b4aa4e92c6e3b68ed5506fbb88f",
+    "bytes": 1084
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed2026/scalers.pkl",
+    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
+    "bytes": 152235
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed2026/validation_predictions.csv",
+    "sha256": "4e828a936497e38c9a9754cf7a28311cdb3319209261720529458df01450ea77",
+    "bytes": 161544
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed42/COMPLETE.json",
+    "sha256": "324fa5ced5c791c3f939e453fc2323b68282eb8b963ba36e187b951c0cda73d8",
+    "bytes": 483
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed42/EVALUATION.json",
+    "sha256": "5f696066c8bae9a001067a9425180ca2dfc65b64a7dc4550c4516a1a3079f848",
+    "bytes": 241
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed42/PROGRESS.json",
+    "sha256": "e85f7b4c409445c3d191853b9872bad0aa294d7c1f59018442d43d1ec8358242",
+    "bytes": 192
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed42/STARTED.json",
+    "sha256": "9d53d65b179addaf29a844a9866ea96d2a16e32ce9d635c4af0dfce941f45cb3",
+    "bytes": 217
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed42/best.pt",
+    "sha256": "16f24cd5711b500cf5cba8d60a89099a88ccc38b97fcb9aa4ec8d367bbb8c38e",
+    "bytes": 871241
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed42/evaluation_predictions.csv",
+    "sha256": "10e188273599933713b7d26eb123f63c7be87508f857df5f9ef9ad5381323238",
+    "bytes": 398105
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed42/history.csv",
+    "sha256": "e5d95f7758dc00c2afd6092f3f226298a1bb830a7d904da83bf316a698342170",
+    "bytes": 1074
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed42/scalers.pkl",
+    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
+    "bytes": 152235
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed42/validation_predictions.csv",
+    "sha256": "47f21f138658dbde8a21c9d2cd8e3ddb3aaf51c09de68b1e6adc2a70e9c8c8ca",
+    "bytes": 161527
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed7/COMPLETE.json",
+    "sha256": "280891068746913f45d92a6cb93190b9b6bbaf6bb5c6674fb51e7d228f415177",
+    "bytes": 483
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed7/EVALUATION.json",
+    "sha256": "4d50c3d533722bf8875cbf5b3e7245a8dfdc82b296fa882f7ff79f72179fee68",
+    "bytes": 237
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed7/PROGRESS.json",
+    "sha256": "74b1dc54851d67f2f38f73d9f09beb2d3764ce8b40f760a75ed64bdbe7c99eeb",
+    "bytes": 193
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed7/STARTED.json",
+    "sha256": "4566beafe3f5d462d3eada60d68aaf8a956862a6cadf98228f24702b31b01a7e",
+    "bytes": 216
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed7/best.pt",
+    "sha256": "89f4fb17337c81b4628ca7ae15f3d3846fdb2790c26c7774b281676425b6f5b1",
+    "bytes": 871241
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed7/evaluation_predictions.csv",
+    "sha256": "1f45a534401c057c91a923dd94e24fbb2ea98df7ed3629e57d4d7a7209d891eb",
+    "bytes": 398315
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed7/history.csv",
+    "sha256": "bcf20918fb883d382f38d73727ba3cb42b03c8a6a392149f6c76b45f1720e159",
+    "bytes": 1600
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed7/scalers.pkl",
+    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
+    "bytes": 152235
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed7/validation_predictions.csv",
+    "sha256": "9e563f473d9ceab85359bf3b11eb60c38eb74a53d0f54a699a2fc219cfa1a9a3",
+    "bytes": 161543
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed99/COMPLETE.json",
+    "sha256": "ce6854374c193ece10f73afa0e3e9e71bef2603108f6fe9bbd45157a9a9708c9",
+    "bytes": 485
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed99/EVALUATION.json",
+    "sha256": "7a20d84216425214e460b973b85c59de8be47fcaa1ceaffff646d220db42a87f",
+    "bytes": 236
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed99/PROGRESS.json",
+    "sha256": "89f5cfbbaf7e7c4652f12a852944936b174f3acb2c96af1634952ab5dc3be94b",
+    "bytes": 193
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed99/STARTED.json",
+    "sha256": "a52ebf75735a51cf218b453dabfdc18fb767cb8550d79919039870c6668ab80b",
+    "bytes": 217
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed99/best.pt",
+    "sha256": "c038787e65e7ac9280dce4974186cbe6f74799012cd30e3f01859c0dbf8619c2",
+    "bytes": 871241
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed99/evaluation_predictions.csv",
+    "sha256": "9dadd6f72bc6cc485d9f3083cd6a2daa71b13cd47962e4dadb1e7d21d3ba7f6a",
+    "bytes": 398207
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed99/history.csv",
+    "sha256": "e7513f2bafb8222bea67f7a39f856ed3dd0c23839804672e9b1a110be5fbea2f",
+    "bytes": 1849
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed99/scalers.pkl",
+    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
+    "bytes": 152235
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/03_lstm_128_with_bitcoin/results/lstm_btc_seed99/validation_predictions.csv",
+    "sha256": "352b8409ae88cca68f15072dcdf99f664dc8ee4c45c25d0642a2aa418ef7af63",
+    "bytes": 161563
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/README.md",
+    "sha256": "8d0d073762a14073da2de797e7860041482c58a33cb62867095f2cf2db08d4fe",
+    "bytes": 512
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/code/original/build_comparison_report.py",
+    "sha256": "0f272649d9e53fbb13b24544ddd8330b0b1c3b5a1330375dee42895c42260931",
+    "bytes": 8267
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/code/original/build_report.py",
+    "sha256": "793f114a617f1a0eb4c7ae91d268e293e17b3a0d11a287528c11307b0cd70eec",
+    "bytes": 17934
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/code/original/check_setup.py",
+    "sha256": "6d790e055ed8e8f0f8d03b4a3561c77c44bb0c3c181c6b8e610c9f04cae4b3e0",
+    "bytes": 1559
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/code/original/common.py",
+    "sha256": "5613e92acf44bbc04d84b440b1e7b6339b5334c778cc4a15eed96c426888a4a6",
+    "bytes": 1603
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/code/original/neural.py",
+    "sha256": "c3be76ab476c2de4113f4bf5d896b88fd423e5b97cf8fe5a9121e50601175a73",
+    "bytes": 4863
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/code/original/pipeline.py",
+    "sha256": "b2cbf83b3e866999e0551fa1bc31f50b5400e81308e07290014b24e301f73499",
+    "bytes": 1914
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/code/original/prepare.py",
+    "sha256": "50bc6dacf9c1e27acc198c6534b234a32480e7101349f317d16116c00601b4ba",
+    "bytes": 4015
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/code/original/statistical.py",
+    "sha256": "fbf1c66b0e97e4ea9b34b793f0a96f61263fc5849c93b5eab6a0347ffee8b4e2",
+    "bytes": 4168
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/code/original/summarise.py",
+    "sha256": "ebfc3e89dd9681f8ca107c4e9fdbdec61d95210f7295e1a321c620b1d539ad9f",
+    "bytes": 6592
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/code/original/verify_completed.py",
+    "sha256": "61f8374905edcca015a0c993979f95c412bce29aab030f62ef18d99b39be2de2",
+    "bytes": 3488
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed123/COMPLETE.json",
+    "sha256": "db57d2e9fd0fb444911bd903a61c116f6d17d720ea52b14318eb5010bfa6f78f",
+    "bytes": 491
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed123/EVALUATION.json",
+    "sha256": "d49bd4f15562f55d61bec7738b369785b639876fc13644c16282a74738059c58",
+    "bytes": 248
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed123/PROGRESS.json",
+    "sha256": "d09b46e61b05e2672fdfbaa2d7cb2b231ba80122aef230faf1cfc75b78b5edee",
+    "bytes": 194
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed123/STARTED.json",
+    "sha256": "8c1a150055681bfc4038a79381b40fcfa5107add2805359d56e2292952e8aecc",
+    "bytes": 226
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed123/best.pt",
+    "sha256": "0f6fd74aea16042e8bd63681e274eb0ca658e9aa7548b8769b17f0457c57627f",
+    "bytes": 2253001
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed123/evaluation_predictions.csv",
+    "sha256": "dfaa01c18befb2deb934409bd64b7afdbc7285c7e2ddb7b5c50dd9da2f20ab15",
+    "bytes": 398149
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed123/history.csv",
+    "sha256": "b5e70ec50426edbcc9fea664dcf91cd8eb39b4da9915091698b19b82dece568e",
+    "bytes": 1477
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed123/scalers.pkl",
+    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
+    "bytes": 152235
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed123/validation_predictions.csv",
+    "sha256": "35aabd7e27cc6dd2856a7ccf05307f0e15cb0317529f9c9b9fcc26a33a6bb003",
+    "bytes": 161572
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed2026/COMPLETE.json",
+    "sha256": "12465dcf3fbef860b611357b7dd96aa9e1b7162c52778c2e5b519e92faea0d36",
+    "bytes": 492
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed2026/EVALUATION.json",
+    "sha256": "8f81a702b06be9bb5ea8bc5b937a11b5b375725707a6dd1e51fe9fb33aae9a47",
+    "bytes": 246
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed2026/PROGRESS.json",
+    "sha256": "c93b90bcbb2152c81777e4d8ec78ae706e674e993d55d19afb5d35d299c29c13",
+    "bytes": 193
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed2026/STARTED.json",
+    "sha256": "28f7bcdb4b4ececd7ca2fb3f13b0438ed74450456f4755ce4329dc94bc4d3bdf",
+    "bytes": 227
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed2026/best.pt",
+    "sha256": "3ecd233cf3d3a44350cd0b594136b66460de82350c278ae5e957cfd764ab78d0",
+    "bytes": 2253001
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed2026/evaluation_predictions.csv",
+    "sha256": "acb31b025b49e19aaafcaab6d0d9e8a0a19895a31c2b9b9422f1e7759d070df0",
+    "bytes": 398036
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed2026/history.csv",
+    "sha256": "6bf7b976f41f83520c802de0565b926bdbcacc1ca30046c6ddfcab5a96bfff3f",
+    "bytes": 1143
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed2026/scalers.pkl",
+    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
+    "bytes": 152235
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed2026/validation_predictions.csv",
+    "sha256": "64062468d5eaf9fdd1951f560165a3fb2b0523e2d997260077b92714a5a5c20b",
+    "bytes": 161523
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed42/COMPLETE.json",
+    "sha256": "9b97ff81318f6d9c381164fc865125d80d257abbf88cb9b745989d257cb2c3b2",
+    "bytes": 493
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed42/EVALUATION.json",
+    "sha256": "52471db0bb0254e72ad145286c3d4d11cd371a65931de36d651c85e0abbf007b",
+    "bytes": 246
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed42/PROGRESS.json",
+    "sha256": "a25f29416003766ae669f7294ea9f3bb97b70cd0990603b4828f210200c18c97",
+    "bytes": 194
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed42/STARTED.json",
+    "sha256": "32fed2ae5b207c1d31f1f5561ef3035ef9eb38b9113cdfa3280c0f18640e8cdb",
+    "bytes": 225
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed42/best.pt",
+    "sha256": "664c9e89809e5b0b2c48110d11471d1e800c9cc1611de0a4bde0bb8fd227b8b7",
+    "bytes": 2253001
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed42/evaluation_predictions.csv",
+    "sha256": "7e0650e85c5d6b2af9d09dbd076f594a4f0e26a6529c88880385549aa32d595f",
+    "bytes": 398171
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed42/history.csv",
+    "sha256": "15dec6ff402832308937443063a22bd538b5805be77c9b7fdd78488764f3bbe8",
+    "bytes": 1084
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed42/scalers.pkl",
+    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
+    "bytes": 152235
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed42/validation_predictions.csv",
+    "sha256": "8860277f359c0490e83495d893b386c7d7051cb46ce037a28428c1a9a9f58b16",
+    "bytes": 161510
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed7/COMPLETE.json",
+    "sha256": "422717faf644e052162952b902edaf3f596aaf420115afd7cf0a4b60c656d970",
+    "bytes": 489
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed7/EVALUATION.json",
+    "sha256": "7c185138d8fc8f776b571c2a6154e14d888950db74bd071259976cf1742c3a54",
+    "bytes": 243
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed7/PROGRESS.json",
+    "sha256": "d500dbf6eb4abdffd265cd94c6b84d3c94383e056997f0ce70c9cba41397cdda",
+    "bytes": 193
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed7/STARTED.json",
+    "sha256": "209a5be1b7cdc2af19f3aa3b78655664b7c291eaa63b467e1621020d0dfdabaf",
+    "bytes": 224
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed7/best.pt",
+    "sha256": "3584c13921f83acafdfba88e5031bd292edf04e0847f9441e7174c9389c6569c",
+    "bytes": 2253001
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed7/evaluation_predictions.csv",
+    "sha256": "510004ef2d831c923fb61f37d7ce45ff11db5b8a946c62b1856f5bce831771cf",
+    "bytes": 398012
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed7/history.csv",
+    "sha256": "cb63695cceb25a53587c628b66a2f4c8e46d1a3ebbd9f2575f34b53e45723744",
+    "bytes": 1211
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed7/scalers.pkl",
+    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
+    "bytes": 152235
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed7/validation_predictions.csv",
+    "sha256": "331e4dba0469c927b7f48e3fad0543b1ec42d2c61b249cb854b419748292f3d5",
+    "bytes": 161555
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed99/COMPLETE.json",
+    "sha256": "b64b89f3000eed2ed68d8fdab4ca980d87119d7a05e0426193c63cdd4aac1205",
+    "bytes": 492
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed99/EVALUATION.json",
+    "sha256": "ef13970b5fe747e139946703822e013941ae60cc660d7e76917cd53c6bc0910d",
+    "bytes": 245
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed99/PROGRESS.json",
+    "sha256": "73bb9c82c4678c431d68c400a81bf627904494439927020030dd138d12a2a809",
+    "bytes": 193
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed99/STARTED.json",
+    "sha256": "97e4045488f31259325b841e7f31fc031e14e80a910924eaa50da7121f39735d",
+    "bytes": 225
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed99/best.pt",
+    "sha256": "e4eb14d219051bab9b8ff4e3bb4655cf9f2a574646fdb6f1270808cf5bd9b577",
+    "bytes": 2253001
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed99/evaluation_predictions.csv",
+    "sha256": "5bee60413067e9f4019db1ef51b606c07fd5399be40defdc4f3fd11de46ab610",
+    "bytes": 398047
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed99/history.csv",
+    "sha256": "efb6ff67100e27e0fa76d894574cc713b0b3008a0d9108e83be6df9995183260",
+    "bytes": 1150
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed99/scalers.pkl",
+    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
+    "bytes": 152235
+  },
+  {
+    "path": "subprojects/13_xrp_technical_architecture_comparison/04_lstm_210_parameter_matched/results/lstm_matched_btc_seed99/validation_predictions.csv",
+    "sha256": "5a682a3074039fffce7af343f89ae4b07772d0b6e8dd902617fffe199338f4a6",
+    "bytes": 161554
+  },
+  {
     "path": "subprojects/13_xrp_technical_architecture_comparison/README.md",
-    "sha256": "db91a265f93aa58ab32cc23aa6214389b05ef671369619df5c05911ea0afa727",
-    "bytes": 984
+    "sha256": "0221cde9da272263513600b51ae3fa144c9013b99f9f420bc8f8297b7d65166a",
+    "bytes": 1776
   },
   {
     "path": "subprojects/13_xrp_technical_architecture_comparison/code/original/build_comparison_report.py",
@@ -3865,909 +5050,9 @@
     "bytes": 111096
   },
   {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed123/COMPLETE.json",
-    "sha256": "24144f225f759daef0b1d25cb7dfcdd9ccde8a74042aa006b970f165b885a1f4",
-    "bytes": 486
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed123/EVALUATION.json",
-    "sha256": "6ec3b94514e8b85493ea46b1f5378c8f7d10bc6c15dca62991d1151458fb1e6a",
-    "bytes": 240
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed123/PROGRESS.json",
-    "sha256": "f433a60d1d9e0f3b942ae6a16285523e14d0a46d250839fec627e4f722dc8be7",
-    "bytes": 192
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed123/STARTED.json",
-    "sha256": "7be4036d8482877a8d22505f0bd8b1047c681cb49353c01b4a9fe589b7188045",
-    "bytes": 219
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed123/best.pt",
-    "sha256": "0beb54bdc041cf1f87587044fa2fdf1fc00efa0cac379043d7b0c4fd277fc0fe",
-    "bytes": 2263513
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed123/evaluation_predictions.csv",
-    "sha256": "ed2932e146279dcad678b3c27805fc27ec5ba55a3fdaa5ef316f54ffefec8a0d",
-    "bytes": 398258
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed123/history.csv",
-    "sha256": "9711aeffc3171ddd63c429b35ab62fdadb07532bdd9ab757da3d5e10dc6130c7",
-    "bytes": 1138
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed123/scalers.pkl",
-    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
-    "bytes": 152235
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed123/validation_predictions.csv",
-    "sha256": "69f9b6ef7d4b8dcec00e6e752ed49e58d4b5ab692c26f190e87a606b9bf2aa3f",
-    "bytes": 161558
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed2026/COMPLETE.json",
-    "sha256": "ce94aa14251e877d9b3eefb78e9e91952949a7c97ff642b0516862f3abff240f",
-    "bytes": 489
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed2026/EVALUATION.json",
-    "sha256": "40ad494f919ae36a4e1cbcb4f47ae3d2a0d0d6b306b0ec192bc7385e15fd1d18",
-    "bytes": 242
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed2026/PROGRESS.json",
-    "sha256": "f935b1693dc2d3ab5325f5895dc125219e3589929d707a89322051f42116612b",
-    "bytes": 192
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed2026/STARTED.json",
-    "sha256": "3e9499a4e530b54bb2de0d524cd98eb197b0be08d638a275ca07730b9fe4d630",
-    "bytes": 220
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed2026/best.pt",
-    "sha256": "e87fc9d1ccb972a457b90e0eb4a787a4470909c7311ba38a0cd4c90d3efd5d0c",
-    "bytes": 2263513
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed2026/evaluation_predictions.csv",
-    "sha256": "cb2470935db6e3ed2a8755537511e1a06651babf82b07d6d71af384510d044c8",
-    "bytes": 398165
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed2026/history.csv",
-    "sha256": "2c65d0af8c3faff847d585549024d2d718e2f2be88a7138084cbbf6889db9918",
-    "bytes": 1148
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed2026/scalers.pkl",
-    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
-    "bytes": 152235
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed2026/validation_predictions.csv",
-    "sha256": "9ec8bcd30b61fed4d457d12334b62343d634302578bbaa25b4d090166a7a589a",
-    "bytes": 161556
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed42/COMPLETE.json",
-    "sha256": "a057b373ed62ac2c0a62bf4f813bcb24131f6e76d47061133bbb8cb88fb3fc0e",
-    "bytes": 485
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed42/EVALUATION.json",
-    "sha256": "8571f7efad7dab531536762b656df99d26cf7b432092cff7a404b8d8c0403fa1",
-    "bytes": 240
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed42/PROGRESS.json",
-    "sha256": "55104595c32522d12dc2e1ef8dd6b5aad1f95af5dea1d44cdd52fc6f450b6c81",
-    "bytes": 193
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed42/STARTED.json",
-    "sha256": "5d653753078ea1a417aab4f47da21bbf189fb085035347082a3aaf62b963c3e0",
-    "bytes": 218
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed42/best.pt",
-    "sha256": "d7cb353b1a9e483ad846fd2faf84a8b4e32c934929620b30bb09e666abf07afd",
-    "bytes": 2263513
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed42/evaluation_predictions.csv",
-    "sha256": "c65a2c932f7641e969de80861992b52dd4412af6a1b0bd81c436a7f22a3fe470",
-    "bytes": 398122
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed42/history.csv",
-    "sha256": "3d98a20244f5750191ac2223b13bbaa15371a139195fd2e9041728ff245b3e86",
-    "bytes": 1079
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed42/scalers.pkl",
-    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
-    "bytes": 152235
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed42/validation_predictions.csv",
-    "sha256": "9a8145eebb9b5055f992c27a4f199eb499cd1bf5fe4c5daaf45b1667309970a1",
-    "bytes": 161537
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed7/COMPLETE.json",
-    "sha256": "e8b78d5884a532647a743c170d842a9993947e0eb6a80485efeed31eae61b0a9",
-    "bytes": 483
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed7/EVALUATION.json",
-    "sha256": "26a07eba7e2d2eef9078b5a7b9f117d8e64090939147fc529818a3f289ebd380",
-    "bytes": 238
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed7/PROGRESS.json",
-    "sha256": "10b9f385b14b1050b298c2d8037b71d63ef8b7801ca2830994819d753c3c2a39",
-    "bytes": 193
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed7/STARTED.json",
-    "sha256": "ece4b46795dcbaa300edfb5e00dbcd00de24723e13bf023822790870dba0f710",
-    "bytes": 217
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed7/best.pt",
-    "sha256": "66509c71ed1ee8a4d1ba0c7dc2508d0771237bc1ed4f241771da725509064131",
-    "bytes": 2263513
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed7/evaluation_predictions.csv",
-    "sha256": "9d72ebf1454515196ea92da1bbbcb0fd243285431424ead722b9f490b8535dbb",
-    "bytes": 398147
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed7/history.csv",
-    "sha256": "32716a6f97d9cd29e49e44c63b346a53aebf1b1fe7ccad2d10913b37ac0af1dd",
-    "bytes": 1078
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed7/scalers.pkl",
-    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
-    "bytes": 152235
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed7/validation_predictions.csv",
-    "sha256": "f9b1fe42861ed50a42e4ba1203c39f045ecb954089e5615a8ee7872257cbf95e",
-    "bytes": 161475
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed99/COMPLETE.json",
-    "sha256": "82340c1f873a9e266fa64340fea6d298a68b09c9acd1aecb350ded977ac48bec",
-    "bytes": 485
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed99/EVALUATION.json",
-    "sha256": "86ae59f507c8aac23a05c4f5c436d497ee51c28de0cc3677a70b3fcfa65a7664",
-    "bytes": 240
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed99/PROGRESS.json",
-    "sha256": "3c55ff5d3b0544e0224554b1791faa17559cec0d7ff0a0eb9b37253dc493569e",
-    "bytes": 194
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed99/STARTED.json",
-    "sha256": "c088f501ecc387b26bd5784f8d5aa58e2264526f0f84be803c2db1f61384dec6",
-    "bytes": 218
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed99/best.pt",
-    "sha256": "f5a2933c0bd863b7d0d54a2fdb7f872007bfa2dd51c90355abba95e3e3f067fc",
-    "bytes": 2263513
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed99/evaluation_predictions.csv",
-    "sha256": "772f73209c097cc5d0d38faddb41005f0b130822abb38f89bf9f991424bf4641",
-    "bytes": 398346
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed99/history.csv",
-    "sha256": "e5a1a973a8a1601e96258f69ca403b33df34a2794928678ec61ac6ce9ccecd22",
-    "bytes": 1088
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed99/scalers.pkl",
-    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
-    "bytes": 152235
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_btc_seed99/validation_predictions.csv",
-    "sha256": "962be5bd5c95d87540546f299ac30874bca0f980c6e4af249c7bf0b293256964",
-    "bytes": 161540
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed123/COMPLETE.json",
-    "sha256": "30e1c36a831ad859346e263fa5b7de5cf436a05cec47835a1eaae9f37e700c61",
-    "bytes": 491
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed123/EVALUATION.json",
-    "sha256": "b3b009411139de2f5bdbb959d38748f85450ff51c7a2bf04ba2d3747a2881318",
-    "bytes": 243
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed123/PROGRESS.json",
-    "sha256": "f458bf8b6da6e5edf9e1704e3d492fe14f509071d800e2a59181e2190c73dea1",
-    "bytes": 193
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed123/STARTED.json",
-    "sha256": "757dc11099ceb454adf8c210f2f89c9a8494802ab268337ec62e2aa9d2e6cb87",
-    "bytes": 223
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed123/best.pt",
-    "sha256": "1b838d4949167648bc46837ea70b93d9a71cfbd06491d8e4ebe12abe11e5db39",
-    "bytes": 2259417
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed123/evaluation_predictions.csv",
-    "sha256": "3ee5a9d4b8c39548e1a34e280ee77446502888cdca29cc7ff79d5c97bd478182",
-    "bytes": 398426
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed123/history.csv",
-    "sha256": "246860d1aa0557f020b7be3d9c2f048ff34aec45349c2eb1d821b0df3c029f98",
-    "bytes": 1785
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed123/scalers.pkl",
-    "sha256": "9a1121250b6a01536078f64e8c02b6bd20ddd27674ff7c85e90b044d7cc53ed7",
-    "bytes": 152207
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed123/validation_predictions.csv",
-    "sha256": "f8ea8c92c87cb9a51d2693193f308b42a202dd8e64b8794dd5b65b74c4cf51f4",
-    "bytes": 161542
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed2026/COMPLETE.json",
-    "sha256": "c6b3a1f6d32c4e965132c07af82ff327f7f7ca0c01a6c8b1ef947555b92af17b",
-    "bytes": 490
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed2026/EVALUATION.json",
-    "sha256": "e8dbc361d2ba6ecaac8920f7e5469e34281e4706e5bf099c3710b1276bad8893",
-    "bytes": 242
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed2026/PROGRESS.json",
-    "sha256": "76ccf1fb771f874ef5d663428af2cc1334bb24c7f445f601b48403543840cd80",
-    "bytes": 193
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed2026/STARTED.json",
-    "sha256": "037544281258c840e8766fe5f2711b01c9bd62d3f0dea9c1916a171f3dc66d8e",
-    "bytes": 224
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed2026/best.pt",
-    "sha256": "d38eec2e8323289eb65e11b081d74c69b19a8e06623500b38efdb2574c7b6000",
-    "bytes": 2259417
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed2026/evaluation_predictions.csv",
-    "sha256": "924109d72dc43f9b56c0a53aae8aa1623afed0bba256fea4bf9cc427c467dd8f",
-    "bytes": 398071
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed2026/history.csv",
-    "sha256": "1cbadf249d0ec009cf697dc040c24abbf313e0d4f053a2d1fa5e3e65ac6bf497",
-    "bytes": 1150
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed2026/scalers.pkl",
-    "sha256": "9a1121250b6a01536078f64e8c02b6bd20ddd27674ff7c85e90b044d7cc53ed7",
-    "bytes": 152207
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed2026/validation_predictions.csv",
-    "sha256": "234382738d82116db1a639f16711a5da922d8c10ba3b89cd1604c97c69fea221",
-    "bytes": 161555
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed42/COMPLETE.json",
-    "sha256": "5e2dc554c935af07e0020a7bdfafbff9a24f23683324a3b5fa3c881c674db4c1",
-    "bytes": 489
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed42/EVALUATION.json",
-    "sha256": "1b003d0cd749faf5d73ce5f8a42f50d367e1e28b5b6195c178dd87dcf4dc0bcb",
-    "bytes": 243
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed42/PROGRESS.json",
-    "sha256": "b0d0205596c2e4257eebf4ff06a445311ed105b9075f907b6195583da2db0880",
-    "bytes": 194
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed42/STARTED.json",
-    "sha256": "9b4a6319b72e4953b548bfcc967e9ca6b4cf389ca0fb7c9e6e13266845eb55fd",
-    "bytes": 222
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed42/best.pt",
-    "sha256": "a96ee096b931dc7e233c9549a8ecc00a1cd2f0115b6a921b745dc2938460665c",
-    "bytes": 2259417
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed42/evaluation_predictions.csv",
-    "sha256": "ebd3e2fdc460f76de0009335445caf50871e5619677b97ae21e381a60108909d",
-    "bytes": 398059
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed42/history.csv",
-    "sha256": "17addda271b215f7e2fa7698851b3d59606f855a0baa94ef7d0362bb4c435aa6",
-    "bytes": 1142
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed42/scalers.pkl",
-    "sha256": "9a1121250b6a01536078f64e8c02b6bd20ddd27674ff7c85e90b044d7cc53ed7",
-    "bytes": 152207
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed42/validation_predictions.csv",
-    "sha256": "477b830b662557089ce9b5d61f3e52be0da59cc8dd0d2a674a90d4fdf1e1df41",
-    "bytes": 161509
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed7/COMPLETE.json",
-    "sha256": "6f4d04b009c317c2448441528b6603d02b93ac8d476c701e6ee3901dde677e60",
-    "bytes": 488
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed7/EVALUATION.json",
-    "sha256": "b3b775df77c4a899bee577f12df2da49ef69e5e9b5815c09680175fe758473b5",
-    "bytes": 241
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed7/PROGRESS.json",
-    "sha256": "39fbc144035eb1dfb2183a73d62c2cb2af74ac3bc78cea59dc0e8a997794e133",
-    "bytes": 193
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed7/STARTED.json",
-    "sha256": "4b48efda4e65d917bbd1000bc5cac242d6e4e97ae55c18177445b61f920d9bc9",
-    "bytes": 221
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed7/best.pt",
-    "sha256": "a21052f08f728f5695d1523199da1dc239044d33a3dc7d37785a458e47b89e62",
-    "bytes": 2259417
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed7/evaluation_predictions.csv",
-    "sha256": "8320bd948874bcdaac0d162d4b7a785e04519a95ab734625a5060053002836e6",
-    "bytes": 398258
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed7/history.csv",
-    "sha256": "dbe0fede605d69ca726ba46dfb2d72f027de6bea5d48b3d7de93a39293ae8a89",
-    "bytes": 1728
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed7/scalers.pkl",
-    "sha256": "9a1121250b6a01536078f64e8c02b6bd20ddd27674ff7c85e90b044d7cc53ed7",
-    "bytes": 152207
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed7/validation_predictions.csv",
-    "sha256": "20a072439293c997e3fc8ad5cc5df3d5285c01059d00d45542cc268588857c90",
-    "bytes": 161565
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed99/COMPLETE.json",
-    "sha256": "1e79e402956331e268c1d4f3490e77f1c4e2a26c961769f85846e6e9b4426faf",
-    "bytes": 490
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed99/EVALUATION.json",
-    "sha256": "5e12a85500e1dd8d9156ddb3f090e6425cb13d19e6f1698f1bbca2006b4d3208",
-    "bytes": 245
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed99/PROGRESS.json",
-    "sha256": "f9e8bd2033ded592e2d9cdda7e137d0947f661ce0f14bac499c97010eb3ccbfb",
-    "bytes": 193
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed99/STARTED.json",
-    "sha256": "1441ec940d3c0c57dcf9fed4db159d0f8b0187593eab226202cada1a7f6d2868",
-    "bytes": 222
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed99/best.pt",
-    "sha256": "56b62326b317f3f0ba54940af954dee4c7e435fc99af11ec988e0ba589380732",
-    "bytes": 2259417
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed99/evaluation_predictions.csv",
-    "sha256": "69c21db2601d21dda5208a72b8099406d854278b9a0808b0d9ee11fab78956a9",
-    "bytes": 398222
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed99/history.csv",
-    "sha256": "2b3bcda51855a4e998ad7a9771d0fbb7f99cf015988cf0db0c094e6823074390",
-    "bytes": 1411
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed99/scalers.pkl",
-    "sha256": "9a1121250b6a01536078f64e8c02b6bd20ddd27674ff7c85e90b044d7cc53ed7",
-    "bytes": 152207
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/bilstm_no_btc_seed99/validation_predictions.csv",
-    "sha256": "3bb97a1d43a5e6a90f1303a60c6312a7c5e2df7c91c612b817b6edc3e9333ca7",
-    "bytes": 161517
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed123/COMPLETE.json",
-    "sha256": "fbb81af26934f501099a73a17caff416e785d67b141a0383be8be04d261821ba",
-    "bytes": 485
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed123/EVALUATION.json",
-    "sha256": "fbb98b77fe106e251621823d0128ec21ec343c10434cc27f99bf15cd1c24ba26",
-    "bytes": 240
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed123/PROGRESS.json",
-    "sha256": "e81f62d00218389636c30d93026360414a355745bfde9d95df597effe69e9b35",
-    "bytes": 193
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed123/STARTED.json",
-    "sha256": "035210632dc3308f1c0648a450a9a24b406963fe9d46a3cae80b29bf25b426d2",
-    "bytes": 218
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed123/best.pt",
-    "sha256": "7d2296df5f115be971850f3c1c203610452532605276a6c9afc07faddef0451f",
-    "bytes": 871241
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed123/evaluation_predictions.csv",
-    "sha256": "f14e26c03695276f8caaf0d22616d61f299bc3b21686443775e6038c8debfa7d",
-    "bytes": 398166
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed123/history.csv",
-    "sha256": "54c529bc4cc43a14594a025d2198dcfc3edebbd1cd1468989344b2ecf6ba60a6",
-    "bytes": 1147
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed123/scalers.pkl",
-    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
-    "bytes": 152235
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed123/validation_predictions.csv",
-    "sha256": "77f2e24a223a29de62fe49a9c950daa7e99505dbbd71a16063a8e4271fc643ee",
-    "bytes": 161532
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed2026/COMPLETE.json",
-    "sha256": "4c1f9b0de670fe2b47e98308404a3590bc854eb6588f064df73634fa7495a679",
-    "bytes": 482
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed2026/EVALUATION.json",
-    "sha256": "a8c47dbbc2f70d2430ab532e85dab90cc05d1b37a6f0fb5044967b2046554ef6",
-    "bytes": 241
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed2026/PROGRESS.json",
-    "sha256": "5cb278ff29dbf266fbd159c9a08f422485056396c818e0f7887a9fbdaee5260a",
-    "bytes": 194
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed2026/STARTED.json",
-    "sha256": "292072121aef7293a0235cdacfa94d1268aae7b73b8b96f9b61c6e0cc650c779",
-    "bytes": 219
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed2026/best.pt",
-    "sha256": "d86af6fce78ba34370a896db8d67ec0d83736ee2d477312344e609d0ea5a9cdc",
-    "bytes": 871241
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed2026/evaluation_predictions.csv",
-    "sha256": "160a069446ba5eccba16a673b13f7a4dc1f4a19e96159ed6c186441a1cd269c0",
-    "bytes": 398272
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed2026/history.csv",
-    "sha256": "582c1f19d6a6326a8e725f3547069f45a96e5b4aa4e92c6e3b68ed5506fbb88f",
-    "bytes": 1084
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed2026/scalers.pkl",
-    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
-    "bytes": 152235
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed2026/validation_predictions.csv",
-    "sha256": "4e828a936497e38c9a9754cf7a28311cdb3319209261720529458df01450ea77",
-    "bytes": 161544
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed42/COMPLETE.json",
-    "sha256": "324fa5ced5c791c3f939e453fc2323b68282eb8b963ba36e187b951c0cda73d8",
-    "bytes": 483
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed42/EVALUATION.json",
-    "sha256": "5f696066c8bae9a001067a9425180ca2dfc65b64a7dc4550c4516a1a3079f848",
-    "bytes": 241
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed42/PROGRESS.json",
-    "sha256": "e85f7b4c409445c3d191853b9872bad0aa294d7c1f59018442d43d1ec8358242",
-    "bytes": 192
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed42/STARTED.json",
-    "sha256": "9d53d65b179addaf29a844a9866ea96d2a16e32ce9d635c4af0dfce941f45cb3",
-    "bytes": 217
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed42/best.pt",
-    "sha256": "16f24cd5711b500cf5cba8d60a89099a88ccc38b97fcb9aa4ec8d367bbb8c38e",
-    "bytes": 871241
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed42/evaluation_predictions.csv",
-    "sha256": "10e188273599933713b7d26eb123f63c7be87508f857df5f9ef9ad5381323238",
-    "bytes": 398105
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed42/history.csv",
-    "sha256": "e5d95f7758dc00c2afd6092f3f226298a1bb830a7d904da83bf316a698342170",
-    "bytes": 1074
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed42/scalers.pkl",
-    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
-    "bytes": 152235
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed42/validation_predictions.csv",
-    "sha256": "47f21f138658dbde8a21c9d2cd8e3ddb3aaf51c09de68b1e6adc2a70e9c8c8ca",
-    "bytes": 161527
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed7/COMPLETE.json",
-    "sha256": "280891068746913f45d92a6cb93190b9b6bbaf6bb5c6674fb51e7d228f415177",
-    "bytes": 483
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed7/EVALUATION.json",
-    "sha256": "4d50c3d533722bf8875cbf5b3e7245a8dfdc82b296fa882f7ff79f72179fee68",
-    "bytes": 237
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed7/PROGRESS.json",
-    "sha256": "74b1dc54851d67f2f38f73d9f09beb2d3764ce8b40f760a75ed64bdbe7c99eeb",
-    "bytes": 193
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed7/STARTED.json",
-    "sha256": "4566beafe3f5d462d3eada60d68aaf8a956862a6cadf98228f24702b31b01a7e",
-    "bytes": 216
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed7/best.pt",
-    "sha256": "89f4fb17337c81b4628ca7ae15f3d3846fdb2790c26c7774b281676425b6f5b1",
-    "bytes": 871241
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed7/evaluation_predictions.csv",
-    "sha256": "1f45a534401c057c91a923dd94e24fbb2ea98df7ed3629e57d4d7a7209d891eb",
-    "bytes": 398315
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed7/history.csv",
-    "sha256": "bcf20918fb883d382f38d73727ba3cb42b03c8a6a392149f6c76b45f1720e159",
-    "bytes": 1600
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed7/scalers.pkl",
-    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
-    "bytes": 152235
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed7/validation_predictions.csv",
-    "sha256": "9e563f473d9ceab85359bf3b11eb60c38eb74a53d0f54a699a2fc219cfa1a9a3",
-    "bytes": 161543
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed99/COMPLETE.json",
-    "sha256": "ce6854374c193ece10f73afa0e3e9e71bef2603108f6fe9bbd45157a9a9708c9",
-    "bytes": 485
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed99/EVALUATION.json",
-    "sha256": "7a20d84216425214e460b973b85c59de8be47fcaa1ceaffff646d220db42a87f",
-    "bytes": 236
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed99/PROGRESS.json",
-    "sha256": "89f5cfbbaf7e7c4652f12a852944936b174f3acb2c96af1634952ab5dc3be94b",
-    "bytes": 193
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed99/STARTED.json",
-    "sha256": "a52ebf75735a51cf218b453dabfdc18fb767cb8550d79919039870c6668ab80b",
-    "bytes": 217
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed99/best.pt",
-    "sha256": "c038787e65e7ac9280dce4974186cbe6f74799012cd30e3f01859c0dbf8619c2",
-    "bytes": 871241
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed99/evaluation_predictions.csv",
-    "sha256": "9dadd6f72bc6cc485d9f3083cd6a2daa71b13cd47962e4dadb1e7d21d3ba7f6a",
-    "bytes": 398207
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed99/history.csv",
-    "sha256": "e7513f2bafb8222bea67f7a39f856ed3dd0c23839804672e9b1a110be5fbea2f",
-    "bytes": 1849
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed99/scalers.pkl",
-    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
-    "bytes": 152235
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_btc_seed99/validation_predictions.csv",
-    "sha256": "352b8409ae88cca68f15072dcdf99f664dc8ee4c45c25d0642a2aa418ef7af63",
-    "bytes": 161563
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed123/COMPLETE.json",
-    "sha256": "db57d2e9fd0fb444911bd903a61c116f6d17d720ea52b14318eb5010bfa6f78f",
-    "bytes": 491
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed123/EVALUATION.json",
-    "sha256": "d49bd4f15562f55d61bec7738b369785b639876fc13644c16282a74738059c58",
-    "bytes": 248
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed123/PROGRESS.json",
-    "sha256": "d09b46e61b05e2672fdfbaa2d7cb2b231ba80122aef230faf1cfc75b78b5edee",
-    "bytes": 194
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed123/STARTED.json",
-    "sha256": "8c1a150055681bfc4038a79381b40fcfa5107add2805359d56e2292952e8aecc",
-    "bytes": 226
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed123/best.pt",
-    "sha256": "0f6fd74aea16042e8bd63681e274eb0ca658e9aa7548b8769b17f0457c57627f",
-    "bytes": 2253001
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed123/evaluation_predictions.csv",
-    "sha256": "dfaa01c18befb2deb934409bd64b7afdbc7285c7e2ddb7b5c50dd9da2f20ab15",
-    "bytes": 398149
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed123/history.csv",
-    "sha256": "b5e70ec50426edbcc9fea664dcf91cd8eb39b4da9915091698b19b82dece568e",
-    "bytes": 1477
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed123/scalers.pkl",
-    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
-    "bytes": 152235
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed123/validation_predictions.csv",
-    "sha256": "35aabd7e27cc6dd2856a7ccf05307f0e15cb0317529f9c9b9fcc26a33a6bb003",
-    "bytes": 161572
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed2026/COMPLETE.json",
-    "sha256": "12465dcf3fbef860b611357b7dd96aa9e1b7162c52778c2e5b519e92faea0d36",
-    "bytes": 492
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed2026/EVALUATION.json",
-    "sha256": "8f81a702b06be9bb5ea8bc5b937a11b5b375725707a6dd1e51fe9fb33aae9a47",
-    "bytes": 246
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed2026/PROGRESS.json",
-    "sha256": "c93b90bcbb2152c81777e4d8ec78ae706e674e993d55d19afb5d35d299c29c13",
-    "bytes": 193
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed2026/STARTED.json",
-    "sha256": "28f7bcdb4b4ececd7ca2fb3f13b0438ed74450456f4755ce4329dc94bc4d3bdf",
-    "bytes": 227
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed2026/best.pt",
-    "sha256": "3ecd233cf3d3a44350cd0b594136b66460de82350c278ae5e957cfd764ab78d0",
-    "bytes": 2253001
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed2026/evaluation_predictions.csv",
-    "sha256": "acb31b025b49e19aaafcaab6d0d9e8a0a19895a31c2b9b9422f1e7759d070df0",
-    "bytes": 398036
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed2026/history.csv",
-    "sha256": "6bf7b976f41f83520c802de0565b926bdbcacc1ca30046c6ddfcab5a96bfff3f",
-    "bytes": 1143
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed2026/scalers.pkl",
-    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
-    "bytes": 152235
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed2026/validation_predictions.csv",
-    "sha256": "64062468d5eaf9fdd1951f560165a3fb2b0523e2d997260077b92714a5a5c20b",
-    "bytes": 161523
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed42/COMPLETE.json",
-    "sha256": "9b97ff81318f6d9c381164fc865125d80d257abbf88cb9b745989d257cb2c3b2",
-    "bytes": 493
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed42/EVALUATION.json",
-    "sha256": "52471db0bb0254e72ad145286c3d4d11cd371a65931de36d651c85e0abbf007b",
-    "bytes": 246
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed42/PROGRESS.json",
-    "sha256": "a25f29416003766ae669f7294ea9f3bb97b70cd0990603b4828f210200c18c97",
-    "bytes": 194
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed42/STARTED.json",
-    "sha256": "32fed2ae5b207c1d31f1f5561ef3035ef9eb38b9113cdfa3280c0f18640e8cdb",
-    "bytes": 225
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed42/best.pt",
-    "sha256": "664c9e89809e5b0b2c48110d11471d1e800c9cc1611de0a4bde0bb8fd227b8b7",
-    "bytes": 2253001
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed42/evaluation_predictions.csv",
-    "sha256": "7e0650e85c5d6b2af9d09dbd076f594a4f0e26a6529c88880385549aa32d595f",
-    "bytes": 398171
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed42/history.csv",
-    "sha256": "15dec6ff402832308937443063a22bd538b5805be77c9b7fdd78488764f3bbe8",
-    "bytes": 1084
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed42/scalers.pkl",
-    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
-    "bytes": 152235
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed42/validation_predictions.csv",
-    "sha256": "8860277f359c0490e83495d893b386c7d7051cb46ce037a28428c1a9a9f58b16",
-    "bytes": 161510
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed7/COMPLETE.json",
-    "sha256": "422717faf644e052162952b902edaf3f596aaf420115afd7cf0a4b60c656d970",
-    "bytes": 489
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed7/EVALUATION.json",
-    "sha256": "7c185138d8fc8f776b571c2a6154e14d888950db74bd071259976cf1742c3a54",
-    "bytes": 243
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed7/PROGRESS.json",
-    "sha256": "d500dbf6eb4abdffd265cd94c6b84d3c94383e056997f0ce70c9cba41397cdda",
-    "bytes": 193
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed7/STARTED.json",
-    "sha256": "209a5be1b7cdc2af19f3aa3b78655664b7c291eaa63b467e1621020d0dfdabaf",
-    "bytes": 224
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed7/best.pt",
-    "sha256": "3584c13921f83acafdfba88e5031bd292edf04e0847f9441e7174c9389c6569c",
-    "bytes": 2253001
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed7/evaluation_predictions.csv",
-    "sha256": "510004ef2d831c923fb61f37d7ce45ff11db5b8a946c62b1856f5bce831771cf",
-    "bytes": 398012
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed7/history.csv",
-    "sha256": "cb63695cceb25a53587c628b66a2f4c8e46d1a3ebbd9f2575f34b53e45723744",
-    "bytes": 1211
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed7/scalers.pkl",
-    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
-    "bytes": 152235
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed7/validation_predictions.csv",
-    "sha256": "331e4dba0469c927b7f48e3fad0543b1ec42d2c61b249cb854b419748292f3d5",
-    "bytes": 161555
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed99/COMPLETE.json",
-    "sha256": "b64b89f3000eed2ed68d8fdab4ca980d87119d7a05e0426193c63cdd4aac1205",
-    "bytes": 492
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed99/EVALUATION.json",
-    "sha256": "ef13970b5fe747e139946703822e013941ae60cc660d7e76917cd53c6bc0910d",
-    "bytes": 245
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed99/PROGRESS.json",
-    "sha256": "73bb9c82c4678c431d68c400a81bf627904494439927020030dd138d12a2a809",
-    "bytes": 193
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed99/STARTED.json",
-    "sha256": "97e4045488f31259325b841e7f31fc031e14e80a910924eaa50da7121f39735d",
-    "bytes": 225
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed99/best.pt",
-    "sha256": "e4eb14d219051bab9b8ff4e3bb4655cf9f2a574646fdb6f1270808cf5bd9b577",
-    "bytes": 2253001
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed99/evaluation_predictions.csv",
-    "sha256": "5bee60413067e9f4019db1ef51b606c07fd5399be40defdc4f3fd11de46ab610",
-    "bytes": 398047
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed99/history.csv",
-    "sha256": "efb6ff67100e27e0fa76d894574cc713b0b3008a0d9108e83be6df9995183260",
-    "bytes": 1150
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed99/scalers.pkl",
-    "sha256": "23f1093655b6e6f3b86fc99e17c8df880ad23a8aa853a25bb57f160bde564716",
-    "bytes": 152235
-  },
-  {
-    "path": "subprojects/13_xrp_technical_architecture_comparison/results/lstm_matched_btc_seed99/validation_predictions.csv",
-    "sha256": "5a682a3074039fffce7af343f89ae4b07772d0b6e8dd902617fffe199338f4a6",
-    "bytes": 161554
-  },
-  {
     "path": "subprojects/14_xrp_technical_arimax/README.md",
-    "sha256": "c83b9aa544a2632aec85da9ae6c7ae7b6c7657f60195b419f470da4a6cf2406b",
-    "bytes": 945
+    "sha256": "153a1cef7a6418a05c6131d626a0563feccf6e3ea66eb6c9ef61625d2849db16",
+    "bytes": 1458
   },
   {
     "path": "subprojects/14_xrp_technical_arimax/code/original/build_comparison_report.py",
@@ -4946,8 +5231,8 @@
   },
   {
     "path": "subprojects/15_xrp_garch_volatility/README.md",
-    "sha256": "bb46b6a696235bb8015a8c949f916b8116bfcd63d3c4b5445567f92d9a158bd5",
-    "bytes": 954
+    "sha256": "473c300b0a9e369020ff65497a05a597fcc98f611f764aff0c7dbe90a7bb9192",
+    "bytes": 1467
   },
   {
     "path": "subprojects/15_xrp_garch_volatility/code/original/build_comparison_report.py",
@@ -5086,8 +5371,8 @@
   },
   {
     "path": "subprojects/16_xrp_frozen_later_evaluation/README.md",
-    "sha256": "20d1cc616ed55bddde25cd4415799c962ce9589c9c46f20d02a60978ad57cefe",
-    "bytes": 855
+    "sha256": "b36ae29de7c163796fe1941548ee74c545b11c8482d61b945076695e9c8f8697",
+    "bytes": 990
   },
   {
     "path": "subprojects/16_xrp_frozen_later_evaluation/code/original/evaluate.py",
@@ -5161,8 +5446,8 @@
   },
   {
     "path": "subprojects/17_expected_integrated_gradients/README.md",
-    "sha256": "c863ec75f46cd249e5504429012425b0df7796f84716744e7efe513a7e62d546",
-    "bytes": 1008
+    "sha256": "ed9e3ec7d031f3f8870c028adb4bedf7064f380d82104994137e8a9ed515f805",
+    "bytes": 1193
   },
   {
     "path": "subprojects/17_expected_integrated_gradients/code/original/build_report.py",
@@ -5326,8 +5611,8 @@
   },
   {
     "path": "subprojects/18_gpt_annotation_provenance/README.md",
-    "sha256": "ff929b1674d88243c72a4d5b9816859a061f1d2b432f925a16ad689cd55ff891",
-    "bytes": 880
+    "sha256": "01e40bbb65c01cdd9d1b2cd4e0b13850af5058e64984bd7f8c859c5c13913fc1",
+    "bytes": 1269
   },
   {
     "path": "subprojects/18_gpt_annotation_provenance/code/original/impact_audit.py",
@@ -5408,5 +5693,35 @@
     "path": "tools/reproduce_saved_metrics.py",
     "sha256": "487940d0f29222bb400c3933f69d7be20a89eda326821ee962b5f5caa330631f",
     "bytes": 5273
+  },
+  {
+    "path": "verification/ATTRIBUTION_RECALCULATED.csv",
+    "sha256": "43e0bf6cb43c71a8cd54546af89325dec9005286cb306dab77322c40a2da23be",
+    "bytes": 731
+  },
+  {
+    "path": "verification/MATCHED_PER_SEED_METRICS.csv",
+    "sha256": "a5de1c34299a7ddd2bf8b3c7a6eaf62828e5b0990d721ef9a85b7d3371ff5458",
+    "bytes": 6336
+  },
+  {
+    "path": "verification/MATCHED_SUMMARY.csv",
+    "sha256": "0cae8431bae09b49423b75f7f9fe5a01ef7ee921b4577b6567362903170eaa15",
+    "bytes": 1656
+  },
+  {
+    "path": "verification/PER_FILE_PRICE_METRICS.csv",
+    "sha256": "f32c4903bc7790c4f119e14d4c9402454649ea1c13eaa3c4e428b753c874cb7a",
+    "bytes": 23256
+  },
+  {
+    "path": "verification/SEPARATE_VARIANCE_METRICS.csv",
+    "sha256": "7bf7d516767543cc9efae2b1f960f6adcdd34ae0b1b6528c34c5a000592d25d9",
+    "bytes": 179
+  },
+  {
+    "path": "verification/VERIFICATION.json",
+    "sha256": "e9c5401720f5893ca17609b8bf29cbd7e0d4f4f019cabce362174cd8fb717fd9",
+    "bytes": 382
   }
 ]

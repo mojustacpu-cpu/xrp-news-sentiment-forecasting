@@ -9,3 +9,8 @@ Target: `reconstructed_price_from_log_return`.
 
 Run `python tools/reproduce_saved_metrics.py --output reproduced` from the repository root to reproduce saved price metrics without fitting. Read the root reproducibility guide before training: archived scripts preserve no-restart guards and historical paths; do not run stage pipelines blindly. No new models were fitted for this release.
 
+
+## Source entry points
+
+- [verify_saved_metrics.py](code/original/verify_saved_metrics.py)
+- [evaluate.py](code/original/evaluate.py)
